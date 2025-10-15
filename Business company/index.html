@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AA SİRKO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> /* Custom styles for the video transition */ #video-wrapper { transition: all 0.7s ease-in-out; } .video-shrink { width: 80% !important; height: 80vh !important; } </style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+</style>
+</head>
+
+<body class="bg-white text-[#001E60] overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-50">
+    <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-5">
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-2 md:space-x-3">
+        <img src="logo.png" alt="Logo" class="w-10 h-10" />
+        <span class="font-bold text-xl md:text-2xl text-[#0054A6]">AA SİRKO</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex flex-1 justify-center">
+        <ul class="flex space-x-8 font-medium text-lg items-center">
+          <li><a href="#" class="hover:text-[#0054A6]">Home</a></li>
+          <li><a href="#" class="hover:text-[#0054A6]">About</a></li>
+          <li class="relative group cursor-pointer">
+            <div class="flex items-center space-x-1 hover:text-[#0054A6]">
+              <span>Divisions</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+            <ul class="absolute left-0 mt-2 hidden group-hover:block bg-white border rounded-lg shadow-lg text-[#001E60] w-56">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Real Estate</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Automobiles Trade</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Transportations</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Logistics Services</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="hover:text-[#0054A6]">Impact</a></li>
+          <li><a href="#" class="hover:text-[#0054A6]">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-white flex-col pt-10 px-8 space-y-8 text-lg z-40">
+      <div class="flex justify-end">
+        <button id="close-btn" class="focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <ul class="flex flex-col space-y-6 font-medium">
+        <li><a href="#" class="hover:text-[#0054A6]">Home</a></li>
+        <li><a href="#" class="hover:text-[#0054A6]">About</a></li>
+
+        <!-- Mobile Dropdown -->
+        <li>
+          <button id="mobile-division-btn" class="flex justify-between items-center w-full hover:text-[#0054A6] focus:outline-none">
+            <span>Divisions</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+          <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2">
+            <li><a href="#" class="block hover:text-[#0054A6]">Real Estate</a></li>
+            <li><a href="#" class="block hover:text-[#0054A6]">Automobiles Trade</a></li>
+            <li><a href="#" class="block hover:text-[#0054A6]">Transportations</a></li>
+            <li><a href="#" class="block hover:text-[#0054A6]">Logistics Services</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="hover:text-[#0054A6]">Impact</a></li>
+        <li><a href="#" class="hover:text-[#0054A6]">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="mt-20 relative">
+    <div class="bg-[#002855] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 relative text-center md:text-left">
+      <div class="max-w-6xl mx-auto transform -translate-y-3">
+        <h1 class="xl sm:text-5xl md:text-8xl font-bold leading-tight">
+          <span class="text-[#00AEEF]">Enriching</span><br />
+          Lives Everyday
+        </h1>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div id="video-wrapper"
+         class="absolute left-1/2 bottom-[-180px] sm:bottom-[-250px] md:bottom-[-400px] transform -translate-x-1/2 z-10 w-[90%] md:w-[100%] h-[50vh] sm:h-[60vh] md:h-[60vh] flex items-center justify-center transition-all duration-700 ease-in-out">
+      <video id="hero-video"
+             autoplay muted loop playsinline
+             class="shadow-2xl w-full h-full object-cover rounded-lg md:rounded-none">
+        <source src="./assets/videos/hero.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- White Section Below -->
+  <div class="bg-white h-[600px] sm:h-[600px] "></div>
+
+  <!-- About Us Section -->
+<section class="bg-[#F8FAFC] py-16 sm:py-20 px-10 sm:px-10 md:px-24">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+    
+    <!-- Left: Title -->
+    <div class="text-center md:text-left">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#001E60] mb-4 sm:mb-6">
+        Who We Are
+      </h2>
+      <div class="w-32 sm:w-48 md:w-60 h-1 bg-[#00AEEF] mx-auto md:mx-10 rounded-full "></div>
+    </div>
+
+    <!-- Right: Description -->
+    <div class="text-gray-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
+      <p class="mb-4">
+AA SİRKO is a highly diversified and forward-thinking company committed to achieving excellence across a wide range of industries. Our expertise spans real estate development, automotive trade, transportation, and logistics, allowing us to create comprehensive solutions that drive progress and innovation. We strive to deliver exceptional value to our clients, partners, and communities by combining industry knowledge, cutting-edge technology, and sustainable practices.
+
+      </p>
+      
+      <a href="about.html" 
+         class="inline-block text-[#00AEEF] font-semibold hover:underline transition duration-300">
+         Learn More →
+      </a>
+    </div>
+  </div>
+</section>
+<!--our values-->
+<section class="bg-white text-[#001E60]">
+
+  <!-- Our Values Section - Alternative Design -->
+  <div class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 md:px-8 lg:px-16">
+      <!-- Section Header -->
+      <div class="text-center mb-12 md:mb-16">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Our Values</h1>
+        <div class="w-50 sm:w-50 md:w-60 h-1 bg-[#00AEEF] mx-auto md:mx-50 rounded-full "></div>
+      </div>
+
+      <!-- Values Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-6xl mx-auto">
+        
+        <!-- Innovation Card -->
+        <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group text-center">
+          <div class="w-16 h-16 bg-[#00AEEF] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-lightbulb text-white text-2xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-[#0054A6] mb-6">Innovation</h2>
+          <div class="space-y-4">
+            <p class="text-gray-700 leading-relaxed">
+              Fostering a culture of continuous improvement and creative thinking.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Embracing new technologies and strategies to stay ahead in a dynamic market.
+            </p>
+          </div>
+        </div>
+
+        <!-- Collaboration Card -->
+        <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group text-center">
+          <div class="w-16 h-16 bg-[#0054A6] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-handshake text-white text-2xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-[#0054A6] mb-6">Collaboration</h2>
+          <div class="space-y-4">
+            <p class="text-gray-700 leading-relaxed">
+              Building strong partnerships and alliances for mutual success.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Encouraging teamwork and cross-functional collaboration across diverse sectors.
+            </p>
+          </div>
+        </div>
+
+        <!-- Social Responsibility Card -->
+        <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group text-center">
+          <div class="w-16 h-16 bg-[#002855] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-heart text-white text-2xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-[#0054A6] mb-6">Social Responsibility</h2>
+          <div class="space-y-4">
+            <p class="text-gray-700 leading-relaxed">
+              Contributing positively to the communities where we operate.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Implementing environmentally sustainable practices.
+            </p>
+          </div>
+        </div>
+
+        <!-- Integrity Card -->
+        <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group text-center">
+          <div class="w-16 h-16 bg-[#001E60] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i class="fas fa-shield-alt text-white text-2xl"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-[#0054A6] mb-6">Integrity</h2>
+          <div class="space-y-4">
+            <p class="text-gray-700 leading-relaxed">
+              Upholding the highest ethical standards in all our dealings.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              Transparency and accountability across all practices.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+</section>
+
+<!--OUR DIVISON-->
+<section class="bg-gray-50 text-[#001E60] py-16">
+  <div class="max-w-7xl mx-auto px-10000">
+    
+
+  <h2 class="text-6xl md:text-4xl font-semibold mb-12 tracking-wide text-left">
+    Our Divisions
+  </h2>
+
+
+    <!-- Division Template -->
+    <div class="space-y-6">
+<div class="border-b border-gray-300 pb-8 w-[110%] -ml-10"></div>
+      <!-- Automotive -->
+      <div class="border-b border-gray-300 pb-8 w-[110%] -ml-10">
+        <button 
+          class="w-full text-left text-4xl md:text-6xl font-extrabold hover:text-blue-700 transition-all duration-500"
+          onclick="toggleSection('auto')">
+          Automotive
+        </button>
+        <div id="auto" class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
+          <div class="md:flex md:items-center md:space-x-10">
+            <div class="md:w-1/2">
+              <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+                   alt="Automotive" class="w-full h-64 object-cover rounded-lg shadow-md">
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                Since our inception in <span class="font-semibold text-blue-700">1955</span>, 
+                our <span class="font-semibold">Automotive Division</span> has set the benchmark 
+                for excellence and customer service across the 
+                <span class="font-semibold">Middle East & North Africa</span>.  
+              </p>
+        <a href="about.html" 
+         class="inline-block text-[#00AEEF] font-semibold hover:underline transition duration-1000">
+         Learn More →
+      </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Estate -->
+      <div class="border-b border-gray-300 pb-8 w-[110%] -ml-10">
+        <button 
+          class="w-full text-left text-4xl md:text-6xl font-extrabold hover:text-blue-700 transition-all duration-500"
+          onclick="toggleSection('realestate')">
+          Real Estate
+        </button>
+        <div id="realestate" class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
+          <div class="md:flex md:items-center md:space-x-10">
+            <div class="md:w-1/2">
+              <img src="assets/images/realestate.jpg"
+                   alt="Real Estate" class="w-full h-70 object-cover rounded-lg shadow-md">
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                Our <span class="font-semibold">Real Estate Division</span> delivers innovative 
+                developments and communities that combine functionality and modern design.
+              </p>
+             <a href="real.html" 
+         class="inline-block text-[#00AEEF] font-semibold hover:underline transition duration-1000">
+         Learn More →
+      </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transportation -->
+      <div class="border-b border-gray-300 pb-8 w-[110%] -ml-10">
+        <button 
+          class="w-full text-left text-4xl md:text-6xl font-extrabold hover:text-blue-700 transition-all duration-500"
+          onclick="toggleSection('transport')">
+          Transportation
+        </button>
+        <div id="transport" class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
+          <div class="md:flex md:items-center md:space-x-10">
+            <div class="md:w-1/2">
+              <img src="assets/images/transport.png"
+                   alt="Transportation" class="w-full h-70 object-cover rounded-lg shadow-md">
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                The <span class="font-semibold">Transportation Division</span> provides efficient and 
+                reliable logistics and mobility solutions for global operations.
+              </p>
+                      <a href="trans.html" 
+         class="inline-block text-[#00AEEF] font-semibold hover:underline transition duration-1000">
+         Learn More →
+      </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logistics -->
+      <div class="border-b border-gray-300 pb-8 w-[110%] -ml-10">
+        <button 
+          class="w-full text-left text-4xl md:text-6xl font-extrabold hover:text-blue-700 transition-all duration-500"
+          onclick="toggleSection('logistics')">
+          Logistics
+        </button>
+        <div id="logistics" class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
+          <div class="md:flex md:items-center md:space-x-10">
+            <div class="md:w-1/2">
+              <img src="assets/images/log.jpg"
+                   alt="Logistics" class="w-full h-70 object-cover rounded-lg shadow-md">
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+              <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                Our <span class="font-semibold">Logistics Division</span> ensures streamlined 
+                operations, delivering end-to-end supply chain and warehousing solutions.
+              </p>
+        <a href="logi.html" 
+         class="inline-block text-[#00AEEF] font-semibold hover:underline transition duration-1000">
+         Learn More →
+      </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
+
+
+
+  <script src="js.js"></script>
+</body>
+</html>
