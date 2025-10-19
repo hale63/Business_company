@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AA SİRKO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('fonts/PPNeueMontreal-Regular.woff2') format('woff2');
+}
+
+.custom-font {
+  font-family: 'PPNeueMontreal', sans-serif;
+}
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+    
+    /* Custom styles for the video transition */
+    #video-wrapper { transition: all 0.7s ease-in-out; }
+    .video-shrink { width: 80% !important; height: 80vh !important; }
+    
+    /* Custom fonts and animations */
+    
+      body {
+  font-family: 'PPNeueMontreal', 'Inter', sans-serif;
+  font-weight: 500;
+}
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'PPNeueMontreal', 'Inter';
+      font-weight: 800;
+    }
+    .nav-link, .btn-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Custom animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    .animate-slideInLeft {
+      animation: slideInLeft 0.8s ease-out forwards;
+    }
+    
+    .animate-delay-200 {
+      animation-delay: 0.2s;
+    }
+    
+    .animate-delay-400 {
+      animation-delay: 0.4s;
+    }
+    
+    .animate-delay-600 {
+      animation-delay: 0.6s;
+    }
+    
+    /* Smooth transitions for dropdowns */
+    .dropdown-content {
+      transition: all 0.3s ease;
+    }
+    
+    /* Hover effects for cards */
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Improved font weights */
+    .font-medium-bold {
+      font-weight: 600;
+    }
+    
+    .font-semibold {
+      font-weight: 700;
+    }
+    
+    .font-bold {
+      font-weight: 800;
+    }
+    
+    .font-extrabold {
+      font-weight: 900;
+    }
+  
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="bg-white text-[#001E60] overflow-x-hidden">
+
+  <nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-[9999] shadow-sm">
+  <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-5">
+
+    <!-- Logo -->
+    <div class="flex left-125 space-x-10">
+      <img 
+        src="assets/images/AASIRKO.png" 
+        alt="AA SİRKO Logo" 
+        class="h-14 w-auto md:h-16 transition-transform duration-500 ease-in-out hover:scale-110 drop-shadow-lg"
+      />
+    </div>
+
+    <!-- DESKTOP design -->
+    <div class="hidden md:flex flex-1 justify-center relative z-50">
+      <ul class="flex space-x-8 font-weight-20 text-2xl items-center">
+        <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
+
+        <!-- FIXED: Added padding to the parent and proper hover handling -->
+        <li class="relative group cursor-pointer py-2">
+          <div class="flex items-center space-x-1 hover:text-[#0054A6] transition-colors duration-300">
+            <span>Divisions</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+
+          <!-- FIXED: Added padding-top to create a hover gap and pointer-events-none -->
+          <div class="absolute left-0 pt-2 pointer-events-none">
+            <ul class="hidden group-hover:block bg-white border rounded-lg shadow-lg text-[#001E60] w-56 dropdown-content z-[10000] pointer-events-auto">
+              <li><a href="real.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Real Estate</a></li>
+              <li><a href="automotive.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Automotive Trade</a></li>
+              <li><a href="transportations.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Transportations</a></li>
+              <li><a href="logistic.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Logistics Services</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><a href="#" class="hover:text-[#0054A6] transition-colors duration-300">Impact</a></li>
+        <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none transition-transform duration-300 hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-white flex-col pt-10 px-8 space-y-8 text-lg z-40">
+    <div class="flex justify-end">
+      <button id="close-btn" class="focus:outline-none transition-transform duration-300 hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="flex flex-col space-y-6 font-medium">
+      <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
+      <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
+
+      <!-- Mobile Dropdown -->
+      <li>
+        <button id="mobile-division-btn" class="flex justify-between items-center w-full hover:text-[#0054A6] focus:outline-none transition-colors duration-300">
+          <span>Divisions</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
+          <li><a href="real.html" class="block hover:text-[#0054A6] transition-colors duration-300">Real Estate</a></li>
+          <li><a href="automotive.html" class="block hover:text-[#0054A6] transition-colors duration-300">Automobiles Trade</a></li>
+          <li><a href="transportations.html" class="block hover:text-[#0054A6] transition-colors duration-300">Transportations</a></li>
+          <li><a href="logistic.html" class="block hover:text-[#0054A6] transition-colors duration-300">Logistics Services</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="hover:text-[#0054A6] transition-colors duration-300">Impact</a></li>
+      <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+  <section class="mt-20 relative">
+    <div class=" bg-[#002855] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:pl:6">
+      <div class="max-w-6xl mx-auto md:text-left text-left">
+      <h1 class="text-5xl sm:text-7xl md:text-8xl leading-tight">
+        Contect Us
+      </h1>
+    </div>
+    </div>
+
+    <!-- Video Section -->
+    <div id="video-wrapper"
+         class="absolute left-1/2 bottom-[-180px] sm:bottom-[-250px] md:bottom-[-400px] transform -translate-x-1/2 z-10 w-[90%] md:w-[100%] h-[50vh] sm:h-[60vh] md:h-[60vh] flex items-center justify-center transition-all duration-700 ease-in-out">
+            <img src="/Business company/assets/images/about hero 2.jpg"  class="shadow-2xl w-full h-full object-cover rounded-lg md:rounded-none">
+
+    </div>
+  </section>
+    <div class="bg-white h-[400px] sm:h-[550px]"></div>
+  <section class="">
+     <div class="min-h-screen p-6 md:p-12 ">
+        <div class="max-w-7xl mx-auto bg-white shadow-sm">
+            <div class="grid md:grid-cols-5 gap-20 p-2 md:p-12">
+                <!-- Left Column - Company Info -->
+                <div class="md:col-span-2 space-y-6">
+                    <div>
+                        <h1 class="text-2xl font-normal text-gray-800 mb-8">
+                            AASIRKO  Global.BB
+                        </h1>
+                        
+                        <div class="h-px bg-blue-500 mb-8"></div>
+                        
+                        <div class="space-y-4 text-gray-700">
+                            <p class="font-medium">Kanoo Tower, Level 19, Entrance No. 155</p>
+                            <p>Road 1703, Block 317</p>
+                            <p>Diplomatic Area, Kingdom of Bahrain</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-6">
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>+973 1722 0220</span>
+                        </div>
+                        
+                        <div class="flex items-center gap-3 text-gray-700">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+                            </svg>
+                            <span>+973 1722 9122</span>
+                        </div>
+                        
+                        <button class="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors mt-4">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>View Location</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Column - Contact Form -->
+                <div class="md:col-span-3">
+                    <p class="text-gray-700 mb-8">
+                        For further information regarding YBA Kanoo, its partnerships, and projects, fill out the contact form.
+                    </p>
+
+                    <div class="space-y-6">
+                        <!-- First Name and Last Name -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-2">
+                                    First name*
+                                </label>
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-600 transition-colors"
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-2">
+                                    Last name*
+                                </label>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-600 transition-colors"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Phone and Email -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-2">
+                                    Phone
+                                </label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-600 transition-colors"
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-2">
+                                    Email*
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-600 transition-colors"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Company and Subject -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-2">
+                                    Company
+                                </label>
+                                <input
+                                    type="text"
+                                    id="company"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-600 transition-colors"
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-2">
+                                    Subject*
+                                </label>
+                                <select
+                                    id="subject"
+                                    class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-600 transition-colors bg-white text-gray-500"
+                                >
+                                    <option value="">—Please choose an option—</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="project">Project Information</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div>
+                            <label class="block text-sm text-gray-600 mb-2">
+                                Message*
+                            </label>
+                            <textarea
+                                id="message"
+                                rows="6"
+                                class="w-full px-4 py-3 border border-gray-300 focus:outline-none focus:border-blue-600 transition-colors resize-none"
+                            ></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="flex justify-end">
+                            <button
+                                onclick="submitForm()"
+                                class="bg-blue-900 hover:bg-blue-800 text-white px-12 py-3 rounded-full transition-colors font-medium"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+    
+    <footer class="bg-[#071A3E] border-t border-gray-700 py-10 text-2xl px-6 md:px-16">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
+      
+      <!-- Logo -->
+      <div class="px-5 py-2 bg-white rounded-lg">
+        <img src="assets/images/AASIRKO.png" alt="Logo" class="w-40 mb-6 ">
+      </div>
+
+      <!-- Footer Links -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-2xl">
+        <div>
+          <p class="font-semibold mb-3">Company</p>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Divisions</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold mb-3">Explore</p>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#">Impact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News & Insights</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold mb-3">Programs</p>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="#">Blue Rewards</a></li>
+            <li><a href="#">Suppliers</a></li>
+            <li><a href="#">Media Kit</a></li>
+          </ul>
+        </div>
+        <div class="flex space-x-4 items-center mt-6 md:mt-0">
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Categories -->
+    <div class="border-t border-gray-700 mt-10 pt-6 text-gray-400 text-sm flex flex-wrap justify-center gap-6">
+      <p>Automotive</p>
+      <p>Financial</p>
+      <p>Health</p>
+      <p>Real Estate</p>
+      <p>Retail</p>
+      <p>Education Foundation</p>
+    </div>
+  </footer>
+
+    <script>
+        function submitForm() {
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (!firstName || !lastName || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            const formData = {
+                firstName: firstName,
+                lastName: lastName,
+                phone: phone,
+                email: email,
+                company: company,
+                subject: subject,
+                message: message
+            };
+
+            console.log('Form submitted:', formData);
+            alert('Form submitted successfully!');
+            
+            document.getElementById('firstName').value = '';
+            document.getElementById('lastName').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('company').value = '';
+            document.getElementById('subject').value = '';
+            document.getElementById('message').value = '';
+        }
+    </script>
+   <script src="https://kit.fontawesome.com/a2e0a1b8e4.js" crossorigin="anonymous"></script>
+   <script src="js.js"></script>
+</body>
+</html>

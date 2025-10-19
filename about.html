@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+    
+    /* Custom styles for the video transition */
+    #video-wrapper { transition: all 0.7s ease-in-out; }
+    .video-shrink { width: 80% !important; height: 80vh !important; }
+    
+    /* Custom fonts and animations */
+         body {
+  font-family: 'PPNeueMontreal', 'Inter', sans-serif;
+  font-weight: 500;
+}
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+    }
+    .nav-link, .btn-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Custom animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    .animate-slideInLeft {
+      animation: slideInLeft 0.8s ease-out forwards;
+    }
+    
+    .animate-delay-200 {
+      animation-delay: 0.2s;
+    }
+    
+    .animate-delay-400 {
+      animation-delay: 0.4s;
+    }
+    
+    .animate-delay-600 {
+      animation-delay: 0.6s;
+    }
+    
+    /* Smooth transitions for dropdowns */
+    .dropdown-content {
+      transition: all 0.3s ease;
+    }
+    
+    /* Hover effects for cards */
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Improved font weights */
+    .font-medium-bold {
+      font-weight: 600;
+    }
+    
+    .font-semibold {
+      font-weight: 700;
+    }
+    
+    .font-bold {
+      font-weight: 800;
+    }
+    
+    .font-extrabold {
+      font-weight: 900;
+    }
+  
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="bg-white text-[#001E60] overflow-x-hidden">
+
+  <!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-[9999] shadow-sm">
+  <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-5">
+
+    <!-- Logo -->
+    <div class="flex left-125 space-x-10">
+      <img 
+        src="assets/images/AASIRKO.png" 
+        alt="AA SİRKO Logo" 
+        class="h-14 w-auto md:h-16 transition-transform duration-500 ease-in-out hover:scale-110 drop-shadow-lg"
+      />
+    </div>
+
+    <!-- DESKTOP design -->
+    <div class="hidden md:flex flex-1 justify-center relative z-50">
+      <ul class="flex space-x-8 font-weight-20 text-2xl items-center">
+        <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
+
+        <!-- FIXED: Added padding to the parent and proper hover handling -->
+        <li class="relative group cursor-pointer py-2">
+          <div class="flex items-center space-x-1 hover:text-[#0054A6] transition-colors duration-300">
+            <span>Divisions</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+
+          <!-- FIXED: Added padding-top to create a hover gap and pointer-events-none -->
+          <div class="absolute left-0 pt-2 pointer-events-none">
+            <ul class="hidden group-hover:block bg-white border rounded-lg shadow-lg text-[#001E60] w-56 dropdown-content z-[10000] pointer-events-auto">
+              <li><a href="real.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Real Estate</a></li>
+              <li><a href="automotive.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Automotive Trade</a></li>
+              <li><a href="transportations.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Transportations</a></li>
+              <li><a href="logistic.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Logistics Services</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><a href="#" class="hover:text-[#0054A6] transition-colors duration-300">Impact</a></li>
+        <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none transition-transform duration-300 hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-white flex-col pt-10 px-8 space-y-8 text-lg z-40">
+    <div class="flex justify-end">
+      <button id="close-btn" class="focus:outline-none transition-transform duration-300 hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="flex flex-col space-y-6 font-medium">
+      <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
+      <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
+
+      <!-- Mobile Dropdown -->
+      <li>
+        <button id="mobile-division-btn" class="flex justify-between items-center w-full hover:text-[#0054A6] focus:outline-none transition-colors duration-300">
+          <span>Divisions</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
+          <li><a href="real.html" class="block hover:text-[#0054A6] transition-colors duration-300">Real Estate</a></li>
+          <li><a href="automotive.html" class="block hover:text-[#0054A6] transition-colors duration-300">Automobiles Trade</a></li>
+          <li><a href="transportations.html" class="block hover:text-[#0054A6] transition-colors duration-300">Transportations</a></li>
+          <li><a href="logistic.html" class="block hover:text-[#0054A6] transition-colors duration-300">Logistics Services</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="hover:text-[#0054A6] transition-colors duration-300">Impact</a></li>
+      <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="mt-20 relative">
+    <div class="bg-[#002855] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:text-left">
+      <div class="max-w-6xl mx-auto transform -translate-y-3">
+        <h1 class="text-8xl sm:text-7xl md:text-8xl leading-tight text-left text-[#00AEEF]">
+          Who We Are
+        </h1>
+      </div>
+    </div>
+        <!-- Video Section -->
+    <div id="video-wrapper"
+         class="absolute left-1/2 bottom-[-180px] sm:bottom-[-250px] md:bottom-[-400px] transform -translate-x-1/2 z-10 w-[90%] md:w-[100%] h-[50vh] sm:h-[60vh] md:h-[60vh] flex items-center justify-center transition-all duration-700 ease-in-out">
+      <img src="assets/images/company_member.jpeg"  class="shadow-2xl w-full h-full object-cover rounded-lg md:rounded-none">
+    </div>
+  </section>
+
+  <!-- White Section Below -->
+  <div class="bg-white h-[400px] sm:h-[550px]"></div>
+
+
+  <!-- About Us Section -->
+  <section class="bg-white py-16 sm:py-20 px-10 sm:px-10 md:px-24" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+      
+      <!-- Left: Title -->
+      <div class="text-center md:text-left">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-black mb-4 sm:mb-6">
+          Overview
+        </h2>
+      </div>
+
+      <!-- Right: Description -->
+      <div class="text-gray-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
+        <p class="mb-4">
+AA SİRKO – Company Overview
+
+AA SİRKO is a dynamic and innovative company dedicated to excellence across multiple industries. With a strong focus on quality, reliability, and customer satisfaction, we strive to provide comprehensive solutions that empower businesses and individuals alike.
+
+Our expertise spans a range of sectors, including real estate, automotive, logistics, and technology services, allowing us to deliver integrated solutions that meet the evolving needs of our clients. At AA SİRKO, we believe in combining innovation with tradition, leveraging modern technology while upholding the highest standards of professionalism        </p>
+   </div>
+    </div>
+  </section>
+  <div class="bg-white h-[400px] sm:h-[300px]"> 
+    <div class="relative">
+    <img 
+    src="assets/images/staff.jpg" 
+    alt="Staff" 
+    class="absolute right-20 -bottom-900 top-0 h-[80vh]
+     object-cover  shadow-md transition-transform duration-500
+      hover:scale-105"
+  />
+  </div>
+  </div> 
+  <div class="bg-gray-100 h-[400px] sm:h-[300px]">
+  </div>
+  
+  <!-- Our Philosophy -->
+   
+<section class="bg-gray-100 py-36 px-6 md:px-12 lg:px-32">
+  <div class="max-w-7xl mx-auto  md:text-left">
+    <h2 class="text-4xl font-bold text-[#001E60] mb-32">Our Philosophy</h2>
+  </div>
+
+<div class="grid grid-cols-0 md:grid-cols-2 gap-2 md:pr-12 justify-items-end">
+  <!-- Vision -->
+  <div class="flex flex-col items-center md:items-start text-center md:text-left border-t md:border-t-0 md:border-l border-gray-300 pb-8 md:pb-0 md:pr-0 md:pl-6">
+    <svg class="w-12 h-24 text-[#00BFFF] mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/>
+      <circle cx="12" cy="12" r="3"/>
+    </svg>
+    <h3 class="text-xl font-semibold text-[#001E60] mb-2">Vision</h3>
+    <p class="text-gray-700 max-w-sm">We provide quality products and services that enrich people's lives and aspirations each and every day.</p>
+  </div>
+
+  <!-- Purpose -->
+  <div class="flex flex-col items-center md:items-start text-center md:text-left border-t md:border-t-0 md:border-l border-gray-300 pt-8 md:pt-0 md:pr-0 md:pl-6">
+    <svg class="w-12 h-24 text-[#00BFFF] mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="3"/>
+      <circle cx="12" cy="12" r="6"/>
+      <circle cx="12" cy="12" r="9"/>
+    </svg>
+    <h3 class="text-xl font-semibold text-[#001E60] mb-2">Purpose</h3>
+    <p class="text-gray-700 max-w-sm">We relentlessly pursue excellence to be the foremost provider of quality products and services, placing our customer needs at the heart of everything we do.</p>
+  </div>
+</div>
+
+
+
+
+  </div>
+</section>
+<!--leaders-->
+
+<section class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Header -->
+    <div class="md:flex md:justify-between md:items-center mb-12 h-[350px]">
+      <h2 class="text-3xl md:text-4xl font-semibold text-[#001E60] mb-4 md:mb-0">
+        Our Leadership
+      </h2>
+      <p class="text-gray-400 max-w-md text-1xl">
+Our leadership team is committed to driving innovation, growth, and excellence
+ across all areas of the organization.      </p>
+    </div>
+
+    <!-- Leadership Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 ">
+      <!-- Member 1 -->
+      <div class="text-center">
+        <img src="assets/images/1member.jpg" alt="Wael" class="w-full h-[350px] object-cover rounded-lg mb-4 shadow-md hover:scale-105 transition-transform duration-500">
+        <h3 class="text-lg font-semibold text-[#001E60]">Wael</h3>
+        <p class="text-gray-500 text-sm">Vice Chairman & CEO</p>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="text-center">
+        <img src="assets/images/2.member.jpg" alt="Paul Willis" class="w-full h-[350px] object-cover rounded-lg mb-4 shadow-md hover:scale-105 transition-transform duration-500">
+        <h3 class="text-lg font-semibold text-[#001E60]">Paul Willis</h3>
+        <p class="text-gray-500 text-sm">President, Automotive</p>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="text-center">
+        <img src="assets/images/4.member.jpg" alt="Dr. Haider Al Enzi" class="w-full h-[350px] object-cover rounded-lg mb-4 shadow-md hover:scale-105 transition-transform duration-500">
+        <h3 class="text-lg font-semibold text-[#001E60]">Hale</h3>
+        <p class="text-gray-500 text-sm">Managing Director, Health</p>
+      </div>
+
+      <!-- Member 4 -->
+      <div class="text-center">
+        <img src="assets/images/3.member.jpg" alt="Naaman Atallah" class="w-full h-[350px] object-cover rounded-lg mb-4 shadow-md hover:scale-105 transition-transform duration-500">
+        <h3 class="text-lg font-semibold text-[#001E60]">Maria</h3>
+        <p class="text-gray-500 text-sm">President, Real Estate</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+ 
+
+
+ 
+ <script src="https://kit.fontawesome.com/a2e0a1b8e4.js" crossorigin="anonymous"></script>
+<script src="js.js"></script>
+</body>
+</html>
