@@ -3,18 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AA SİRKO</title>
+  <title>About us</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     
-@font-face {
-  font-family: 'PPNeueMontreal';
-  src: url('fonts/PPNeueMontreal-Regular.woff2') format('woff2');
-}
-
-.custom-font {
-  font-family: 'PPNeueMontreal', sans-serif;
-}
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
     
     /* Custom styles for the video transition */
@@ -22,14 +14,12 @@
     .video-shrink { width: 80% !important; height: 80vh !important; }
     
     /* Custom fonts and animations */
-    
-      body {
+         body {
   font-family: 'PPNeueMontreal', 'Inter', sans-serif;
   font-weight: 500;
 }
-    
     h1, h2, h3, h4, h5, h6 {
-      font-family: 'PPNeueMontreal', 'Inter';
+      font-family: 'Montserrat', sans-serif;
       font-weight: 800;
     }
     .nav-link, .btn-text {
@@ -119,6 +109,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
@@ -209,117 +203,82 @@
     </ul>
   </div>
 </nav>
+
   <!-- Hero Section -->
   <section class="mt-20 relative">
     <div class="bg-[#002855] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:text-left">
       <div class="max-w-6xl mx-auto transform -translate-y-3">
-        <h1 class="text-5xl sm:text-7xl md:text-8xl leading-tight text-left">
-          <span class="text-[#00AEEF] animate-slideInLeft">Enriching</span><br />
-          <span class="animate-fadeInUp animate-delay-200">Lives Everyday</span>
+        <h1 class="text-4xl sm:text-7xl md:text-8xl leading-tight text-left text-[#00AEEF]">
+         Join our growing legacy
         </h1>
       </div>
     </div>
-
-    <!-- Video Section -->
+        <!-- Video Section -->
     <div id="video-wrapper"
          class="absolute left-1/2 bottom-[-180px] sm:bottom-[-250px] md:bottom-[-400px] transform -translate-x-1/2 z-10 w-[90%] md:w-[100%] h-[50vh] sm:h-[60vh] md:h-[60vh] flex items-center justify-center transition-all duration-700 ease-in-out">
-      <video id="hero-video"
-             autoplay muted loop playsinline
-             class="shadow-2xl w-full h-full object-cover rounded-lg md:rounded-none">
-        <source src="./assets/videos/hero.mp4" type="video/mp4" />
-      </video>
+      <img src="assets/images/pexels-mikhail-nilov-7988240.jpg"  class="shadow-2xl w-full h-full object-cover rounded-lg md:rounded-none">
     </div>
   </section>
 
   <!-- White Section Below -->
-  <div class="bg-white h-[200px] sm:h-[500px]"></div>
+  <div class="bg-white h-[400px] sm:h-[550px]"></div>
+
 
   <!-- About Us Section -->
-  <section class="bg-[#F8FAFC] py-32 sm:py-32 px-10 sm:px-10 md:px-24" data-aos="fade-up">
+  <section class="bg-white py-16 sm:py-20 px-10 sm:px-10 md:px-24" data-aos="fade-up">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
       
       <!-- Left: Title -->
       <div class="text-center md:text-left">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#001E60] mb-4 sm:mb-6">
-          Who We Are
+        <h2 class="text-1xl sm:text-4xl md:text-5xl font-bold text-black mb-4 sm:mb-6">
+        AA SIRKO: A Place To Belong, Grow, Excel.
         </h2>
-        <div class="w-32 sm:w-48 md:w-60 h-1 bg-[#00AEEF] mx-auto md:mx-10 rounded-full"></div>
       </div>
 
       <!-- Right: Description -->
       <div class="text-gray-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
-        <p class="mb-4">
-          AA SİRKO is a highly diversified and forward-thinking company committed to achieving excellence across a wide range of industries. Our expertise spans real estate development, automotive trade, transportation, and logistics, allowing us to create comprehensive solutions that drive progress and innovation. We strive to deliver exceptional value to our clients, partners, and communities by combining industry knowledge, cutting-edge technology, and sustainable practices.
-        </p>
-        
-        <a href="about.html" 
-           class="inline-block text-[#00AEEF] font-semibold hover:underline transition duration-300 transform hover:translate-x-1">
-           Learn More →
-        </a>
-      </div>
+        <p class="mb-4">We are committed to fostering a dynamic and inclusive work environment where every employee has the opportunity to thrive and grow. Through our comprehensive training and development programs, we empower our team members to enhance their skills, expand their knowledge, and excel in collaborative team settings.
+          </p>
+   </div>
     </div>
   </section>
+<section class="bg-white text-[#001E60] py-16 px-6 md:px-12 lg:px-20">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12">
+      Our Culture is Built On
+    </h2>
 
-  <!-- Our Values Section -->
-<section class="bg-gray-50 py-32 min-h-[50vh] text-[#001E60]">
-  <div class="max-w-8xl mx-auto px-6 text-center">
-    <h2 class="text-4xl font-semibold mb-12 tracking-wide">Our Values</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-     <!-- Innovation -->
-      <div class="bg-gray-200 p-10 rounded-xl shadow-sm hover:shadow-lg transition-all h-full flex flex-col  min-h-[420px]">
-<div class=" flex justify-center mb-4">
-        <img src="assets/images/innovation_icon.svg" alt="Collaboration" class="w-16 h-16" />
-      </div>
-        <h3 class="text-2xl font-semibold mb-4">Innovation</h3>
-        <p class="text-black leading-relaxed flex-grow text-1.5xl">
-          Fostering a culture of continuous improvement and creative thinking. 
-          Embracing new technologies and strategies to stay ahead in a dynamic market.
-        </p>
-      </div> 
-
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       <!-- Collaboration -->
-      <div class="bg-gray-200 p-10 rounded-xl shadow-sm hover:shadow-lg transition-all h-full flex flex-col min-h-[420px]">
-        <div class="flex justify-center mb-4">
-        <img src="assets/images/collaboration_icon.svg" alt="Collaboration" class="w-16 h-16" />
-      
-
-        </div>
-        <h3 class="text-2xl font-semibold mb-4">Collaboration</h3>
-        <p class="text-black leading-relaxed flex-grow text-1xl">
-          Building strong partnerships and alliances for mutual success. Encouraging teamwork and cross-functional collaboration across diverse sectors.
-        </p>
+      <div class="flex flex-col items-center">
+        <img src="assets/images/Collaboration-1-2-scaled.jpg" alt="Collaboration" class="rounded-lg shadow-md w-full h-64 object-cover mb-6">
+        <h3 class="text-xl font-semibold">Collaboration</h3>
       </div>
 
-      <!-- Social Responsibility -->
-      <div class="bg-gray-200 p-10 rounded-xl shadow-sm hover:shadow-lg transition-all h-full flex flex-col min-h-[450px]">
-        <div class="flex justify-center mb-4">
-  <img src="assets/images/social_responsibility_icon.svg" alt="Collaboration" class="w-16 h-16" />
-</div>
-
-        <h3 class="text-2xl font-semibold mb-4">Social Responsibility</h3>
-        <p class="text-black leading-relaxed flex-grow text-1xl">
-          Contributing positively to the communities where we operate. Implementing environmentally sustainable practices.
-        </p>
+      <!-- Honesty -->
+      <div class="flex flex-col items-center">
+        <img src="assets/images/realestate.jpg" alt="Honesty" class="rounded-lg shadow-md w-full h-64 object-cover mb-6">
+        <h3 class="text-xl font-semibold">Honesty</h3>
       </div>
 
       <!-- Integrity -->
-      <div class="bg-gray-200 p-10 rounded-xl shadow-sm hover:shadow-lg transition-all h-full flex flex-col min-h-[450px]">
-       <div class="flex justify-center mb-4">
-  <img src="assets/images/integrity_icon.svg" alt="Collaboration" class="w-16 h-16" />
-</div>
+      <div class="flex flex-col items-center">
+        <img src="assets/images/Integrity-1-2048x1365.jpg" alt="Integrity" class="rounded-lg shadow-md w-full h-64 object-cover mb-6">
+        <h3 class="text-xl font-semibold">Integrity</h3>
+      </div>
 
-        <h3 class="text-2xl font-semibold mb-4">Integrity</h3>
-        <p class="text-black leading-relaxed flex-grow text-1.2xl">
-          Upholding the highest ethical standards in all our dealings. Transparency and accountability across all practices.
-        </p>
+      <!-- Respect -->
+      <div class="flex flex-col items-center">
+        <img src="assets/images/Career-Respect-2-720x480.jpg" alt="Respect" class="rounded-lg shadow-md w-full h-64 object-cover mb-6">
+        <h3 class="text-xl font-semibold">Respect</h3>
       </div>
     </div>
   </div>
 </section>
 
-
-  <!-- AT A GLANCE -->
+  
+  
+    <!-- AT A GLANCE -->
 <section class="bg-white py-20 px-6 md:px-16 text-[#001E60]">
   <div class="max-w-7xl mx-auto">
     <!-- Title and Description Row -->
@@ -331,9 +290,9 @@
 
       <!-- Description -->
       <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center md:text-left md:max-w-3xl">
-        We are committed to pushing the boundaries of what is possible, embracing new technologies,
-        driving sustainable progress, and making an enduring positive impact for our partners,
-        customers, and the communities we serve.
+        We are proud to drive innovation and progress in the global automotive industry. Committed to excellence,
+         we deliver cutting-edge solutions 
+        that empower businesses and enrich communities. Explore our impact and latest advancements here.
       </p>
     </div>
     <div class="bg-white py-20"></div>
@@ -341,194 +300,49 @@
     <!-- Numbers Row -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:divide-x divide-gray-300">
       <div>
-        <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="4">0</h3>
-        <p class="text-gray-600 mt-3 text-lg md:text-xl">Divisions</p>
-      </div>
-      <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="10">0</h3>
-        <p class="text-gray-600 mt-3 text-lg md:text-xl">Employees (k+)</p>
+        <p class="text-gray-600 mt-3 text-lg md:text-xl">Colleagues (K)</p>
       </div>
       <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="100">0</h3>
-        <p class="text-gray-600 mt-3 text-lg md:text-xl">Nationalities</p>
+        <p class="text-gray-600 mt-3 text-lg md:text-xl">Nationalities </p>
+      </div>
+      <div>
+        <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="12">0</h3>
+        <p class="text-gray-600 mt-3 text-lg md:text-xl">Countries (K)</p>
       </div>
     </div>
   </div>
 </section>
-
-
-<div class="bg-white py-20 px-4 sm:px-8 md:px-16 lg:px-32">
-  <img 
-    src="assets/images/company_member.jpeg" 
-    alt="Company Member"
-    class="w-full h-64 sm:h-56 md:h-64 lg:h-[110vh] object-cover rounded-lg shadow-md transition-transform duration-500 hover:scale-105"
-  />
-</div>
-
-
-
-
-<!-- OUR DIVISIONS SECTION -->
-<section class="bg-gray-50 text-[#001E60] py-12 sm:py-20 px-4 sm:px-8 lg:px-16" data-aos="fade-up">
-  <div class="max-w-7xl mx-auto">
-
-    <!-- Section Title -->
-    <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-12 tracking-wide text-center sm:text-left">
-      Our Divisions
-    </h2>
-
-    <!-- Divisions Container -->
-    <div class="space-y-16 sm:space-y-20">
-
-      <!-- Division Item Template -->
-      <!-- Automotive -->
-      <div class="border-b border-gray-200 pb-8">
-        <button
-          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#0054A6] transition-all duration-500"
-          onclick="toggleSection('auto')"
-          aria-expanded="false"
-        >
-          <span>Automotive</span>
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 sm:h-8 sm:w-8 text-[#001E60] transition-transform duration-500"
-            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-
-        <div id="auto"
-          class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
-          <div class="flex flex-col md:flex-col items-end gap-8">
-            <div class="md:w-1/2">
-              <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
-                alt="Automotive"
-                class="w-full h-60 sm:h-72 lg:h-80 object-cover rounded-2xl shadow-md transition-transform duration-500 hover:scale-105" />
-            </div>
-            <div class="md:w-1/2">
-              <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                Since our inception in <span class="font-semibold text-[#0054A6]">1955</span>, our
-                <span class="font-semibold">Automotive Division</span> has set the benchmark for
-                excellence and customer service across the
-                <span class="font-semibold">Middle East & North Africa</span>.
-              </p>
-              <a href="automotive.html"
-                class="inline-block text-[#00AEEF] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
-                Learn More →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Real Estate -->
-      <div class="border-b border-gray-200 pb-8">
-        <button
-          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#0054A6] transition-all duration-500"
-          onclick="toggleSection('realestate')">
-          <span>Real Estate</span>
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 sm:h-8 sm:w-8 text-[#001E60]" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-
-        <div id="realestate"
-          class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
-          <div class="flex flex-col  md:flex-col items-end gap-8">
-            <div class="md:w-1/2">
-              <img src="assets/images/realestate.jpg" alt="Real Estate"
-                class="w-full h-60 sm:h-72 lg:h-80 object-cover rounded-2xl shadow-md transition-transform duration-500 hover:scale-105" />
-            </div>
-            <div class="md:w-1/2">
-              <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                Our <span class="font-semibold">Real Estate Division</span> delivers innovative
-                developments and communities that blend functionality with modern design.
-              </p>
-              <a href="real.html"
-                class="inline-block text-[#00AEEF] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
-                Learn More →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Transportation -->
-      <div class="border-b border-gray-200 pb-8">
-        <button
-          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#0054A6] transition-all duration-500"
-          onclick="toggleSection('transport')">
-          <span>Transportation</span>
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 sm:h-8 sm:w-8 text-[#001E60]" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-
-        <div id="transport"
-          class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
-          <div class="flex flex-col md:flex-col items-end gap-8">
-            <div class="md:w-1/2">
-              <img src="assets/images/transport.png" alt="Transportation"
-                class="w-full h-60 sm:h-72 lg:h-80 object-cover rounded-2xl shadow-md transition-transform duration-500 hover:scale-105" />
-            </div>
-            <div class="md:w-1/2">
-              <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                The <span class="font-semibold">Transportation Division</span> provides efficient
-                and reliable logistics and mobility solutions for global operations.
-              </p>
-              <a href="logistic.html"
-                class="inline-block text-[#00AEEF] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
-                Learn More →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Logistics -->
-      <div class="border-b border-gray-200 pb-8">
-        <button
-          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#0054A6] transition-all duration-500"
-          onclick="toggleSection('logistics')">
-          <span>Logistics</span>
-          <svg xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 sm:h-8 sm:w-8 text-[#001E60]" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-
-        <div id="logistics"
-          class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
-          <div class="flex flex-col md:flex-col items-end gap-8">
-            <div class="md:w-1/2">
-              <img src="assets/images/log.jpg" alt="Logistics"
-                class="w-full h-60 sm:h-72 lg:h-80 object-cover rounded-2xl shadow-md transition-transform duration-500 hover:scale-105" />
-            </div>
-            <div class="md:w-1/2">
-              <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                Our <span class="font-semibold">Logistics Division</span> ensures streamlined
-                operations, delivering end-to-end supply chain and warehousing solutions.
-              </p>
-              <a href="logi.html"
-                class="inline-block text-[#00AEEF] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
-                Learn More →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+<!--WHY US-->
+<section class="bg-gray-50">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
+    
+    <!-- Left Text Section -->
+    <div class="px-6 sm:px-12 py-20 text-[#001E60]">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6">Why AA SIRKO?</h2>
+      <p class="text-lg leading-relaxed mb-8 text-gray-700">
+        AA SIRKO provides you with the opportunity to leave your mark on a breadth of industries 
+        through various diverse projects. Empowered with best-in-class training and a culture that 
+        enables fruitful collaboration, you’ll be equipped to take charge of a prosperous career.
+      </p>
+      <a href="#" class="text-[#001E60] font-semibold flex items-center gap-2 hover:underline">
+        Explore our careers on LinkedIn
+        <span class="border border-[#001E60] rounded-full w-6 h-6 flex items-center justify-center text-sm">
+          →
+        </span>
+      </a>
     </div>
+
+    <!-- Right Image Section -->
+    <div class="w-full h-full">
+      <img src="assets/images/whycareers.jpg" alt="Writing on notebook" class="w-full h-[90%] object-cover">
+    </div>
+
   </div>
 </section>
+
+
 
 <!-- Connect Section -->
    <!-- Connect Section -->
@@ -610,6 +424,10 @@
       <p>Logistics & Transportations</p>
     </div>
   </footer>
+
+
+ 
+
 
  
  <script src="https://kit.fontawesome.com/a2e0a1b8e4.js" crossorigin="anonymous"></script>

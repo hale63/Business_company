@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AA SİRKO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'PPNeueMontreal';
+      src: url('fonts/PPNeueMontreal-Regular.woff2') format('woff2');
+    }
+
+    .custom-font {
+      font-family: 'PPNeueMontreal', sans-serif;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
+    
+    /* Custom styles for the video transition */
+    #video-wrapper { transition: all 0.7s ease-in-out; }
+    .video-shrink { width: 80% !important; height: 80vh !important; }
+    
+    /* Custom fonts and animations */
+    body {
+      font-family: 'PPNeueMontreal', 'Inter', sans-serif;
+      font-weight: 500;
+      overflow-x: hidden;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'PPNeueMontreal', 'Inter';
+      font-weight: 800;
+    }
+    
+    .nav-link, .btn-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Custom animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    .animate-slideInLeft {
+      animation: slideInLeft 0.8s ease-out forwards;
+    }
+    
+    .animate-delay-200 {
+      animation-delay: 0.2s;
+    }
+    
+    .animate-delay-400 {
+      animation-delay: 0.4s;
+    }
+    
+    .animate-delay-600 {
+      animation-delay: 0.6s;
+    }
+    
+    /* Smooth transitions for dropdowns */
+    .dropdown-content {
+      transition: all 0.3s ease;
+    }
+    
+    /* Hover effects for cards */
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Improved font weights */
+    .font-medium-bold {
+      font-weight: 600;
+    }
+    
+    .font-semibold {
+      font-weight: 700;
+    }
+    
+    .font-bold {
+      font-weight: 800;
+    }
+    
+    .font-extrabold {
+      font-weight: 900;
+    }
+    
+    /* Mobile-specific fixes */
+    @media (max-width: 768px) {
+      .mobile-padding {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      
+      .mobile-full-width {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      
+      .mobile-text-center {
+        text-align: center;
+      }
+      
+      .mobile-grid-1 {
+        grid-template-columns: 1fr;
+      }
+      
+      .mobile-no-overflow {
+        overflow-x: hidden;
+      }
+      
+      .mobile-image-container {
+        width: 100%;
+        padding: 0 1rem;
+      }
+      
+      .mobile-image-container img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body class="bg-white text-[#001E60] overflow-x-hidden mobile-no-overflow">
+
+  <!-- Navbar -->
+ <nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-[9999] shadow-sm">
+  <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-5">
+
+    <!-- Logo -->
+    <div class="flex left-125 space-x-10">
+     <a href="index.html"><img 
+        src="assets/images/AASIRKO.png" 
+        alt="AA SİRKO Logo" 
+        class="h-14 w-auto md:h-16 transition-transform duration-500 ease-in-out hover:scale-110 drop-shadow-lg"
+      /></a> 
+    </div>
+
+    <!-- DESKTOP design -->
+    <div class="hidden md:flex flex-1 justify-center relative z-50">
+      <ul class="flex space-x-8 font-weight-20 text-2xl items-center">
+        <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
+
+        <!-- FIXED: Added padding to the parent and proper hover handling -->
+        <li class="relative group cursor-pointer py-2">
+          <div class="flex items-center space-x-1 hover:text-[#0054A6] transition-colors duration-300">
+            <span>Divisions</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+
+          <!-- FIXED: Added padding-top to create a hover gap and pointer-events-none -->
+          <div class="absolute left-0 pt-2 pointer-events-none">
+            <ul class="hidden group-hover:block bg-white border rounded-lg shadow-lg text-[#001E60] w-56 dropdown-content z-[10000] pointer-events-auto">
+              <li><a href="real.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Real Estate</a></li>
+              <li><a href="automotive.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Automotive Trade</a></li>
+              <li><a href="logistic.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Logistics & Transportations</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><a href="careers.html" class="hover:text-[#0054A6] transition-colors duration-300">Careers</a></li>
+        <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none transition-transform duration-300 hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-white flex-col pt-10 px-8 space-y-8 text-lg z-40">
+    <div class="flex justify-end">
+      <button id="close-btn" class="focus:outline-none transition-transform duration-300 hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="flex flex-col space-y-6 font-medium">
+      <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
+      <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
+
+      <!-- Mobile Dropdown -->
+      <li>
+        <button id="mobile-division-btn" class="flex justify-between items-center w-full hover:text-[#0054A6] focus:outline-none transition-colors duration-300">
+          <span>Divisions</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
+          <li><a href="real.html" class="block hover:text-[#0054A6] transition-colors duration-300">Real Estate</a></li>
+          <li><a href="automotive.html" class="block hover:text-[#0054A6] transition-colors duration-300">Automobiles Trade</a></li>
+          <li><a href="logistic.html" class="block hover:text-[#0054A6] transition-colors duration-300">Logistics & Transportations</a></li>
+        </ul>
+      </li>
+
+      <li><a href="careers.html" class="hover:text-[#0054A6] transition-colors duration-300">Careers</a></li>
+      <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  <!-- Hero Section -->
+  <section class="mt-20 relative">
+    <div class="bg-[#002855] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:pl:6">
+      <div class="max-w-6xl mx-auto md:text-left text-left">
+        <h1 class="text-5xl sm:text-7xl md:text-8xl leading-tight">
+          Real Estate
+        </h1>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div id="video-wrapper"
+         class="absolute left-1/2 bottom-[-180px] sm:bottom-[-250px] md:bottom-[-400px] transform -translate-x-1/2 z-10 w-[90%] md:w-[100%] h-[50vh] sm:h-[60vh] md:h-[60vh] flex items-center justify-center transition-all duration-700 ease-in-out">
+      <img src="assets/images/division_reals_estate_hero.webp" class="shadow-2xl w-full h-full object-cover rounded-lg md:rounded-none">
+    </div>
+  </section>
+
+  <!-- White Section Below -->
+  <div class="bg-white h-[200px] sm:h-[500px]"></div>
+
+  <!-- About Us Section -->
+  <section class="bg-white py-16 sm:py-20 px-6 md:px-24 mobile-padding" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
+      
+      <!-- Left: Title -->
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#001E60] mb-4 sm:mb-6">
+          Overview
+        </h2>
+      </div>
+
+      <!-- Right: Description -->
+      <div class="text-gray-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
+        <p class="mb-4 text-xl md:text-2xl">
+          Discover your dream home or ideal investment with AASIRKO. We specialize in connecting buyers, sellers, and investors with the perfect properties. Whether you're looking for residential, commercial, or rental properties, our dedicated team provides expert guidance, personalized service, and in-depth market knowledge to help you make confident decisions.
+        </p>
+        <p class="text-xl md:text-2xl">
+          Explore listings, browse virtual tours, and experience a seamless real estate journey tailored just for you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SERVICES -->
+  <section class="py-20 bg-gray-50 mobile-padding">
+    <div class="max-w-12xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mobile-grid-1">
+        
+        <!-- Project Development -->
+        <div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-700">
+          <img src="assets/images/projectdevelopmen.jpg" alt="Project Development" class="w-full justify-center h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl md:text-3xl font-semibold mb-2">Project Development</h3>
+            <p class="text-lg md:text-xl">
+              The company's duties range from identifying desirable land assets to directing property design, construction and leasing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project Management -->
+        <div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-700">
+          <img src="assets/images/PROJECT_MMANAgment.jpg" alt="Project Management" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl md:text-3xl font-semibold mb-2">Project Management</h3>
+            <p class="text-lg md:text-xl">
+              Kanoo Real Estate is dedicated to providing viable solutions to the various challenges that residential and commercial properties face.
+            </p>
+          </div>
+        </div>
+
+        <!-- Asset Management -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-700">
+          <img src="assets/images/wall-with-a-balcony-of-new-empty-modern-multi-stor-2023-11-27-05-11-17-utc-720x480.jpg" alt="Asset Management" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-3xl font-semibold mb-2">Asset Management</h3>
+            <p class="text-gray-600 text-lg md:text-xl">
+              Kanoo Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Facility Management -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-700">
+          <img src="assets/images/man-an-electrical-technician-working-in-a-switchb-2023-11-27-04-54-15-utc-720x480.jpg" 
+          alt="Asset Management" class="w-full h-70 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Facility Management</h3>
+            <p class="text-gray-600 text-lg md:text-xl">
+              Kanoo Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AT A GLANCE -->
+  <section class="bg-white py-20 px-6 md:px-16 text-[#001E60] mobile-padding">
+    <div class="max-w-7xl mx-auto">
+      <!-- Title and Description Row -->
+      <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-16 space-y-8 md:space-y-0">
+        <!-- Title -->
+        <h2 class="text-4xl md:text-5xl font-semibold text-center md:text-left">
+          At a Glance
+        </h2>
+
+        <!-- Description -->
+        <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center md:text-left md:max-w-3xl">
+          We are proud to drive innovation and progress in the global automotive industry. Committed to excellence,
+          we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.
+        </p>
+      </div>
+      
+      <div class="bg-white py-10 md:py-20"></div>
+
+      <!-- Numbers Row -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:divide-x divide-gray-300">
+        <div>
+          <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="1">0</h3>
+          <p class="text-gray-600 mt-3 text-lg md:text-xl"> Of prime retail and commercial spaces(Mm²)</p>
+        </div>
+        <div>
+          <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="80">0</h3>
+          <p class="text-gray-600 mt-3 text-lg md:text-xl">Annual visitors (k+)</p>
+        </div>
+        <div>
+          <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="100">0</h3>
+          <p class="text-gray-600 mt-3 text-lg md:text-xl">Nationalities</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="bg-white py-20 px-6 md:px-16 text-[#001E60] mobile-padding">
+    <div class="max-w-7xl mx-auto">
+      <!-- Title and Description Row -->
+      <div class="flex flex-col md:flex-row justify-center items-center md:items-start mb-16 space-y-8 md:space-y-0">
+        <!-- Title -->
+        <h2 class="text-4xl md:text-5xl font-semibold text-center md:text-left">
+          Selected Brands
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mobile-grid-1">
+        <div class="flex justify-center items-center bg-gray-100 w-full h-[200px] md:h-[350px]">
+          <div>
+            <img src="assets/images/brand_the_podium_logo.svg" class="max-w-[80%] mx-auto">
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center bg-gray-100 w-full h-[200px] md:h-[350px]">
+          <div>
+            <a href="#"><img src="assets/images/brand_the_podium_logo.svg" class="max-w-[80%] mx-auto"></a>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center bg-gray-100 w-full h-[200px] md:h-[350px]">
+          <div>
+            <a href="#" id=""><img src="assets/images/brand_the_podium_logo.svg" class="max-w-[80%] mx-auto"></a>
+          </div>
+        </div>
+        
+        <div class="flex justify-center items-center bg-gray-100 w-full h-[200px] md:h-[350px]">
+          <div>
+            <a href="#"><img src="assets/images/brand_the_podium_logo.svg" class="max-w-[80%] mx-auto"></a>
+          </div>
+        </div>
+        
+        <div class="flex justify-center items-center bg-gray-100 w-full h-[200px] md:h-[350px]">
+          <div>
+            <a href=""><img src="assets/images/brand_the_podium_logo.svg" class="max-w-[80%] mx-auto"></a>
+          </div>
+        </div>
+        
+        <div class="flex justify-center items-center bg-gray-100 w-full h-[200px] md:h-[350px]">
+          <div>
+            <a href=""> <img src="assets/images/brand_the_podium_logo.svg" class="max-w-[80%] mx-auto"></a>
+          </div>
+        </div>
+        
+        <div class="flex justify-center items-center bg-gray-100 w-full h-[200px] md:h-[350px]">
+          <div>
+            <a href="#"><img src="assets/images/brand_the_podium_logo.svg" class="max-w-[80%] mx-auto"></a> 
+          </div>
+        </div>
+        
+        <div class="flex justify-center items-center bg-gray-100 w-full h-[200px] md:h-[350px]">
+          <div>
+            <a href=""><img src="assets/images/brand_the_podium_logo.svg" class="max-w-[80%] mx-auto"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARS DIVISIONS -->
+  <div class="bg-white h-[300px] sm:h-[500px] mobile-image-container">
+    <div class="relative">
+      <img
+        src="assets/images/real2.jpg"
+        alt="Staff"
+        class="w-full md:w-auto md:left-20 md:top-[120px] h-[50vh] md:h-[80vh] object-cover shadow-md transition-transform duration-500 hover:scale-105"
+      />
+    </div>
+  </div>
+
+  <!-- Spacer Between Image and Content -->
+  <div class="bg-gray-100 h-[100px] md:h-[200px]"></div>
+
+  <!-- MAIN CONTENT SECTION -->
+  <section class="bg-gray-100 py-20 sm:py-40 px-6 md:px-32 text-[#001E60] mobile-padding" >
+    <div class="max-w-7xl mx-auto" data-aos="fade-up">
+
+      <!-- Section Title -->
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-16 tracking-wide text-left">
+        Our Divisions
+      </h2>
+
+      <!-- real estate Divisions List -->
+      <div class="space-y-20">
+
+        <!-- Residences & Communities -->
+        <div class="border-b border-gray-300 pb-10">
+          <button
+            class="w-full text-left text-2xl sm:text-4xl 
+            font-bold hover:text-[#0054A6] transition-all duration-500 flex justify-between items-end"
+            onclick="toggleSection('newCars')"
+          >
+            <span>Residences & Communities</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60] transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="newCars" class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
+            <div class="flex flex-col md:flex-col md:items-end gap-10">
+              <div class="md:w-1/2">
+                <img src="assets/images/Real-Estate-discover_al_badia_living_urban_luxury_redefined_modal__0c1cd1.webp" alt="New Cars" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="md:w-1/2">
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                  Our <span class="font-semibold">Superior Living Spaces Designed To Enhance Quality of Life</span> Our residences and communities offer thoughtfully designed environments that go beyond housing, fostering a true sense of belonging. With a deep commitment to social responsibility, we create vibrant neighborhoods where people thrive together. These developments are designed to empower residents and address
+                  local challenges, establishing us as a trusted real estate broker in the region.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Malls -->
+        <div class="border-b border-gray-300 pb-10">
+          <button
+            class="w-full text-left text-2xl sm:text-4xl font-bold hover:text-[#0054A6] transition-all duration-500 flex justify-between items-center"
+             onclick="toggleSection('evCharging')"
+          >
+            <span>Malls</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="evCharging" class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
+            <div class="flex flex-col md:flex-col md:items-end gap-10">
+              <div class="md:w-1/2">
+                <img src="assets/images/Division_reals_estate_malls.webp" alt="EV & Charging" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="md:w-1/2">
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                  The <span class="font-semibold">malls division</span> focuses on creating modern shopping destinations that serve as community hubs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contracting Group -->
+        <div class="border-b border-gray-300 pb-10">
+          <button
+            class="w-full text-left text-2xl sm:text-4xl font-bold hover:text-[#0054A6] transition-all duration-500 flex justify-between items-center"
+            onclick="toggleSection('usedVehicles')"
+          >
+            <span>Contracting Group</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="usedVehicles" class="max-h-0 opacity-0 overflow-hidden transition-all duration-700 ease-in-out mt-6">
+            <div class="flex flex-col md:flex-col md:items-end gap-10">
+              <div class="md:w-1/2">
+                <img src="assets/images/Division-reals-estate-property-management.webp" alt="Used Vehicles" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="md:w-1/2">
+                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                  Our <span class="font-semibold">Efficient Supply Chains for Stronger Results</span>
+                  ensures top quality pre-owned cars with complete service and reliability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect Section -->
+  <section class="py-20 md:py-32 px-6 md:px-20 text-center md:text-left bg-[#071A3E] gap-12 mobile-padding">
+    <div class="max-w-9xl mx-auto">
+      <div class="md:flex justify-between items-start space-y-10 md:space-y-2">
+        
+        <!-- Left Text -->
+        <div class="md:w-1/2"> 
+          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white">Looking to connect with us?</h2> 
+        </div>
+
+        <!-- Right Text -->
+        <div class="md:w-1/2 text-gray-300 text-lg md:text-xl leading-relaxed">
+          <p>
+            Whether you have a question, a partnership proposal, or an interest in joining our team,
+            select the relevant category below, and we'll direct you to the right form.
+          </p>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+  <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+  <a href="contect.html"
+     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#00AEEF] hover:text-white transition duration-300">
+    Connect with us
+  </a>
+
+  <a href="contect.html"
+     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#00AEEF] hover:text-white transition duration-300">
+    Partner with us
+  </a>
+</div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#071A3E] border-t border-gray-700 py-10 text-lg md:text-2xl px-6 md:px-16 mobile-padding">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
+      
+      <!-- Logo -->
+      <div class="px-5 py-2 bg-white rounded-lg">
+        <img src="assets/images/AASIRKO.png" alt="Logo" class="w-40 mb-6 ">
+      </div>
+
+      <!-- Footer Links -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 text-lg md:text-2xl">
+        <div>
+          <p class="font-semibold mb-3 text-[#00AEEF]">Company</p>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="about.html">About</a></li>
+            
+            <li><a href="careers.html"></a>Careers</li>
+            <li><a href="contect.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold mb-3 text-[#00AEEF]">Divisions</p>
+          <ul class="space-y-2 text-gray-300">
+            <li><a href="real.html">Real Estate</a></li>
+            <li><a href="automotive.html">Automotives</a></li>
+            <li><a href="logistic.html">Logistics & Transportations</a></li>
+          </ul>
+        </div>
+      
+        <div class="flex space-x-4 items-center mt-6 md:mt-0">
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Categories -->
+    <div class="border-t border-gray-700 mt-10 pt-6 text-gray-400 text-sm flex flex-wrap justify-center gap-4 md:gap-6">
+      <p>Real Estate</p>
+      <p>Automotive</p>
+      <p>Logistics & Transportations</p>
+    </div>
+  </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="js.js"></script>
+</body>
+</html>

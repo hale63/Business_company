@@ -1,218 +1,216 @@
-/*// Mobile menu open/close
-const menuBtn = document.getElementById("menu-btn");
-const closeBtn = document.getElementById("close-btn");
-const mobileMenu = document.getElementById("mobile-menu");
-const mobileDivisionBtn = document.getElementById("mobile-division-btn");
-const mobileDivisionMenu = document.getElementById("mobile-division-menu");
+// ===== Initialize AOS =====
+if (typeof AOS !== 'undefined') {
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 100
+  });
+}
 
-menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.remove("hidden");
-});
-
-closeBtn.addEventListener("click", () => {
-  mobileMenu.classList.add("hidden");
-});
-
-// Toggle divisions submenu on mobile
-mobileDivisionBtn.addEventListener("click", () => {
-  mobileDivisionMenu.classList.toggle("hidden");
-});
-const videoContainer = document.getElementById("video-container");
-
-  window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-
-    // Shrink and lift video as you scroll down
-    const scale = Math.max(0.75, 1 - scrollY / 1200);
-    const translateY = Math.min(0, -scrollY / 5); // slight upward motion
-    videoContainer.style.transform = `translate(-50%, ${translateY}px) scale(${scale})`;
-  });*/
-    // Mobile menu functionality
-  /*  const menuBtn = document.getElementById('menu-btn');
-    const closeBtn = document.getElementById('close-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileDivisionBtn = document.getElementById('mobile-division-btn');
-    const mobileDivisionMenu = document.getElementById('mobile-division-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('hidden');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-
-    mobileDivisionBtn.addEventListener('click', () => {
-      mobileDivisionMenu.classList.toggle('hidden');
-    });
-
-    // Video shrink effect on scroll
-    const videoWrapper = document.getElementById('video-wrapper');
+// ===== Mobile Menu Functionality =====
+class MobileMenu {
+  constructor() {
+    this.menuBtn = document.getElementById('menu-btn');
+    this.closeBtn = document.getElementById('close-btn');
+    this.mobileMenu = document.getElementById('mobile-menu');
+    this.mobileDivisionBtn = document.getElementById('mobile-division-btn');
+    this.mobileDivisionMenu = document.getElementById('mobile-division-menu');
     
-    window.addEventListener('scroll', () => {
-      // Get the scroll position
-      const scrollPosition = window.scrollY;
-      
-      // Define the scroll threshold for the effect
-      const threshold = 100;
-      
-      // Apply the shrink effect when scrolled past the threshold
-      if (scrollPosition > threshold) {
-        videoWrapper.classList.add('video-shrink');
-      } else {
-        videoWrapper.classList.remove('video-shrink');
+    this.init();
+  }
+
+  init() {
+    if (!this.mobileMenu) {
+      console.error('Mobile menu element not found!');
+      return;
+    }
+
+    // Menu toggle
+    if (this.menuBtn) {
+      this.menuBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        this.openMenu();
+      });
+    }
+
+    // Close button
+    if (this.closeBtn) {
+      this.closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        this.closeMenu();
+      });
+    }
+
+    // Division dropdown
+    if (this.mobileDivisionBtn && this.mobileDivisionMenu) {
+      this.mobileDivisionBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        this.toggleDivisionMenu();
+      });
+    }
+
+    // Close menu when clicking outside (only on mobile)
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth < 768 && 
+          !this.mobileMenu.classList.contains('hidden') && 
+          !this.mobileMenu.contains(e.target) && 
+          e.target !== this.menuBtn) {
+        this.closeMenu();
       }
     });
 
-    /**********division part********/
-  /*function toggleSection(id) {
-    const sections = document.querySelectorAll('[id="auto"], [id="realestate"], [id="transport"], [id="logistics"]');
-    sections.forEach(sec => {
-      if (sec.id !== id) {
-        sec.style.maxHeight = null;
-        sec.style.opacity = 0;
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !this.mobileMenu.classList.contains('hidden')) {
+        this.closeMenu();
       }
     });
-    const section = document.getElementById(id);
-    if (section.style.maxHeight) {
-      section.style.maxHeight = null;
-      section.style.opacity = 0;
-    } else {
-      section.style.maxHeight = section.scrollHeight + "px";
-      section.style.opacity = 1;
+  }
+
+  openMenu() {
+    console.log('Opening mobile menu');
+    this.mobileMenu.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    
+    // Add a small delay to ensure the class is applied before any transitions
+    setTimeout(() => {
+      this.mobileMenu.style.opacity = '1';
+      this.mobileMenu.style.transform = 'translateX(0)';
+    }, 10);
+  }
+
+  closeMenu() {
+    console.log('Closing mobile menu');
+    this.mobileMenu.classList.add('hidden');
+    document.body.style.overflow = '';
+    
+    // Close division menu as well
+    if (this.mobileDivisionMenu) {
+      this.mobileDivisionMenu.classList.add('hidden');
     }
   }
 
-
-   AOS.init({
-    duration: 1000, // animation duration
-    once: true, // animate only once
-    offset: 100 // distance before animation starts
-  });
-     */
-       // Initialize AOS (Animate On Scroll)
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 100
-    });
-
-    // Mobile menu functionality
-    const menuBtn = document.getElementById('menu-btn');
-    const closeBtn = document.getElementById('close-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileDivisionBtn = document.getElementById('mobile-division-btn');
-    const mobileDivisionMenu = document.getElementById('mobile-division-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.remove('hidden');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-    });
-
-    mobileDivisionBtn.addEventListener('click', () => {
-      mobileDivisionMenu.classList.toggle('hidden');
-    });
-
-    // Toggle sections for divisions
-    function toggleSection(sectionId) {
-      const section = document.getElementById(sectionId);
-      const isOpen = section.classList.contains('max-h-0');
-      
-      // Close all sections first
-      document.querySelectorAll('[id="auto"], [id="realestate"], [id="transport"], [id="logistics"]').forEach(el => {
-        el.classList.add('max-h-0', 'opacity-0');
-        el.classList.remove('max-h-screen', 'opacity-100');
-      });
-      
-      // Rotate all arrows back to default
-      document.querySelectorAll('button svg').forEach(svg => {
-        svg.style.transform = 'rotate(0deg)';
-      });
-      
-      // If the clicked section was closed, open it
-      if (isOpen) {
-        section.classList.remove('max-h-0', 'opacity-0');
-        section.classList.add('max-h-screen', 'opacity-100');
-        
-        // Rotate the arrow for the opened section
-        event.currentTarget.querySelector('svg').style.transform = 'rotate(180deg)';
-      }
+  toggleDivisionMenu() {
+    if (this.mobileDivisionMenu) {
+      this.mobileDivisionMenu.classList.toggle('hidden');
     }
+  }
+}
 
-    // Video shrink effect on scroll
+// ===== Video Shrink Effect =====
+class VideoShrink {
+  constructor() {
+    this.videoWrapper = document.getElementById('video-wrapper');
+    if (!this.videoWrapper) return;
+    
+    this.init();
+  }
+
+  init() {
     window.addEventListener('scroll', () => {
-      const videoWrapper = document.getElementById('video-wrapper');
       const scrollPosition = window.scrollY;
-      
-      if (scrollPosition > 100) {
-        videoWrapper.classList.add('video-shrink');
-      } else {
-        videoWrapper.classList.remove('video-shrink');
-      }
+      this.videoWrapper.classList.toggle('video-shrink', scrollPosition > 100);
     });
+  }
+}
 
-    /*AT GALANCE*/
-    const counters = document.querySelectorAll('[data-target]');
-    const speed = 50; // smaller = faster
+// ===== Counter Animation =====
+class CounterAnimation {
+  constructor() {
+    this.counters = document.querySelectorAll('[data-target]');
+    this.speed = 50;
+    
+    if (this.counters.length > 0) {
+      this.init();
+    }
+  }
 
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const inc = target / speed;
-
-        if (count < target) {
-          counter.innerText = Math.ceil(count + inc);
-          setTimeout(updateCount, 20);
-        } else {
-          counter.innerText = target + '+';
+  init() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.animateCounter(entry.target);
+          observer.unobserve(entry.target);
         }
-      };
+      });
+    }, { threshold: 0.5 });
 
-      const observer = new IntersectionObserver(entries => {
-        if (entries[0].isIntersecting) {
-          updateCount();
-          observer.unobserve(counter);
-        }
-      }, { threshold: 0.5 });
-
+    this.counters.forEach(counter => {
       observer.observe(counter);
     });
-      // Toggle sections for divisions with arrow rotation
-  function toggleSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    const button = event.currentTarget;
-    const arrow = button.querySelector('svg');
-    const isOpen = section.classList.contains('max-h-0');
+  }
+
+  animateCounter(counter) {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText.replace('+', '').trim();
     
-    // Close all sections first
-    document.querySelectorAll('[id="auto"], [id="realestate"], [id="transport"], [id="logistics"]').forEach(el => {
-      el.classList.add('max-h-0', 'opacity-0');
-      el.classList.remove('max-h-screen', 'opacity-100');
-    });
-    
-    // Reset all arrows
-    document.querySelectorAll('button svg').forEach(svg => {
-      svg.style.transform = 'rotate(0deg)';
-    });
-    
-    // If the clicked section was closed, open it
-    if (isOpen) {
-      section.classList.remove('max-h-0', 'opacity-0');
-      section.classList.add('max-h-screen', 'opacity-100');
+    const updateCount = () => {
+      const currentCount = +counter.innerText.replace('+', '').trim();
+      const inc = Math.ceil(target / this.speed);
       
-      // Rotate the arrow for the opened section
-      arrow.style.transform = 'rotate(180deg)';
+      if (currentCount < target) {
+        counter.innerText = Math.min(currentCount + inc, target) + '+';
+        setTimeout(updateCount, 20);
+      }
+    };
+
+    updateCount();
+  }
+}
+
+// ===== Initialize Everything =====
+if (document.readyState === 'complete') {
+  new MobileMenu();
+}
+
+// Make sure the mobile menu works even if DOM is already loaded
+if (document.readyState === 'complete') {
+  console.log('Document already ready, initializing mobile menu...');
+  new MobileMenu();
+}
+if (!window.mobileMenuInitialized) {
+  document.addEventListener('DOMContentLoaded', function() {
+    new MobileMenu();
+    new VideoShrink();
+    new CounterAnimation();
+    window.mobileMenuInitialized = true;
+  });
+}
+
+// ===== Toggle Sections (Accordion for Divisions) =====
+function toggleSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  const button = document.querySelector(`button[onclick="toggleSection('${sectionId}')"]`);
+  const icon = button?.querySelector('svg');
+
+  if (!section) return;
+
+  // Close all other sections
+  document.querySelectorAll('.space-y-20 > div > div[id]').forEach(div => {
+    if (div.id !== sectionId) {
+      div.classList.remove('max-h-[1000px]', 'opacity-100');
+      div.classList.add('max-h-0', 'opacity-0');
+      const otherIcon = div.parentElement.querySelector('svg');
+      otherIcon?.classList.remove('rotate-180');
     }
+  });
+
+  // Toggle the clicked section
+  const isOpen = section.classList.contains('max-h-[1000px]');
+  if (isOpen) {
+    section.classList.remove('max-h-[1000px]', 'opacity-100');
+    section.classList.add('max-h-0', 'opacity-0');
+    icon?.classList.remove('rotate-180');
+  } else {
+    section.classList.remove('max-h-0', 'opacity-0');
+    section.classList.add('max-h-[1000px]', 'opacity-100');
+    icon?.classList.add('rotate-180');
   }
-function toggleSection(id) {
-    const section = document.getElementById(id);
-    section.classList.toggle('max-h-0');
-    section.classList.toggle('opacity-0');
-    section.classList.toggle('max-h-[1000px]');
-    section.classList.toggle('opacity-100');
-  }
-  
+}
+
+// Make it global so HTML onclick can access it
+window.toggleSection = toggleSection;
+
