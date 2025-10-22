@@ -4,6 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AA SİRKO</title>
+
+  <!-- Define config FIRST -->
+  <script>
+    window.tailwind = {
+      config: {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#EA580C',   // Main orange
+              secondary: '#DC2626', // Red
+              highlight: '#F97316', // Bright orange for hover
+              darkbg: '#111827',    // Dark background
+              textlight: '#E5E7EB', // Light gray text
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Then load Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     
@@ -15,6 +37,7 @@
 .custom-font {
   font-family: 'PPNeueMontreal', sans-serif;
 }
+
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
     
     /* Custom styles for the video transition */
@@ -22,7 +45,19 @@
     .video-shrink { width: 80% !important; height: 80vh !important; }
     
     /* Custom fonts and animations */
-    
+:root {
+  /* Option 2 Colors - Warm & Energetic */
+  --primary-color: #EA580C;
+  --secondary-color: #DC2626;
+  --background-color: #010203;
+  --text-color: #E5E7EB;
+  --accent-color: #F97316;
+  
+  /* Optional: Add these for more control */
+  --button-bg: var(--primary-color);
+  --button-hover: var(--accent-color);
+  --link-color: var(--secondary-color);
+}
       body {
   font-family: 'PPNeueMontreal', 'Inter', sans-serif;
   font-weight: 500;
@@ -122,99 +157,175 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body class="bg-white text-[#001E60] overflow-x-hidden">
-
+<body class="bg-white text-white overflow-x-hidden">
   <!-- Navbar -->
-<nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-[9999] shadow-sm">
-  <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-5">
+<nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-black via-gray-950 to-black shadow-2xl backdrop-blur-xl z-[9999] border-b border-orange-700/50">
+  <div class="flex justify-between items-center px-4 py-1 md:px-8 md:py-3">
 
     <!-- Logo -->
     <div class="flex left-125 space-x-10">
-     <a href="index.html"><img 
-        src="assets/images/AASIRKO.png" 
-        alt="AA SİRKO Logo" 
-        class="h-14 w-auto md:h-16 transition-transform duration-500 ease-in-out hover:scale-110 drop-shadow-lg"
-      /></a> 
+     <a href="index.html" class="group">
+        <div class="relative">
+          <!-- Logo shadow effect -->
+          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+          <img 
+            src="assets/images/Gemini_Generated_Image_uuk5d1uuk5d1uuk5 (1) (1) (1).png" 
+            alt="AA SİRKO Logo" 
+            class="relative h-14 w-auto md:h-16 transition-all duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl"
+          />
+        </div>
+      </a> 
     </div>
 
     <!-- DESKTOP design -->
     <div class="hidden md:flex flex-1 justify-center relative z-50">
-      <ul class="flex space-x-8 font-weight-20 text-2xl items-center">
-        <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
-        <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
+      <ul class="flex space-x-8 font-medium text-xl items-center">
+        <li>
+          <a href="index.html" class="relative px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
+            <span class="relative z-10">Home</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F1F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+          </a>
+        </li>
+        <li>
+          <a href="about.html" class="relative px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
+            <span class="relative z-10">About</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F1F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+          </a>
+        </li>
 
-        <!-- FIXED: Added padding to the parent and proper hover handling -->
-        <li class="relative group cursor-pointer py-2">
-          <div class="flex items-center space-x-1 hover:text-[#0054A6] transition-colors duration-300">
-            <span>Divisions</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <!-- Enhanced Divisions Dropdown -->
+        <li class="relative group cursor-pointer">
+          <div class="flex items-center space-x-1 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
+            <span class="relative z-10">Divisions</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5F1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0054A6]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
           </div>
 
-          <!-- FIXED: Added padding-top to create a hover gap and pointer-events-none -->
-          <div class="absolute left-0 pt-2 pointer-events-none">
-            <ul class="hidden group-hover:block bg-white border rounded-lg shadow-lg text-[#001E60] w-56 dropdown-content z-[10000] pointer-events-auto">
-              <li><a href="real.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Real Estate</a></li>
-              <li><a href="automotive.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Automotive Trade</a></li>
-              <li><a href="logistic.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Logistics & Transportations</a></li>
-            </ul>
+          <!-- Enhanced Dropdown with better shadows -->
+          <div class="absolute left-0 pt-4 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
+            <div class="relative">
+              <!-- Shadow effect for dropdown -->
+              <div class="absolute -inset-1 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-xl blur opacity-30"></div>
+              <ul class="relative bg-white/95 border border-gray-200 rounded-xl shadow-2xl text-[#FF5F1F] w-56 overflow-hidden backdrop-blur-sm">
+                <li>
+                  <a href="real.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100 last:border-b-0">
+                    Real Estate
+                  </a>
+                </li>
+                <li>
+                  <a href="automotive.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100 last:border-b-0">
+                    Automotive Trade
+                  </a>
+                </li>
+                <li>
+                  <a href="logistic.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300">
+                    Logistics & Transportations
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
 
-        <li><a href="careers.html" class="hover:text-[#0054A6] transition-colors duration-300">Careers</a></li>
-        <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+        <li>
+          <a href="careers.html" class="relative px-3 py-2 text-white hover:text-[#0054A6] transition-all duration-300 group">
+            <span class="relative z-10">Careers</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0054A6]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+          </a>
+        </li>
+        <li>
+          <a href="contect.html" class="relative px-3 py-2 text-white hover:text-[#0054A6] transition-all duration-300 group">
+            <span class="relative z-10">Contact</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0054A6]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+          </a>
+        </li>
       </ul>
     </div>
 
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden focus:outline-none transition-transform duration-300 hover:scale-110">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+    <!-- Enhanced Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none transition-all duration-300 hover:scale-110 group">
+      <div class="relative">
+        <div class="absolute -inset-2 bg-gradient-to-r  rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7 text-[#FF5F1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
     </button>
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-white flex-col pt-10 px-8 space-y-8 text-lg z-40">
+  <!-- Enhanced Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-gray-900 to-black flex-col pt-10 px-8 space-y-8 text-lg z-40 shadow-2xl">
     <div class="flex justify-end">
-      <button id="close-btn" class="focus:outline-none transition-transform duration-300 hover:scale-110">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
+      <button id="close-btn" class="focus:outline-none transition-all duration-300 hover:scale-110 group">
+        <div class="relative">
+          <div class="absolute -inset-2 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="relative h-6 w-6 text-[#FF5F1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
       </button>
     </div>
 
     <ul class="flex flex-col space-y-6 font-medium">
-      <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
-      <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
-
-      <!-- Mobile Dropdown -->
       <li>
-        <button id="mobile-division-btn" class="flex justify-between items-center w-full hover:text-[#0054A6] focus:outline-none transition-colors duration-300">
+        <a href="index.html" class="block py-3 px-4 text-white hover:text-[#0054A6] transition-all duration-300 rounded-lg hover:bg-white/5">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="block py-3 px-4 text-white hover:text-[#0054A6] transition-all duration-300 rounded-lg hover:bg-white/5">
+          About
+        </a>
+      </li>
+
+      <!-- Enhanced Mobile Dropdown -->
+      <li class="rounded-lg hover:bg-white/5 transition-all duration-300">
+        <button id="mobile-division-btn" class="flex justify-between items-center w-full py-3 px-4 text-white hover:text-[#0054A6] focus:outline-none transition-colors duration-300">
           <span>Divisions</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#0054A6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
         <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
-          <li><a href="real.html" class="block hover:text-[#0054A6] transition-colors duration-300">Real Estate</a></li>
-          <li><a href="automotive.html" class="block hover:text-[#0054A6] transition-colors duration-300">Automobiles Trade</a></li>
-          <li><a href="logistic.html" class="block hover:text-[#0054A6] transition-colors duration-300">Logistics & Transportations</a></li>
+          <li>
+            <a href="real.html" class="block py-2 px-4 text-white hover:text-[#0054A6] transition-all duration-300 rounded-lg hover:bg-white/5">
+              Real Estate
+            </a>
+          </li>
+          <li>
+            <a href="automotive.html" class="block py-2 px-4 text-white hover:text-[#0054A6] transition-all duration-300 rounded-lg hover:bg-white/5">
+              Automobiles Trade
+            </a>
+          </li>
+          <li>
+            <a href="logistic.html" class="block py-2 px-4 text-white hover:text-[#0054A6] transition-all duration-300 rounded-lg hover:bg-white/5">
+              Logistics & Transportations
+            </a>
+          </li>
         </ul>
       </li>
 
-      <li><a href="careers.html" class="hover:text-[#0054A6] transition-colors duration-300">Careers</a></li>
-      <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+      <li>
+        <a href="careers.html" class="block py-3 px-4 text-white hover:text-[#0054A6] transition-all duration-300 rounded-lg hover:bg-white/5">
+          Careers
+        </a>
+      </li>
+      <li>
+        <a href="contect.html" class="block py-3 px-4 text-white hover:text-[#0054A6] transition-all duration-300 rounded-lg hover:bg-white/5">
+          Contact
+        </a>
+      </li>
     </ul>
   </div>
 </nav>
   <!-- Hero Section -->
   <section class="mt-20 relative">
-    <div class="bg-[#002855] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:text-left">
+    <div class="bg-[#FF5F15] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:text-left">
       <div class="max-w-6xl mx-auto transform -translate-y-3">
         <h1 class="text-5xl sm:text-7xl md:text-8xl leading-tight text-left">
-          <span class="text-[#00AEEF] animate-slideInLeft">Enriching</span><br />
+          <span class="text-black animate-slideInLeft">Enriching</span><br />
           <span class="animate-fadeInUp animate-delay-200">Lives Everyday</span>
         </h1>
       </div>
@@ -240,10 +351,10 @@
       
       <!-- Left: Title -->
       <div class="text-center md:text-left">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#001E60] mb-4 sm:mb-6">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 sm:mb-6">
           Who We Are
         </h2>
-        <div class="w-32 sm:w-48 md:w-60 h-1 bg-[#00AEEF] mx-auto md:mx-10 rounded-full"></div>
+        <div class="w-32 sm:w-32 md:w-48 h-1 bg-[#FF5533] mx-auto md:mx-10 rounded-full"></div>
       </div>
 
       <!-- Right: Description -->
@@ -253,15 +364,15 @@
         </p>
         
         <a href="about.html" 
-           class="inline-block text-[#00AEEF] font-semibold hover:underline transition duration-300 transform hover:translate-x-1">
+           class="inline-block text-[#FF5533] font-semibold hover:underline transition duration-300 transform hover:translate-x-1">
            Learn More →
         </a>
       </div>
     </div>
   </section>
-
+ <div class="bg-white h-[200px] sm:h-[100px]"></div>
   <!-- Our Values Section -->
-<section class="bg-gray-50 py-32 min-h-[50vh] text-[#001E60]">
+<section class="bg-black py-32 min-h-[50vh] text-[#FF5533]">
   <div class="max-w-8xl mx-auto px-6 text-center">
     <h2 class="text-4xl font-semibold mb-12 tracking-wide">Our Values</h2>
 
@@ -320,7 +431,7 @@
 
 
   <!-- AT A GLANCE -->
-<section class="bg-white py-20 px-6 md:px-16 text-[#001E60]">
+<section class="bg-white py-20 px-6 md:px-16 text-[#FF5533]">
   <div class="max-w-7xl mx-auto">
     <!-- Title and Description Row -->
     <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-16 space-y-8 md:space-y-0">
@@ -339,17 +450,17 @@
     <div class="bg-white py-20"></div>
 
     <!-- Numbers Row -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:divide-x divide-gray-300">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:divide-x divide-gray-900">
       <div>
-        <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="4">0</h3>
+        <h3 class="text-6xl md:text-8xl font-bold text-[#FF5533]" data-target="4">0</h3>
         <p class="text-gray-600 mt-3 text-lg md:text-xl">Divisions</p>
       </div>
       <div>
-        <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="10">0</h3>
+        <h3 class="text-6xl md:text-8xl font-bold text-[#FF5533]" data-target="10">0</h3>
         <p class="text-gray-600 mt-3 text-lg md:text-xl">Employees (k+)</p>
       </div>
       <div>
-        <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="100">0</h3>
+        <h3 class="text-6xl md:text-8xl font-bold text-[#FF5533]" data-target="100">0</h3>
         <p class="text-gray-600 mt-3 text-lg md:text-xl">Nationalities</p>
       </div>
     </div>
@@ -357,9 +468,9 @@
 </section>
 
 
-<div class="bg-white py-20 px-4 sm:px-8 md:px-16 lg:px-32">
+<div class="bg-black py-20 px-4 sm:px-8 md:px-16 lg:px-32">
   <img 
-    src="assets/images/company_member.jpeg" 
+    src="assets/images/Gemini_Generated_Image_newyf8newyf8newy.png" 
     alt="Company Member"
     class="w-full h-64 sm:h-56 md:h-64 lg:h-[110vh] object-cover rounded-lg shadow-md transition-transform duration-500 hover:scale-105"
   />
@@ -369,7 +480,7 @@
 
 
 <!-- OUR DIVISIONS SECTION -->
-<section class="bg-gray-50 text-[#001E60] py-12 sm:py-20 px-4 sm:px-8 lg:px-16" data-aos="fade-up">
+<section class="bg-gray-50 text-black py-12 sm:py-20 px-4 sm:px-8 lg:px-16" data-aos="fade-up">
   <div class="max-w-7xl mx-auto">
 
     <!-- Section Title -->
@@ -384,13 +495,13 @@
       <!-- Automotive -->
       <div class="border-b border-gray-200 pb-8">
         <button
-          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#0054A6] transition-all duration-500"
+          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#FF5533] transition-all duration-500"
           onclick="toggleSection('auto')"
           aria-expanded="false"
         >
           <span>Automotive</span>
           <svg xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 sm:h-8 sm:w-8 text-[#001E60] transition-transform duration-500"
+            class="h-6 w-6 sm:h-8 sm:w-8 text-[#FF5533] transition-transform duration-500"
             fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M19 9l-7 7-7-7" />
@@ -407,13 +518,13 @@
             </div>
             <div class="md:w-1/2">
               <p class="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed mb-4">
-                Since our inception in <span class="font-semibold text-[#0054A6]">1955</span>, our
+                Since our inception in <span class="font-semibold text-[#FF5533]">1955</span>, our
                 <span class="font-semibold">Automotive Division</span> has set the benchmark for
                 excellence and customer service across the
                 <span class="font-semibold">Middle East & North Africa</span>.
               </p>
               <a href="automotive.html"
-                class="inline-block text-[#00AEEF] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
+                class="inline-block text-[#FF5533] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
                 Learn More →
               </a>
             </div>
@@ -459,7 +570,7 @@
       <!-- Transportation -->
       <div class="border-b border-gray-200 pb-8">
         <button
-          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#0054A6] transition-all duration-500"
+          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#FF5533] transition-all duration-500"
           onclick="toggleSection('transport')">
           <span>Transportation</span>
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -483,7 +594,7 @@
                 and reliable logistics and mobility solutions for global operations.
               </p>
               <a href="logistic.html"
-                class="inline-block text-[#00AEEF] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
+                class="inline-block text-[#FF5533] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
                 Learn More →
               </a>
             </div>
@@ -494,7 +605,7 @@
       <!-- Logistics -->
       <div class="border-b border-gray-200 pb-8">
         <button
-          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#0054A6] transition-all duration-500"
+          class="w-full flex justify-between items-center py-3 text-left font-bold text-2xl sm:text-4xl lg:text-5xl hover:text-[#FF5533] transition-all duration-500"
           onclick="toggleSection('logistics')">
           <span>Logistics</span>
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -518,7 +629,7 @@
                 operations, delivering end-to-end supply chain and warehousing solutions.
               </p>
               <a href="logi.html"
-                class="inline-block text-[#00AEEF] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
+                class="inline-block text-[#FF5533] font-semibold hover:underline transition-transform duration-300 hover:translate-x-1">
                 Learn More →
               </a>
             </div>
@@ -532,7 +643,7 @@
 
 <!-- Connect Section -->
    <!-- Connect Section -->
-  <section class="py-20 md:py-32 px-6 md:px-20 text-center md:text-left bg-[#071A3E] gap-12 mobile-padding">
+  <section class="py-20 md:py-32 px-6 md:px-20 text-center md:text-left bg-black gap-12 mobile-padding">
     <div class="max-w-9xl mx-auto">
       <div class="md:flex justify-between items-start space-y-10 md:space-y-2">
         
@@ -566,7 +677,7 @@
   </section>
 
   <!-- Footer Section -->
-  <footer class="bg-[#071A3E] border-t border-gray-700 py-10 text-lg md:text-2xl px-6 md:px-16 mobile-padding">
+  <footer class="bg-black border-t border-gray-700 py-10 text-lg md:text-2xl px-6 md:px-16 mobile-padding">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
       
       <!-- Logo -->
@@ -577,7 +688,7 @@
       <!-- Footer Links -->
       <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 text-lg md:text-2xl">
         <div>
-          <p class="font-semibold mb-3 text-[#00AEEF]">Company</p>
+          <p class="font-semibold mb-3 text-[#FF5533]">Company</p>
           <ul class="space-y-2 text-gray-300">
             <li><a href="about.html">About</a></li>
             
@@ -586,7 +697,7 @@
           </ul>
         </div>
         <div>
-          <p class="font-semibold mb-3 text-[#00AEEF]">Divisions</p>
+          <p class="font-semibold mb-3 text-[#FF5533]">Divisions</p>
           <ul class="space-y-2 text-gray-300">
             <li><a href="real.html">Real Estate</a></li>
             <li><a href="automotive.html">Automotives</a></li>
@@ -604,7 +715,7 @@
     </div>
 
     <!-- Bottom Categories -->
-    <div class="border-t border-gray-700 mt-10 pt-6 text-gray-400 text-sm flex flex-wrap justify-center gap-4 md:gap-6">
+    <div class="border-t border-gray-700 mt-10 pt-6 text-[#FF5533] text-sm flex flex-wrap justify-center gap-4 md:gap-6">
       <p>Real Estate</p>
       <p>Automotive</p>
       <p>Logistics & Transportations</p>
