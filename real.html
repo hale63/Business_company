@@ -5,7 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AA SİRKO</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
+      <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#0f0f13',
+                            800: '#1a1a23',
+                            700: '#252532',
+                            600: '#303041'
+                        },
+                        orange: {
+                            500: '#ff6b35',
+                            600: '#e55a2b',
+                            700: '#cc4a22'
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s ease-out',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'pulse-soft': 'pulseSoft 2s infinite',
+                        'glow': 'glow 3s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        pulseSoft: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.8' },
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px rgba(255, 107, 53, 0.5)' },
+                            '100%': { boxShadow: '0 0 20px rgba(255, 107, 53, 0.8), 0 0 30px rgba(255, 107, 53, 0.6)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .mobile-padding {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        @media (min-width: 768px) {
+            .mobile-padding {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .mobile-padding {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a23;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ff6b35;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e55a2b;
+        }
+        
+        /* Selection color */
+        ::selection {
+            background-color: rgba(255, 107, 53, 0.3);
+        }
+
+  
     @font-face {
       font-family: 'PPNeueMontreal';
       src: url('fonts/PPNeueMontreal-Regular.woff2') format('woff2');
@@ -162,93 +245,172 @@
 <body class="bg-white text-[#001E60] overflow-x-hidden mobile-no-overflow">
 
   <!-- Navbar -->
- <nav class="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-[9999] shadow-sm">
-  <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-5">
+<nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-black via-gray-950 to-black shadow-2xl backdrop-blur-xl z-[9999] border-b border-orange-700/50">
+  <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-3">
 
     <!-- Logo -->
     <div class="flex left-125 space-x-10">
-     <a href="index.html"><img 
-        src="assets/images/AASIRKO.png" 
-        alt="AA SİRKO Logo" 
-        class="h-14 w-auto md:h-16 transition-transform duration-500 ease-in-out hover:scale-110 drop-shadow-lg"
-      /></a> 
+     <a href="index.html" class="group">
+        <div class="relative">
+          <!-- Logo shadow effect -->
+          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+          <img 
+            src="assets/images/new.png" 
+            alt="AA SİRKO Logo" 
+            class="relative h-16 w-auto md:h-16 transition-all
+             duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl"
+          />
+        </div>
+      </a> 
     </div>
 
     <!-- DESKTOP design -->
     <div class="hidden md:flex flex-1 justify-center relative z-50">
-      <ul class="flex space-x-8 font-weight-20 text-2xl items-center">
-        <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
-        <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
+      <ul class="flex space-x-8 font-medium text-xl items-center">
+        <li>
+          <a href="index.html" class="relative px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
+            <span class="relative z-10">Home</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F1F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+          </a>
+        </li>
+        <li>
+          <a href="about.html" class="relative px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
+            <span class="relative z-10">About</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F1F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+          </a>
+        </li>
 
-        <!-- FIXED: Added padding to the parent and proper hover handling -->
-        <li class="relative group cursor-pointer py-2">
-          <div class="flex items-center space-x-1 hover:text-[#0054A6] transition-colors duration-300">
-            <span>Divisions</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <!-- Enhanced Divisions Dropdown -->
+        <li class="relative group cursor-pointer">
+          <div class="flex items-center space-x-1 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
+            <span class="relative z-10">Divisions</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5F1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0054A6]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
           </div>
 
-          <!-- FIXED: Added padding-top to create a hover gap and pointer-events-none -->
-          <div class="absolute left-0 pt-2 pointer-events-none">
-            <ul class="hidden group-hover:block bg-white border rounded-lg shadow-lg text-[#001E60] w-56 dropdown-content z-[10000] pointer-events-auto">
-              <li><a href="real.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Real Estate</a></li>
-              <li><a href="automotive.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Automotive Trade</a></li>
-              <li><a href="logistic.html" class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-300">Logistics & Transportations</a></li>
-            </ul>
+          <!-- Enhanced Dropdown with better shadows -->
+          <div class="absolute left-0 pt-4 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
+            <div class="relative">
+              <!-- Shadow effect for dropdown -->
+              <div class="absolute -inset-1 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-xl blur opacity-30"></div>
+              <ul class="relative bg-white/95 border border-gray-200 rounded-xl shadow-2xl text-[#FF5F1F] w-56 overflow-hidden backdrop-blur-sm">
+                <li>
+                  <a href="real.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100 last:border-b-0">
+                    Real Estate
+                  </a>
+                </li>
+                <li>
+                  <a href="automotive.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100 last:border-b-0">
+                    Automotive Trade
+                  </a>
+                </li>
+                <li>
+                  <a href="logistic.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300">
+                    Logistics & Transportations
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
 
-        <li><a href="careers.html" class="hover:text-[#0054A6] transition-colors duration-300">Careers</a></li>
-        <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+        <li>
+          <a href="careers.html" class="relative px-3 py-2 text-white hover:text-[#FF5533] transition-all duration-300 group">
+            <span class="relative z-10">Careers</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5533]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+          </a>
+        </li>
+        <li>
+          <a href="contect.html" class="relative px-3 py-2 text-white hover:text-[#FF5533] transition-all duration-300 group">
+            <span class="relative z-10">Contact</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5533]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+          </a>
+        </li>
       </ul>
     </div>
 
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden focus:outline-none transition-transform duration-300 hover:scale-110">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+    <!-- Enhanced Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none transition-all duration-300 hover:scale-110 group">
+      <div class="relative">
+        <div class="absolute -inset-2 bg-gradient-to-r  rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
     </button>
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-white flex-col pt-10 px-8 space-y-8 text-lg z-40">
+  <!-- Enhanced Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-gray-900 to-black flex-col pt-10 px-8 space-y-8 text-lg z-40 shadow-2xl">
     <div class="flex justify-end">
-      <button id="close-btn" class="focus:outline-none transition-transform duration-300 hover:scale-110">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-        </svg>
+      <button id="close-btn" class="focus:outline-none transition-all duration-300 hover:scale-110 group">
+        <div class="relative">
+          <div class="absolute -inset-2 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="relative h-6 w-6 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
       </button>
     </div>
 
     <ul class="flex flex-col space-y-6 font-medium">
-      <li><a href="index.html" class="hover:text-[#0054A6] transition-colors duration-300">Home</a></li>
-      <li><a href="about.html" class="hover:text-[#0054A6] transition-colors duration-300">About</a></li>
-
-      <!-- Mobile Dropdown -->
       <li>
-        <button id="mobile-division-btn" class="flex justify-between items-center w-full hover:text-[#0054A6] focus:outline-none transition-colors duration-300">
+        <a href="index.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+          About
+        </a>
+      </li>
+
+      <!-- Enhanced Mobile Dropdown -->
+      <li class="rounded-lg hover:bg-white/5 transition-all duration-300">
+        <button id="mobile-division-btn" class="flex justify-between items-center w-full py-3 px-4 text-white hover:text-[#0054A6] focus:outline-none transition-colors duration-300">
           <span>Divisions</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
         <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
-          <li><a href="real.html" class="block hover:text-[#0054A6] transition-colors duration-300">Real Estate</a></li>
-          <li><a href="automotive.html" class="block hover:text-[#0054A6] transition-colors duration-300">Automobiles Trade</a></li>
-          <li><a href="logistic.html" class="block hover:text-[#0054A6] transition-colors duration-300">Logistics & Transportations</a></li>
+          <li>
+            <a href="real.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+              Real Estate
+            </a>
+          </li>
+          <li>
+            <a href="automotive.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+              Automobiles Trade
+            </a>
+          </li>
+          <li>
+            <a href="logistic.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+              Logistics & Transportations
+            </a>
+          </li>
         </ul>
       </li>
 
-      <li><a href="careers.html" class="hover:text-[#0054A6] transition-colors duration-300">Careers</a></li>
-      <li><a href="contect.html" class="hover:text-[#0054A6] transition-colors duration-300">Contact</a></li>
+      <li>
+        <a href="careers.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+          Careers
+        </a>
+      </li>
+      <li>
+        <a href="contect.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+          Contact
+        </a>
+      </li>
     </ul>
   </div>
 </nav>
+
   <!-- Hero Section -->
   <section class="mt-20 relative">
-    <div class="bg-[#002855] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:pl:6">
+    <div class="bg-[#FF5F15] text-black px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:pl:6">
       <div class="max-w-6xl mx-auto md:text-left text-left">
         <h1 class="text-5xl sm:text-7xl md:text-8xl leading-tight">
           Real Estate
@@ -272,13 +434,13 @@
       
       <!-- Left: Title -->
       <div class="text-center md:text-left">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#001E60] mb-4 sm:mb-6">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FF5F15] mb-4 sm:mb-6">
           Overview
         </h2>
       </div>
 
       <!-- Right: Description -->
-      <div class="text-gray-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
+      <div class="text-black text-base sm:text-lg leading-relaxed text-center md:text-left">
         <p class="mb-4 text-xl md:text-2xl">
           Discover your dream home or ideal investment with AASIRKO. We specialize in connecting buyers, sellers, and investors with the perfect properties. Whether you're looking for residential, commercial, or rental properties, our dedicated team provides expert guidance, personalized service, and in-depth market knowledge to help you make confident decisions.
         </p>
@@ -289,61 +451,111 @@
     </div>
   </section>
 
-  <!-- OUR SERVICES -->
-  <section class="py-20 bg-gray-50 mobile-padding">
-    <div class="max-w-12xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mobile-grid-1">
-        
-        <!-- Project Development -->
-        <div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-700">
-          <img src="assets/images/projectdevelopmen.jpg" alt="Project Development" class="w-full justify-center h-64 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl md:text-3xl font-semibold mb-2">Project Development</h3>
-            <p class="text-lg md:text-xl">
-              The company's duties range from identifying desirable land assets to directing property design, construction and leasing.
-            </p>
-          </div>
-        </div>
+ 
+   <!-- OUR SERVICES -->
+    <section class="py-36 bg-gradient-to-br from-gray-50 to-gray-100 mobile-padding">
+        <div class="max-w-12xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate-fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-orange-600 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We provide comprehensive real estate solutions tailored to your unique needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mobile-grid-1">
+                
+                <!-- Project Development -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Project Development" 
+                             class="w-full h-64 object-cover transition-transform duration-700 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-project-diagram text-orange-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-orange-600">Project Development</h3>
+                        </div>
+                        <p class="text-black text-lg">
+                            The company's duties range from identifying desirable land assets to directing property design, construction and leasing.
+                        </p>
+                        
+                    </div>
+                </div>
 
-        <!-- Project Management -->
-        <div class="bg-white shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-700">
-          <img src="assets/images/PROJECT_MMANAgment.jpg" alt="Project Management" class="w-full h-64 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl md:text-3xl font-semibold mb-2">Project Management</h3>
-            <p class="text-lg md:text-xl">
-              Kanoo Real Estate is dedicated to providing viable solutions to the various challenges that residential and commercial properties face.
-            </p>
-          </div>
-        </div>
+                <!-- Project Management -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Project Management" 
+                             class="w-full h-64 object-cover transition-transform duration-700 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-tasks text-orange-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-orange-600">Project Management</h3>
+                        </div>
+                        <p class="text-black text-lg">
+                            Kanoo Real Estate is dedicated to providing viable solutions to the various challenges that residential and commercial properties face.
+                        </p>
+                        
+                    </div>
+                </div>
 
-        <!-- Asset Management -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-700">
-          <img src="assets/images/wall-with-a-balcony-of-new-empty-modern-multi-stor-2023-11-27-05-11-17-utc-720x480.jpg" alt="Asset Management" class="w-full h-64 object-cover">
-          <div class="p-6">
-            <h3 class="text-3xl font-semibold mb-2">Asset Management</h3>
-            <p class="text-gray-600 text-lg md:text-xl">
-              Kanoo Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill.
-            </p>
-          </div>
+                <!-- Asset Management -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80" 
+                             alt="Asset Management" 
+                             class="w-full h-64 object-cover transition-transform duration-700 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-chart-line text-orange-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-orange-600">Asset Management</h3>
+                        </div>
+                        <p class="text-black text-lg">
+                            Kanoo Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill.
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                <!-- Facility Management -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="Facility Management" 
+                             class="w-full h-64 object-cover transition-transform duration-700 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-tools text-orange-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800">Facility Management</h3>
+                        </div>
+                        <p class="text-gray-600 text-lg">
+                            Kanoo Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+          
         </div>
-        
-        <!-- Facility Management -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-700">
-          <img src="assets/images/man-an-electrical-technician-working-in-a-switchb-2023-11-27-04-54-15-utc-720x480.jpg" 
-          alt="Asset Management" class="w-full h-70 object-cover">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-2">Facility Management</h3>
-            <p class="text-gray-600 text-lg md:text-xl">
-              Kanoo Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
   <!-- AT A GLANCE -->
-  <section class="bg-white py-20 px-6 md:px-16 text-[#001E60] mobile-padding">
+  <section class="bg-black py-20 px-6 md:px-16 text-[#FF5F15] mobile-padding">
     <div class="max-w-7xl mx-auto">
       <!-- Title and Description Row -->
       <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-16 space-y-8 md:space-y-0">
@@ -353,34 +565,34 @@
         </h2>
 
         <!-- Description -->
-        <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center md:text-left md:max-w-3xl">
+        <p class="text-white text-base md:text-lg leading-relaxed text-center md:text-left md:max-w-3xl">
           We are proud to drive innovation and progress in the global automotive industry. Committed to excellence,
           we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.
         </p>
       </div>
       
-      <div class="bg-white py-10 md:py-20"></div>
+      <div class="bg-black py-10 md:py-20"></div>
 
       <!-- Numbers Row -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:divide-x divide-gray-300">
         <div>
-          <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="1">0</h3>
-          <p class="text-gray-600 mt-3 text-lg md:text-xl"> Of prime retail and commercial spaces(Mm²)</p>
+          <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="1">0</h3>
+          <p class="text-white mt-3 text-lg md:text-xl"> Of prime retail and commercial spaces(Mm²)</p>
         </div>
         <div>
-          <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="80">0</h3>
-          <p class="text-gray-600 mt-3 text-lg md:text-xl">Annual visitors (k+)</p>
+          <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="80">0</h3>
+          <p class="text-white mt-3 text-lg md:text-xl">Annual visitors (k+)</p>
         </div>
         <div>
-          <h3 class="text-6xl md:text-8xl font-bold text-[#001E60]" data-target="100">0</h3>
-          <p class="text-gray-600 mt-3 text-lg md:text-xl">Nationalities</p>
+          <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="100">0</h3>
+          <p class="text-white mt-3 text-lg md:text-xl">Nationalities</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Brands -->
-  <section class="bg-white py-20 px-6 md:px-16 text-[#001E60] mobile-padding">
+  <section class="bg-white py-20 px-6 md:px-16 text-[#FF5F15] mobile-padding">
     <div class="max-w-7xl mx-auto">
       <!-- Title and Description Row -->
       <div class="flex flex-col md:flex-row justify-center items-center md:items-start mb-16 space-y-8 md:space-y-0">
@@ -448,7 +660,8 @@
       <img
         src="assets/images/real2.jpg"
         alt="Staff"
-        class="w-full md:w-auto md:left-20 md:top-[120px] h-[50vh] md:h-[80vh] object-cover shadow-md transition-transform duration-500 hover:scale-105"
+        class="w-full md:w-auto md:left-0 md:top-[120px]
+         h-[50vh] md:h-[90vh] object-cover shadow-md transition-transform duration-500 hover:scale-105"
       />
     </div>
   </div>
@@ -457,7 +670,7 @@
   <div class="bg-gray-100 h-[100px] md:h-[200px]"></div>
 
   <!-- MAIN CONTENT SECTION -->
-  <section class="bg-gray-100 py-20 sm:py-40 px-6 md:px-32 text-[#001E60] mobile-padding" >
+  <section class="bg-gray-100 py-20 sm:py-40 px-6 md:px-32 text-black mobile-padding" >
     <div class="max-w-7xl mx-auto" data-aos="fade-up">
 
       <!-- Section Title -->
@@ -472,11 +685,11 @@
         <div class="border-b border-gray-300 pb-10">
           <button
             class="w-full text-left text-2xl sm:text-4xl 
-            font-bold hover:text-[#0054A6] transition-all duration-500 flex justify-between items-end"
+            font-bold hover:text-[#FF5F15] transition-all duration-500 flex justify-between items-end"
             onclick="toggleSection('newCars')"
           >
             <span>Residences & Communities</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60] transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#FF5F15] transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
@@ -486,7 +699,7 @@
                 <img src="assets/images/Real-Estate-discover_al_badia_living_urban_luxury_redefined_modal__0c1cd1.webp" alt="New Cars" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
               </div>
               <div class="md:w-1/2">
-                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                <p class="text-lg leading-relaxed text-black mb-4">
                   Our <span class="font-semibold">Superior Living Spaces Designed To Enhance Quality of Life</span> Our residences and communities offer thoughtfully designed environments that go beyond housing, fostering a true sense of belonging. With a deep commitment to social responsibility, we create vibrant neighborhoods where people thrive together. These developments are designed to empower residents and address
                   local challenges, establishing us as a trusted real estate broker in the region.
                 </p>
@@ -498,11 +711,11 @@
         <!-- Malls -->
         <div class="border-b border-gray-300 pb-10">
           <button
-            class="w-full text-left text-2xl sm:text-4xl font-bold hover:text-[#0054A6] transition-all duration-500 flex justify-between items-center"
+            class="w-full text-left text-2xl sm:text-4xl font-bold hover:text-[#FF5F15] transition-all duration-500 flex justify-between items-center"
              onclick="toggleSection('evCharging')"
           >
             <span>Malls</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#FF5F15]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
@@ -512,7 +725,7 @@
                 <img src="assets/images/Division_reals_estate_malls.webp" alt="EV & Charging" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
               </div>
               <div class="md:w-1/2">
-                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                <p class="text-lg leading-relaxed text-black mb-4">
                   The <span class="font-semibold">malls division</span> focuses on creating modern shopping destinations that serve as community hubs.
                 </p>
               </div>
@@ -523,11 +736,11 @@
         <!-- Contracting Group -->
         <div class="border-b border-gray-300 pb-10">
           <button
-            class="w-full text-left text-2xl sm:text-4xl font-bold hover:text-[#0054A6] transition-all duration-500 flex justify-between items-center"
+            class="w-full text-left text-2xl sm:text-4xl font-bold hover:text-[#FF5F15] transition-all duration-500 flex justify-between items-center"
             onclick="toggleSection('usedVehicles')"
           >
             <span>Contracting Group</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#001E60]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#FF5F15]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
@@ -537,7 +750,7 @@
                 <img src="assets/images/Division-reals-estate-property-management.webp" alt="Used Vehicles" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
               </div>
               <div class="md:w-1/2">
-                <p class="text-lg leading-relaxed text-gray-700 mb-4">
+                <p class="text-lg leading-relaxed text-black mb-4">
                   Our <span class="font-semibold">Efficient Supply Chains for Stronger Results</span>
                   ensures top quality pre-owned cars with complete service and reliability.
                 </p>
@@ -549,8 +762,8 @@
     </div>
   </section>
 
-  <!-- Connect Section -->
-  <section class="py-20 md:py-32 px-6 md:px-20 text-center md:text-left bg-[#071A3E] gap-12 mobile-padding">
+   <!-- Connect Section -->
+  <section class="py-20 md:py-32 px-6 md:px-20 text-center md:text-left bg-black gap-12 mobile-padding">
     <div class="max-w-9xl mx-auto">
       <div class="md:flex justify-between items-start space-y-10 md:space-y-2">
         
@@ -571,12 +784,12 @@
       <!-- Buttons -->
   <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
   <a href="contect.html"
-     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#00AEEF] hover:text-white transition duration-300">
+     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300">
     Connect with us
   </a>
 
   <a href="contect.html"
-     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#00AEEF] hover:text-white transition duration-300">
+     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300">
     Partner with us
   </a>
 </div>
@@ -584,18 +797,18 @@
   </section>
 
   <!-- Footer Section -->
-  <footer class="bg-[#071A3E] border-t border-gray-700 py-10 text-lg md:text-2xl px-6 md:px-16 mobile-padding">
+  <footer class="bg-black border-t border-gray-700 py-10 text-lg md:text-2xl px-6 md:px-16 mobile-padding">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
       
       <!-- Logo -->
-      <div class="px-5 py-2 bg-white rounded-lg">
-        <img src="assets/images/AASIRKO.png" alt="Logo" class="w-40 mb-6 ">
+      <div class="px-5 py-2 bg-black rounded-lg">
+        <img src="assets/images/new.png" alt="Logo" class="w-40 mb-6 ">
       </div>
 
       <!-- Footer Links -->
       <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 text-lg md:text-2xl">
         <div>
-          <p class="font-semibold mb-3 text-[#00AEEF]">Company</p>
+          <p class="font-semibold mb-3 text-[#FF5533]">Company</p>
           <ul class="space-y-2 text-gray-300">
             <li><a href="about.html">About</a></li>
             
@@ -604,7 +817,7 @@
           </ul>
         </div>
         <div>
-          <p class="font-semibold mb-3 text-[#00AEEF]">Divisions</p>
+          <p class="font-semibold mb-3 text-[#FF5533]">Divisions</p>
           <ul class="space-y-2 text-gray-300">
             <li><a href="real.html">Real Estate</a></li>
             <li><a href="automotive.html">Automotives</a></li>
@@ -622,7 +835,7 @@
     </div>
 
     <!-- Bottom Categories -->
-    <div class="border-t border-gray-700 mt-10 pt-6 text-gray-400 text-sm flex flex-wrap justify-center gap-4 md:gap-6">
+    <div class="border-t border-gray-700 mt-10 pt-6 text-[#FF5533] text-sm flex flex-wrap justify-center gap-4 md:gap-6">
       <p>Real Estate</p>
       <p>Automotive</p>
       <p>Logistics & Transportations</p>
