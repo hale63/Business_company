@@ -128,11 +128,12 @@
      <a href="index.html" class="group">
         <div class="relative">
           <!-- Logo shadow effect -->
-          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg
+           blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
           <img 
-            src="assets/images/new2.png" 
+            src="assets/images/carlogo.png" 
             alt="AA SİRKO Logo" 
-            class="relative h-16 w-auto md:h-24 transition-all
+            class="relative h-[85px] left-1 w-auto md:h-50 transition-all
              duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl"
           />
         </div>
@@ -206,15 +207,50 @@
       </ul>
     </div>
 
-    <!-- Enhanced Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden focus:outline-none transition-all duration-300 hover:scale-110 group">
-      <div class="relative">
-        <div class="absolute -inset-2 bg-gradient-to-r  rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+    <!-- Language Selector & Mobile Menu Button Container -->
+    <div class="flex items-center space-x-4">
+      <!-- Language Selector - Desktop -->
+      <div class="hidden md:block relative group cursor-pointer">
+        <button class="flex items-center space-x-2 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+          </svg>
+          <span class="text-sm">EN</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        
+        <!-- Language Dropdown -->
+        <div class="absolute right-0 pt-4 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
+          <div class="relative">
+            <div class="absolute -inset-1 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-lg blur opacity-30"></div>
+            <ul class="relative bg-white/95 border border-gray-200 rounded-lg shadow-2xl text-[#FF5F1F] w-32 overflow-hidden backdrop-blur-sm">
+              <li>
+                <button class="block w-full text-left px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100">
+                  Arabic
+                </button>
+              </li>
+              <li>
+                <button class="block w-full text-left px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300">
+                  Dutch
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </button>
+
+      <!-- Enhanced Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none transition-all duration-300 hover:scale-110 group">
+        <div class="relative">
+          <div class="absolute -inset-2 bg-gradient-to-r rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </div>
+      </button>
+    </div>
   </div>
 
   <!-- Enhanced Mobile Menu -->
@@ -279,6 +315,33 @@
           Contact
         </a>
       </li>
+
+      <!-- Mobile Language Selector -->
+      <li class="rounded-lg hover:bg-white/5 transition-all duration-300">
+        <button id="mobile-language-btn" class="flex justify-between items-center w-full py-3 px-4 text-white hover:text-[#FF5F15] focus:outline-none transition-colors duration-300">
+          <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+            </svg>
+            <span>Language (EN)</span>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        <ul id="mobile-language-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
+          <li>
+            <button class="block w-full text-left py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+              Arabic
+            </button>
+          </li>
+          <li>
+            <button class="block w-full text-left py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
+              Dutch
+            </button>
+          </li>
+        </ul>
+      </li>
     </ul>
   </div>
 </nav>
@@ -292,11 +355,19 @@
         </h1>
       </div>
     </div>
-        <!-- Video Section -->
-    <div id="video-wrapper"
-         class="absolute left-1/2 bottom-[-180px] sm:bottom-[-250px] md:bottom-[-400px] transform -translate-x-1/2 z-10 w-[80%] md:w-[100%] h-[50vh] sm:h-[60vh] md:h-[60vh] flex items-center justify-center transition-all duration-700 ease-in-out">
-      <img src="assets/images/company_member.jpg"  class="shadow-2xl w-full h-full object-cover rounded-lg md:rounded-none">
-    </div>
+<!-- image Section -->
+<div id="video-wrapper"
+     class="absolute left-1/2 
+            bottom-[-120px] sm:bottom-[-200px] md:bottom-[-300px] lg:bottom-[-380px]
+            transform -translate-x-1/2 z-10
+            w-[90%] sm:w-[85%] md:w-[80%] lg:w-[100%]
+            h-[45vh] sm:h-[55vh] md:h-[60vh] lg:h-[65vh]
+            flex items-center justify-center 
+            transition-all duration-700 ease-in-out">
+  <img src="assets/images/company_member.jpg"
+       class="shadow-2xl w-full h-full object-cover rounded-lg md:rounded-none" alt="Company Member">
+</div>
+
   </section>
 
   <!-- White Section Below -->

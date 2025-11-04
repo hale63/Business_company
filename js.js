@@ -214,3 +214,16 @@ function toggleSection(sectionId) {
 // Make it global so HTML onclick can access it
 window.toggleSection = toggleSection;
 
+// Mobile language dropdown functionality
+const mobileLanguageBtn = document.getElementById('mobile-language-btn');
+const mobileLanguageMenu = document.getElementById('mobile-language-menu');
+
+if (mobileLanguageBtn && mobileLanguageMenu) {
+  mobileLanguageBtn.addEventListener('click', function() {
+    mobileLanguageMenu.classList.toggle('hidden');
+    
+    // Rotate arrow icon
+    const arrow = this.querySelector('svg:last-child');
+    arrow.classList.toggle('rotate-90');
+  });
+}
