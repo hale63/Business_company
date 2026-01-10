@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AA SİRKO</title>
+  <title data-i18n ="logic.navbar.companyName">AA SİRKO</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     
@@ -129,69 +129,47 @@
   <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-3">
 
     <!-- Logo -->
-    <div class="flex left-125 space-x-10">
-     <a href="index.html" class="group">
+    <div class="flex space-x-10">
+      <a href="index.html" class="group">
         <div class="relative">
-          <!-- Logo shadow effect -->
-          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg
-           blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <img 
-            src="assets/images/carlogo.png" 
-            alt="AA SİRKO Logo" 
-            class="relative h-[85px] left-1 w-auto md:h-50 transition-all
-             duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl"
-          />
+          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+          <img src="assets/images/carlogo.png" alt="AA SİRKO Logo" class="relative h-[85px] w-auto md:h-50 transition-all duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl" />
         </div>
-      </a> 
+      </a>
     </div>
 
-    <!-- DESKTOP design -->
+    <!-- Desktop Menu -->
     <div class="hidden md:flex flex-1 justify-center relative z-50">
       <ul class="flex space-x-8 font-medium text-xl items-center">
         <li>
           <a href="index.html" class="relative px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
-            <span class="relative z-10">Home</span>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.home">Home</span>
             <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F1F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
           </a>
         </li>
         <li>
           <a href="about.html" class="relative px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
-            <span class="relative z-10">About</span>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.about">About</span>
             <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F1F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
           </a>
         </li>
 
-        <!-- Enhanced Divisions Dropdown -->
+        <!-- Divisions Dropdown -->
         <li class="relative group cursor-pointer">
           <div class="flex items-center space-x-1 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
-            <span class="relative z-10">Divisions</span>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.divisions">Divisions</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5F1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0054A6]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
           </div>
 
-          <!-- Enhanced Dropdown with better shadows -->
           <div class="absolute left-0 pt-4 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
             <div class="relative">
-              <!-- Shadow effect for dropdown -->
               <div class="absolute -inset-1 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-xl blur opacity-30"></div>
               <ul class="relative bg-white/95 border border-gray-200 rounded-xl shadow-2xl text-[#FF5F1F] w-56 overflow-hidden backdrop-blur-sm">
-                <li>
-                  <a href="real.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100 last:border-b-0">
-                    Real Estate
-                  </a>
-                </li>
-                <li>
-                  <a href="automotive.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100 last:border-b-0">
-                    Automotive Trade
-                  </a>
-                </li>
-                <li>
-                  <a href="logistic.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300">
-                    Logistics & Transportations
-                  </a>
-                </li>
+                <li><a href="real.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100" data-i18n="indexPage.navbar.menu.divisionsDropdown.realEstate">Real Estate</a></li>
+                <li><a href="automotive.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100" data-i18n="indexPage.navbar.menu.divisionsDropdown.automotiveTrade">Automotive Trade</a></li>
+                <li><a href="logistic.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300" data-i18n="indexPage.navbar.menu.divisionsDropdown.logisticsTransportations">Logistics & Transportations</a></li>
               </ul>
             </div>
           </div>
@@ -199,163 +177,99 @@
 
         <li>
           <a href="careers.html" class="relative px-3 py-2 text-white hover:text-[#FF5533] transition-all duration-300 group">
-            <span class="relative z-10">Careers</span>
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5533]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.careers">Careers</span>
           </a>
         </li>
         <li>
           <a href="contect.html" class="relative px-3 py-2 text-white hover:text-[#FF5533] transition-all duration-300 group">
-            <span class="relative z-10">Contact</span>
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5533]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.contact">Contact</span>
           </a>
         </li>
       </ul>
     </div>
 
-    <!-- Language Selector & Mobile Menu Button Container -->
-    <div class="flex items-center space-x-4">
-      <!-- Language Selector - Desktop -->
-      <div class="hidden md:block relative group cursor-pointer">
-        <button class="flex items-center space-x-2 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-          </svg>
-          <span class="text-sm">EN</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        
-        <!-- Language Dropdown -->
-        <div class="absolute right-0 pt-4 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
-          <div class="relative">
-            <div class="absolute -inset-1 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-lg blur opacity-30"></div>
-            <ul class="relative bg-white/95 border border-gray-200 rounded-lg shadow-2xl text-[#FF5F1F] w-32 overflow-hidden backdrop-blur-sm">
-              <li>
-                <button class="block w-full text-left px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100">
-                  Arabic
-                </button>
-              </li>
-              <li>
-                <button class="block w-full text-left px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300">
-                  Dutch
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Enhanced Mobile Menu Button -->
-      <button id="menu-btn" class="md:hidden focus:outline-none transition-all duration-300 hover:scale-110 group">
-        <div class="relative">
-          <div class="absolute -inset-2 bg-gradient-to-r rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </div>
+    <!-- Language Selector - Desktop -->
+    <div class="hidden md:block relative group cursor-pointer">
+      <button class="flex items-center space-x-2 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group" id="desktop-language-btn">
+        <span id="current-lang" data-i18n="navbar.language.selector">EN</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
       </button>
+      <div id="desktop-language-menu" class="absolute right-0 mt-2 hidden bg-white/95 border border-gray-200 rounded-lg shadow-xl w-32 text-[#FF5F1F]">
+        <button class="lang-btn block w-full px-4 py-3 text-left hover:bg-orange-100" data-lang="ar">Arabic</button>
+        <button class="lang-btn block w-full px-4 py-3 text-left hover:bg-orange-100" data-lang="nl">Dutch</button>
+        <button class="lang-btn block w-full px-4 py-3 text-left hover:bg-orange-100" data-lang="en">English</button>
+      </div>
     </div>
+
+    <!-- Mobile Menu Button (always visible on small screens) -->
+    <button id="menu-btn" class="md:hidden focus:outline-none transition-all duration-300 hover:scale-110 group">
+      <div class="relative">
+        <div class="absolute -inset-2 bg-gradient-to-r rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+    </button>
+
   </div>
 
-  <!-- Enhanced Mobile Menu -->
-  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-gray-900 to-black flex-col pt-10 px-8 space-y-8 text-lg z-40 shadow-2xl">
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-gray-900 to-black flex-col pt-10 px-8 space-y-8 text-lg z-40">
     <div class="flex justify-end">
       <button id="close-btn" class="focus:outline-none transition-all duration-300 hover:scale-110 group">
-        <div class="relative">
-          <div class="absolute -inset-2 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="relative h-6 w-6 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
       </button>
     </div>
-
     <ul class="flex flex-col space-y-6 font-medium">
-      <li>
-        <a href="index.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="about.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-          About
-        </a>
-      </li>
+      <li><a href="index.html" class="block text-white" data-i18n="navbar.menu.home">Home</a></li>
+      <li><a href="about.html" class="block text-white" data-i18n="navbar.menu.about">About</a></li>
 
-      <!-- Enhanced Mobile Dropdown -->
-      <li class="rounded-lg hover:bg-white/5 transition-all duration-300">
-        <button id="mobile-division-btn" class="flex justify-between items-center w-full py-3 px-4 text-white hover:text-[#FF5F15] focus:outline-none transition-colors duration-300">
-          <span>Divisions</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <!-- Mobile Divisions Dropdown -->
+      <li>
+        <button id="mobile-division-btn" class="flex justify-between w-full text-white">
+          <span data-i18n="navbar.menu.divisions">Divisions</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
-        <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
-          <li>
-            <a href="real.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Real Estate
-            </a>
-          </li>
-          <li>
-            <a href="automotive.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Automobiles Trade
-            </a>
-          </li>
-          <li>
-            <a href="logistic.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Logistics & Transportations
-            </a>
-          </li>
+        <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2">
+          <li><a href="real.html" class="block text-white">Real Estate</a></li>
+          <li><a href="automotive.html" class="block text-white">Automotive Trade</a></li>
+          <li><a href="logistic.html" class="block text-white">Logistics & Transportations</a></li>
         </ul>
       </li>
 
-      <li>
-        <a href="careers.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-          Careers
-        </a>
-      </li>
-      <li>
-        <a href="contect.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-          Contact
-        </a>
-      </li>
+      <li><a href="careers.html" class="block text-white" data-i18n="navbar.menu.careers">Careers</a></li>
+      <li><a href="contect.html" class="block text-white" data-i18n="navbar.menu.contact">Contact</a></li>
 
       <!-- Mobile Language Selector -->
-      <li class="rounded-lg hover:bg-white/5 transition-all duration-300">
-        <button id="mobile-language-btn" class="flex justify-between items-center w-full py-3 px-4 text-white hover:text-[#FF5F15] focus:outline-none transition-colors duration-300">
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-            </svg>
-            <span>Language (EN)</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <li>
+        <button id="mobile-language-btn" class="flex justify-between w-full text-white">
+          <span>Language (EN)</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
-        <ul id="mobile-language-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
-          <li>
-            <button class="block w-full text-left py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Arabic
-            </button>
-          </li>
-          <li>
-            <button class="block w-full text-left py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Dutch
-            </button>
-          </li>
+        <ul id="mobile-language-menu" class="hidden mt-2 ml-4 space-y-2">
+          <li><button data-lang="ar" class="lang-btn text-white hover:text-orange-100">Arabic</button></li>
+          <li><button data-lang="nl" class=" lang-btn block text-white hover:text-orange-100">Dutch</button></li>
+          <li><button data-lang="en" class=" lang-btn block text-white hover:text-orange-100">English</button></li>
         </ul>
       </li>
     </ul>
   </div>
 </nav>
 
+
   <!-- Hero Section -->
   <section class="mt-20 relative">
     <div class=" bg-[#FF5F15] text-black px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:pl:6">
       <div class="max-w-6xl mx-auto md:text-left text-left">
-      <h1 class="text-5xl sm:text-7xl md:text-8xl leading-tight">
+      <h1 class="text-5xl sm:text-7xl md:text-8xl leading-tight" data-i18n ="logic.hero.title">
         Logistics & Transportations 
       </h1>
     </div>
@@ -379,14 +293,14 @@
       <!-- Left: Title -->
       <div class="text-center md:text-left">
         
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FF5F15] mb-4 sm:mb-6">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FF5F15] mb-4 sm:mb-6" data-i18n ="logic.about.overview.title">
           Overview
         </h2>
       </div>
 
       <!-- Right: Description -->
       <div class="text-black text-base sm:text-lg leading-relaxed text-center md:text-left">
-        <p class="mb-4 text-2xl text">
+        <p class="mb-4 text-2xl text" data-i18n ="logic.about.overview.description">
           AAsirko Logistics & Transportations provides reliable and integrated logistics and transportation solutions across land, sea, and air. We ensure safe, on-time delivery through efficient supply chain management, modern fleet operations, and professional expertise. Our mission is to connect businesses with the world through smart, transparent, and customer-focused services.
         </p>
         
@@ -404,10 +318,10 @@
     <div class="rounded-2xl overflow-hidden shadow-sm bg-gray-50 hover:shadow-lg transition">
       <img src="assets/images/Warehousing-750x422.jpg" alt="Air Freight" class="w-full h-56 object-cover">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-4">Warehousing & Inventory</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-i18n ="logic.services.warehousing.title">Warehousing & Inventory</h3>
         <ul class="space-y-2 text-black text-base">
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> Secure storage with advanced monitoring systems.</li>
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span>Real-time stock control and flexible capacity. </li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.warehousing.features.0">Secure storage with advanced monitoring systems.</span></li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.warehousing.features.1">Real-time stock control and flexible capacity.</span></li>
         </ul>
       </div>
     </div>
@@ -416,10 +330,10 @@
     <div class="rounded-2xl overflow-hidden shadow-sm bg-gray-50 hover:shadow-lg transition">
       <img src="assets/images/pexels-chanaka-906494.jpg" alt="Sea Freight" class="w-full h-56 object-cover">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-4">Customs Clearance</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-i18n ="logic.services.customsClearance.title">Customs Clearance</h3>
         <ul class="space-y-2 text-gray-700 text-base">
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> Smooth handling of import and export procedures.</li>
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> Ensures compliance with all local regulations</li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.customsClearance.features.0">Smooth handling of import and export procedures.</span></li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.customsClearance.features.1">Ensures compliance with all local regulations</span></li>
         </ul>
       </div>
     </div>
@@ -428,10 +342,10 @@
     <div class="rounded-2xl overflow-hidden shadow-sm bg-gray-50 hover:shadow-lg transition">
       <img src="assets/images/pexels-tiger-lily-4481259.jpg" alt="Land Freight & Transport" class="w-full h-56 object-cover">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-4">Supply Chain Management</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-i18n ="logic.services.supplyChain.title">Supply Chain Management</h3>
         <ul class="space-y-2 text-black text-base">
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span>End-to-end planning and coordination of shipments.</li>
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> Enhances efficiency and reduces operational costs.</li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.supplyChain.features.0">End-to-end planning and coordination of shipments.</span></li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.supplyChain.features.1">Enhances efficiency and reduces operational costs.</span></li>
         </ul>
       </div>
     </div>
@@ -440,10 +354,10 @@
     <div class="rounded-2xl overflow-hidden shadow-sm bg-gray-50 hover:shadow-lg transition">
       <img src="assets/images/pexels-norma-mortenson-4391478.jpg" alt="Land Freight & Transport" class="w-full h-56 object-cover">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-4">Distribution & Delivery</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-i18n ="logic.services.distribution.title">Distribution & Delivery</h3>
         <ul class="space-y-2 text-black text-base">
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span>Customized packaging to protect every product.</li>
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span>High-quality materials for safe transport and storage.</li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.distribution.features.0">Customized packaging to protect every product.</span></li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.distribution.features.1">High-quality materials for safe transport and storage.</span></li>
         </ul>
       </div>
     </div>
@@ -451,10 +365,10 @@
     <div class="rounded-2xl overflow-hidden shadow-sm bg-gray-50 hover:shadow-lg transition">
       <img src="assets/images/pexels-tima-miroshnichenko-6169033.jpg" alt="Land Freight & Transport" class="w-full h-56 object-cover">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-4">Packaging & Handling</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-i18n ="logic.services.packaging.title">Packaging & Handling</h3>
         <ul class="space-y-2 text-black text-base">
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span>Customized packaging to protect every product.</li>
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span>High-quality materials for safe transport and storage.</li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.packaging.features.0">Customized packaging to protect every product.</span></li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.packaging.features.1">High-quality materials for safe transport and storage.</span></li>
         </ul>
       </div>
     </div>
@@ -463,10 +377,10 @@
     <div class="rounded-2xl overflow-hidden shadow-sm bg-gray-50 hover:shadow-lg transition">
       <img src="assets/images/pexels-artempodrez-8511933.jpg" alt="Land Freight & Transport" class="w-full h-56 object-cover">
       <div class="p-6">
-        <h3 class="text-2xl font-semibold mb-4">Logistics Consulting</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-i18n ="logic.services.consulting.title">Logistics Consulting</h3>
         <ul class="space-y-2 text-black text-base">
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span>Professional advice to optimize your logistics flow.</li>
-          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span>Helps you save time, space, and operational costs..</li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.consulting.features.0">Professional advice to optimize your logistics flow.</span></li>
+          <li class="flex items-start"><span class="text-[#FF5F15] mr-2">›</span> <span data-i18n ="logic.services.consulting.features.1">Helps you save time, space, and operational costs.</span></li>
         </ul>
       </div>
     </div>
@@ -482,12 +396,12 @@
     <!-- Title and Description Row -->
     <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-16 space-y-8 md:space-y-0">
       <!-- Title -->
-      <h2 class="text-4xl md:text-5xl font-semibold text-center md:text-left">
+      <h2 class="text-4xl md:text-5xl font-semibold text-center md:text-left" data-i18n ="logic.atAGlance.title">
         At a Glance
       </h2>
 
       <!-- Description -->
-      <p class="text-white text-base md:text-lg leading-relaxed text-center md:text-left md:max-w-3xl">
+      <p class="text-white text-base md:text-lg leading-relaxed text-center md:text-left md:max-w-3xl" data-i18n ="logic.atAGlance.description">
         We are proud to drive innovation and progress in the global automotive industry. Committed to excellence,
          we deliver cutting-edge solutions 
         that empower businesses and enrich communities. Explore our impact and latest advancements here.
@@ -499,28 +413,28 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:divide-x divide-gray-300">
       <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="50">0</h3>
-        <p class="text-white mt-3 text-lg md:text-xl">Warehousing (m2)</p>
+        <p class="text-white mt-3 text-lg md:text-xl" data-i18n ="logic.atAGlance.stats.warehousing">Warehousing (m2)</p>
       </div>
       <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="300">0</h3>
-        <p class="text-white mt-3 text-lg md:text-xl">Yard Facilities (m2)</p>
+        <p class="text-white mt-3 text-lg md:text-xl" data-i18n ="logic.atAGlance.stats.yardFacilities">Yard Facilities (m2)</p>
       </div>
       <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="1">0</h3>
-        <p class="text-white mt-3 text-lg md:text-xl">Petrochemical Products Handled (tones)</p>
+        <p class="text-white mt-3 text-lg md:text-xl" data-i18n ="logic.atAGlance.stats.petrochemicalProducts">Petrochemical Products Handled (tones)</p>
       </div>
       
        <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="500">0</h3>
-        <p class="text-white mt-3 text-lg md:text-xl">tank container</p>
+        <p class="text-white mt-3 text-lg md:text-xl" data-i18n ="logic.atAGlance.stats.tankContainer">tank container</p>
       </div>
        <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="40">0</h3>
-        <p class="text-white mt-3 text-lg md:text-xl">Vehicles Per Year (k+)</p>
+        <p class="text-white mt-3 text-lg md:text-xl" data-i18n ="logic.atAGlance.stats.vehiclesPerYear">Vehicles Per Year (k+)</p>
       </div>
         <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="40">0</h3>
-        <p class="text-white mt-3 text-lg md:text-xl">Vehicles Per Year (k+)</p>
+        <p class="text-white mt-3 text-lg md:text-xl" data-i18n ="logic.atAGlance.stats.vehiclesPerYear">Vehicles Per Year (k+)</p>
       </div>
     
     </div>
@@ -550,7 +464,7 @@
   <div class="max-w-7xl mx-auto" data-aos="fade-up">
 
     <!-- Section Title -->
-    <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-16 tracking-wide text-left">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-16 tracking-wide text-left" data-i18n ="logic.transportation.title">
       Our transportation
     </h2>
 
@@ -563,7 +477,7 @@
           class="w-full text-left text-3xl sm:text-4xl font-bold hover:text-[#FF5F15] transition-all duration-500 flex justify-between items-center"
           onclick="toggleSection('newCars')"
         >
-          <span>Air Freight</span>
+          <span data-i18n ="logic.transportation.airFreight.title">Air Freight</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#FF5F15] transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
@@ -574,7 +488,7 @@
               <img src="assets/images/Air-Freight.jpg" alt="New Cars" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
             </div>
             <div class="md:w-1/2">
-              <p class="text-lg leading-relaxed text-gray-700 mb-4">
+              <p class="text-lg leading-relaxed text-gray-700 mb-4" data-i18n ="logic.transportation.airFreight.description">
                     IATA/FIATA certified agent, offering services at all key airports in the GCC
                     Member of the Aviation Logistics Network (ALN)
               </p>
@@ -589,7 +503,7 @@
           class="w-full text-left text-3xl sm:text-4xl font-bold hover:text-[#FF5F15] transition-all duration-500 flex justify-between items-center"
           onclick="toggleSection('evCharging')"
         >
-          <span>Sea Freight</span>
+          <span data-i18n ="logic.transportation.seaFreight.title">Sea Freight</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#FF5F15]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
@@ -600,7 +514,7 @@
               <img src="assets/images/Sea-Freight-750x422.jpg" alt="EV & Charging" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
             </div>
             <div class="md:w-1/2">
-              <p class="text-lg leading-relaxed text-gray-700 mb-4">
+              <p class="text-lg leading-relaxed text-gray-700 mb-4" data-i18n ="logic.transportation.seaFreight.description">
 Bonded warehousing facilities in all key ports
 Break bulk shipment handling              </p>
             </div>
@@ -614,7 +528,7 @@ Break bulk shipment handling              </p>
           class="w-full text-left text-3xl sm:text-4xl font-bold hover:text-[#FF5F15] transition-all duration-500 flex justify-between items-center"
           onclick="toggleSection('usedVehicles')"
         >
-          <span>Land Freight & Transport</span>
+          <span data-i18n ="logic.transportation.landFreight.title">Land Freight & Transport</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#FF5F15]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
@@ -625,7 +539,7 @@ Break bulk shipment handling              </p>
               <img src="assets/images/Land-Freight-Transport-750x422.jpg" alt="Used Vehicles" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
             </div>
             <div class="md:w-1/2">
-              <p class="text-lg leading-relaxed text-gray-700 mb-4">
+              <p class="text-lg leading-relaxed text-gray-700 mb-4" data-i18n ="logic.transportation.landFreight.description">
 National transportation with cross-border transport to different GCC countries
 Transport Solutions, including curtain-sided trailers and low-bed specialised tank trailers
               </p>
@@ -640,7 +554,7 @@ Transport Solutions, including curtain-sided trailers and low-bed specialised ta
           class="w-full text-left text-3xl sm:text-4xl font-bold hover:text-[#FF5F15] transition-all duration-500 flex justify-between items-center"
           onclick="toggleSection('rental')"
         >
-          <span>Automotive</span>
+          <span data-i18n ="logic.transportation.automotive.title">Automotive</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#FF5F15]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
@@ -651,7 +565,7 @@ Transport Solutions, including curtain-sided trailers and low-bed specialised ta
               <img src="assets/images/Automotive-1-750x422.jpg" alt="Rental & Leasing" class="w-full h-72 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
             </div>
             <div class="md:w-1/2">
-              <p class="text-lg leading-relaxed text-gray-700 mb-4">
+              <p class="text-lg leading-relaxed text-gray-700 mb-4" data-i18n ="logic.transportation.automotive.description">
 Customs clearance and delivery of vehicles of all varieties
 Exotic car movements              </p>
             </div>
@@ -665,7 +579,7 @@ Exotic car movements              </p>
           class="w-full text-left text-3xl sm:text-4xl font-bold hover:text-[#FF5F15] transition-all duration-500 flex justify-between items-center"
           onclick="toggleSection('motorcycles')"
         >
-          <span>Project Logistics (including Events, Exhibitions & Motorsports)</span>
+          <span data-i18n ="logic.transportation.projectLogistics.title">Project Logistics (including Events, Exhibitions & Motorsports)</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#FF5F15]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
@@ -676,7 +590,7 @@ Exotic car movements              </p>
               <img src="assets/images/project-logistics-1-750x472.jpg" alt="Motorcycles" class="w-full h-50 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-500">
             </div>
             <div class="md:w-1/2">
-              <p class="text-lg leading-relaxed text-gray-700 mb-4">
+              <p class="text-lg leading-relaxed text-gray-700 mb-4" data-i18n ="logic.transportation.projectLogistics.description">
 Complete ground logistics for high-profile international events
 Logistics Management of major exhibitions
               </p>
@@ -691,7 +605,6 @@ Logistics Management of major exhibitions
 </section>
 
 
- <!-- Connect Section -->
    <!-- Connect Section -->
   <section class="py-20 md:py-32 px-6 md:px-20 text-center md:text-left bg-black gap-12 mobile-padding">
     <div class="max-w-9xl mx-auto">
@@ -699,12 +612,12 @@ Logistics Management of major exhibitions
         
         <!-- Left Text -->
         <div class="md:w-1/2"> 
-          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white">Looking to connect with us?</h2> 
+          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white" data-i18n="aboutPage.connect.title">Looking to connect with us?</h2> 
         </div>
 
         <!-- Right Text -->
         <div class="md:w-1/2 text-gray-300 text-lg md:text-xl leading-relaxed">
-          <p>
+          <p data-i18n="aboutPage.connect.description">
             Whether you have a question, a partnership proposal, or an interest in joining our team,
             select the relevant category below, and we'll direct you to the right form.
           </p>
@@ -714,12 +627,14 @@ Logistics Management of major exhibitions
       <!-- Buttons -->
   <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
   <a href="contect.html"
-     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300">
+     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300"
+     data-i18n="aboutPage.connect.buttons.connect">
     Connect with us
   </a>
 
   <a href="contect.html"
-     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300">
+     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300"
+     data-i18n="aboutPage.connect.buttons.partner">
     Partner with us
   </a>
 </div>
@@ -727,7 +642,7 @@ Logistics Management of major exhibitions
   </section>
 
   <!-- Footer Section -->
-  <!-- Footer Section -->
+   <!-- Footer Section -->
   <footer class="bg-black border-t border-gray-700 py-10 text-lg md:text-2xl px-6 md:px-16 mobile-padding">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
       
@@ -739,20 +654,19 @@ Logistics Management of major exhibitions
       <!-- Footer Links -->
       <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 text-lg md:text-2xl">
         <div>
-          <p class="font-semibold mb-3 text-[#FF5533]">Company</p>
+          <p class="font-semibold mb-3 text-[#FF5533]" data-i18n="footer.company.title">Company</p>
           <ul class="space-y-2 text-gray-300">
-            <li><a href="about.html">About</a></li>
-            
-            <li><a href="careers.html"></a>Careers</li>
-            <li><a href="contect.html">Contact</a></li>
+            <li><a href="about.html" data-i18n="footer.company.links.about">About</a></li>
+            <li><a href="careers.html" data-i18n="footer.company.links.careers">Careers</a></li>
+            <li><a href="contect.html" data-i18n="footer.company.links.contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <p class="font-semibold mb-3 text-[#FF5533]">Divisions</p>
+          <p class="font-semibold mb-3 text-[#FF5533]" data-i18n="footer.divisions.title">Divisions</p>
           <ul class="space-y-2 text-gray-300">
-            <li><a href="real.html">Real Estate</a></li>
-            <li><a href="automotive.html">Automotives</a></li>
-            <li><a href="logistic.html">Logistics & Transportations</a></li>
+            <li><a href="real.html" data-i18n="footer.divisions.links.realEstate">Real Estate</a></li>
+            <li><a href="automotive.html" data-i18n="footer.divisions.links.automotives">Automotives</a></li>
+            <li><a href="logistic.html" data-i18n="footer.divisions.links.logisticsTransportations">Logistics & Transportations</a></li>
           </ul>
         </div>
       
@@ -767,14 +681,14 @@ Logistics Management of major exhibitions
 
     <!-- Bottom Categories -->
     <div class="border-t border-gray-700 mt-10 pt-6 text-[#FF5533] text-sm flex flex-wrap justify-center gap-4 md:gap-6">
-      <p>Real Estate</p>
-      <p>Automotive</p>
-      <p>Logistics & Transportations</p>
+      <p data-i18n="footer.categories.realEstate">Real Estate</p>
+      <p data-i18n="footer.categories.automotive">Automotive</p>
+      <p data-i18n="footer.categories.logisticsTransportations">Logistics & Transportations</p>
     </div>
   </footer>
 
 
- 
+ <script src="languageSwitcher.js"></script>
  <script src="https://kit.fontawesome.com/a2e0a1b8e4.js" crossorigin="anonymous"></script>
 <script src="js.js"></script>
 </body>

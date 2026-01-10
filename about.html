@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About us</title>
+  <title data-i18n="aboutPage.navbar.companyName">About us</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     
@@ -118,75 +118,52 @@
 
 <body class="bg-white text-[#001E60] overflow-x-hidden">
 
-  <!-- Navbar -->
-    <!-- Navbar -->
+   <!-- Navbar -->
 <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-black via-gray-950 to-black shadow-2xl backdrop-blur-xl z-[9999] border-b border-orange-700/50">
   <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-3">
 
     <!-- Logo -->
-    <div class="flex left-125 space-x-10">
-     <a href="index.html" class="group">
+    <div class="flex space-x-10">
+      <a href="index.html" class="group">
         <div class="relative">
-          <!-- Logo shadow effect -->
-          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg
-           blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <img 
-            src="assets/images/carlogo.png" 
-            alt="AA SİRKO Logo" 
-            class="relative h-[85px] left-1 w-auto md:h-50 transition-all
-             duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl"
-          />
+          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+          <img src="assets/images/carlogo.png" alt="AA SİRKO Logo" class="relative h-[85px] w-auto md:h-50 transition-all duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl" />
         </div>
-      </a> 
+      </a>
     </div>
 
-    <!-- DESKTOP design -->
+    <!-- Desktop Menu -->
     <div class="hidden md:flex flex-1 justify-center relative z-50">
       <ul class="flex space-x-8 font-medium text-xl items-center">
         <li>
           <a href="index.html" class="relative px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
-            <span class="relative z-10">Home</span>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.home">Home</span>
             <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F1F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
           </a>
         </li>
         <li>
           <a href="about.html" class="relative px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
-            <span class="relative z-10">About</span>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.about">About</span>
             <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5F1F]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
           </a>
         </li>
 
-        <!-- Enhanced Divisions Dropdown -->
+        <!-- Divisions Dropdown -->
         <li class="relative group cursor-pointer">
           <div class="flex items-center space-x-1 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
-            <span class="relative z-10">Divisions</span>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.divisions">Divisions</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5F1F]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#0054A6]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
           </div>
 
-          <!-- Enhanced Dropdown with better shadows -->
           <div class="absolute left-0 pt-4 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
             <div class="relative">
-              <!-- Shadow effect for dropdown -->
               <div class="absolute -inset-1 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-xl blur opacity-30"></div>
               <ul class="relative bg-white/95 border border-gray-200 rounded-xl shadow-2xl text-[#FF5F1F] w-56 overflow-hidden backdrop-blur-sm">
-                <li>
-                  <a href="real.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100 last:border-b-0">
-                    Real Estate
-                  </a>
-                </li>
-                <li>
-                  <a href="automotive.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100 last:border-b-0">
-                    Automotive Trade
-                  </a>
-                </li>
-                <li>
-                  <a href="logistic.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300">
-                    Logistics & Transportations
-                  </a>
-                </li>
+                <li><a href="real.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100" data-i18n="indexPage.navbar.menu.divisionsDropdown.realEstate">Real Estate</a></li>
+                <li><a href="automotive.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100" data-i18n="indexPage.navbar.menu.divisionsDropdown.automotiveTrade">Automotive Trade</a></li>
+                <li><a href="logistic.html" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300" data-i18n="indexPage.navbar.menu.divisionsDropdown.logisticsTransportations">Logistics & Transportations</a></li>
               </ul>
             </div>
           </div>
@@ -194,152 +171,87 @@
 
         <li>
           <a href="careers.html" class="relative px-3 py-2 text-white hover:text-[#FF5533] transition-all duration-300 group">
-            <span class="relative z-10">Careers</span>
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5533]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.careers">Careers</span>
           </a>
         </li>
         <li>
           <a href="contect.html" class="relative px-3 py-2 text-white hover:text-[#FF5533] transition-all duration-300 group">
-            <span class="relative z-10">Contact</span>
-            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FF5533]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md"></div>
+            <span class="relative z-10" data-i18n="indexPage.navbar.menu.contact">Contact</span>
           </a>
         </li>
       </ul>
     </div>
 
-    <!-- Language Selector & Mobile Menu Button Container -->
-    <div class="flex items-center space-x-4">
-      <!-- Language Selector - Desktop -->
-      <div class="hidden md:block relative group cursor-pointer">
-        <button class="flex items-center space-x-2 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-          </svg>
-          <span class="text-sm">EN</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        
-        <!-- Language Dropdown -->
-        <div class="absolute right-0 pt-4 pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
-          <div class="relative">
-            <div class="absolute -inset-1 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-lg blur opacity-30"></div>
-            <ul class="relative bg-white/95 border border-gray-200 rounded-lg shadow-2xl text-[#FF5F1F] w-32 overflow-hidden backdrop-blur-sm">
-              <li>
-                <button class="block w-full text-left px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300 border-b border-gray-100">
-                  Arabic
-                </button>
-              </li>
-              <li>
-                <button class="block w-full text-left px-4 py-3 hover:bg-gradient-to-r hover:from-[#0054A6]/5 hover:to-[#001E60]/5 transition-all duration-300">
-                  Dutch
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Enhanced Mobile Menu Button -->
-      <button id="menu-btn" class="md:hidden focus:outline-none transition-all duration-300 hover:scale-110 group">
-        <div class="relative">
-          <div class="absolute -inset-2 bg-gradient-to-r rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </div>
+    <!-- Language Selector - Desktop -->
+    <div class="hidden md:block relative group cursor-pointer">
+      <button class="flex items-center space-x-2 px-3 py-2 text-white hover:text-[#FF5F1F] transition-all duration-300 group" id="desktop-language-btn">
+        <span id="current-lang" data-i18n="navbar.language.selector">EN</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
       </button>
+      <div id="desktop-language-menu" class="absolute right-0 mt-2 hidden bg-white/95 border border-gray-200 rounded-lg shadow-xl w-32 text-[#FF5F1F]">
+        <button class="lang-btn block w-full px-4 py-3 text-left hover:bg-orange-100" data-lang="ar">Arabic</button>
+        <button class="lang-btn block w-full px-4 py-3 text-left hover:bg-orange-100" data-lang="nl">Dutch</button>
+        <button class="lang-btn block w-full px-4 py-3 text-left hover:bg-orange-100" data-lang="en">English</button>
+      </div>
     </div>
+
+    <!-- Mobile Menu Button (always visible on small screens) -->
+    <button id="menu-btn" class="md:hidden focus:outline-none transition-all duration-300 hover:scale-110 group">
+      <div class="relative">
+        <div class="absolute -inset-2 bg-gradient-to-r rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="relative h-7 w-7 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </div>
+    </button>
+
   </div>
 
-  <!-- Enhanced Mobile Menu -->
-  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-gray-900 to-black flex-col pt-10 px-8 space-y-8 text-lg z-40 shadow-2xl">
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-gradient-to-br from-gray-900 to-black flex-col pt-10 px-8 space-y-8 text-lg z-40">
     <div class="flex justify-end">
       <button id="close-btn" class="focus:outline-none transition-all duration-300 hover:scale-110 group">
-        <div class="relative">
-          <div class="absolute -inset-2 bg-gradient-to-r from-[#FF5F1F] to-[#FF5F1F] rounded-full blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="relative h-6 w-6 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
       </button>
     </div>
-
     <ul class="flex flex-col space-y-6 font-medium">
-      <li>
-        <a href="index.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="about.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-          About
-        </a>
-      </li>
+      <li><a href="index.html" class="block text-white" data-i18n="navbar.menu.home">Home</a></li>
+      <li><a href="about.html" class="block text-white" data-i18n="navbar.menu.about">About</a></li>
 
-      <!-- Enhanced Mobile Dropdown -->
-      <li class="rounded-lg hover:bg-white/5 transition-all duration-300">
-        <button id="mobile-division-btn" class="flex justify-between items-center w-full py-3 px-4 text-white hover:text-[#FF5F15] focus:outline-none transition-colors duration-300">
-          <span>Divisions</span>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <!-- Mobile Divisions Dropdown -->
+      <li>
+        <button id="mobile-division-btn" class="flex justify-between w-full text-white">
+          <span data-i18n="navbar.menu.divisions">Divisions</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
-        <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
-          <li>
-            <a href="real.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Real Estate
-            </a>
-          </li>
-          <li>
-            <a href="automotive.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Automobiles Trade
-            </a>
-          </li>
-          <li>
-            <a href="logistic.html" class="block py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Logistics & Transportations
-            </a>
-          </li>
+        <ul id="mobile-division-menu" class="hidden mt-2 ml-4 space-y-2">
+          <li><a href="real.html" class="block text-white">Real Estate</a></li>
+          <li><a href="automotive.html" class="block text-white">Automotive Trade</a></li>
+          <li><a href="logistic.html" class="block text-white">Logistics & Transportations</a></li>
         </ul>
       </li>
 
-      <li>
-        <a href="careers.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-          Careers
-        </a>
-      </li>
-      <li>
-        <a href="contect.html" class="block py-3 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-          Contact
-        </a>
-      </li>
+      <li><a href="careers.html" class="block text-white" data-i18n="navbar.menu.careers">Careers</a></li>
+      <li><a href="contect.html" class="block text-white" data-i18n="navbar.menu.contact">Contact</a></li>
 
       <!-- Mobile Language Selector -->
-      <li class="rounded-lg hover:bg-white/5 transition-all duration-300">
-        <button id="mobile-language-btn" class="flex justify-between items-center w-full py-3 px-4 text-white hover:text-[#FF5F15] focus:outline-none transition-colors duration-300">
-          <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-            </svg>
-            <span>Language (EN)</span>
-          </div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#FF5533]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <li>
+        <button id="mobile-language-btn" class="flex justify-between w-full text-white">
+          <span>Language (EN)</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
-        <ul id="mobile-language-menu" class="hidden mt-2 ml-4 space-y-2 dropdown-content">
-          <li>
-            <button class="block w-full text-left py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Arabic
-            </button>
-          </li>
-          <li>
-            <button class="block w-full text-left py-2 px-4 text-white hover:text-[#FF5533] transition-all duration-300 rounded-lg hover:bg-white/5">
-              Dutch
-            </button>
-          </li>
+        <ul id="mobile-language-menu" class="hidden mt-2 ml-4 space-y-2">
+          <li><button data-lang="ar" class="lang-btn text-white hover:text-orange-100">Arabic</button></li>
+          <li><button data-lang="nl" class=" lang-btn block text-white hover:text-orange-100">Dutch</button></li>
+          <li><button data-lang="en" class=" lang-btn block text-white hover:text-orange-100">English</button></li>
         </ul>
       </li>
     </ul>
@@ -350,7 +262,7 @@
   <section class="mt-20 relative">
     <div class="bg-[#FF5F15] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:text-left">
       <div class="max-w-6xl mx-auto transform -translate-y-3">
-        <h1 class="text-6xl sm:text-6xl md:text-7xl leading-tight text-left text-black">
+        <h1 class="text-6xl sm:text-6xl md:text-7xl leading-tight text-left text-black" data-i18n="aboutPage.hero.title">
           Who We Are
         </h1>
       </div>
@@ -372,14 +284,14 @@
       
       <!-- Left: Title -->
       <div class="text-center md:text-left">
-        <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#FF5F15] mb-4 sm:mb-6">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-bold text-[#FF5F15] mb-4 sm:mb-6" data-i18n="aboutPage.about.overview.title">
           Overview
         </h2>
       </div>
 
       <!-- Right: Description -->
       <div class="text-gray-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
-        <p class="mb-4">
+        <p class="mb-4" data-i18n="aboutPage.about.overview.description">
 AA SİRKO – Company Overview
 
 AA SİRKO is a dynamic and innovative company dedicated to excellence across multiple industries. With a strong focus on quality, reliability, and customer satisfaction, we strive to provide comprehensive solutions that empower businesses and individuals alike.
@@ -413,7 +325,7 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
    
 <section class="bg-black py-36 px-6 md:px-12 lg:px-32">
   <div class="max-w-7xl mx-auto  md:text-left">
-    <h2 class="text-4xl font-bold text-[#FF5F15] mb-32">Our Philosophy</h2>
+    <h2 class="text-4xl font-bold text-[#FF5F15] mb-32" data-i18n="aboutPage.philosophy.title">Our Philosophy</h2>
   </div>
 
 <div class="grid grid-cols-0 md:grid-cols-2 gap-2 md:pr-12 justify-items-end">
@@ -423,8 +335,8 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z"/>
       <circle cx="12" cy="12" r="3"/>
     </svg>
-    <h3 class="text-xl font-semibold text-[#FF5F15] mb-2">Vision</h3>
-    <p class="text-white max-w-sm">We provide quality products and services that enrich people's lives and aspirations each and every day.</p>
+    <h3 class="text-xl font-semibold text-[#FF5F15] mb-2" data-i18n="aboutPage.philosophy.vision.title">Vision</h3>
+    <p class="text-white max-w-sm" data-i18n="aboutPage.philosophy.vision.description">We provide quality products and services that enrich people's lives and aspirations each and every day.</p>
   </div>
 
   <!-- Purpose -->
@@ -434,8 +346,8 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
       <circle cx="12" cy="12" r="6"/>
       <circle cx="12" cy="12" r="9"/>
     </svg>
-    <h3 class="text-xl font-semibold text-[#FF5F15] mb-2">Purpose</h3>
-    <p class="text-white max-w-sm">We relentlessly pursue excellence to be the foremost provider of quality products and services, placing our customer needs at the heart of everything we do.</p>
+    <h3 class="text-xl font-semibold text-[#FF5F15] mb-2" data-i18n="aboutPage.philosophy.purpose.title">Purpose</h3>
+    <p class="text-white max-w-sm" data-i18n="aboutPage.philosophy.purpose.description">We relentlessly pursue excellence to be the foremost provider of quality products and services, placing our customer needs at the heart of everything we do.</p>
   </div>
 </div>
 
@@ -451,34 +363,35 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
     
     <!-- Header -->
     <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-semibold text-[#FF5F15] mb-4">
+      <h2 class="text-3xl md:text-4xl font-semibold text-[#FF5F15] mb-4" data-i18n="aboutPage.leadership.title">
         Our Leadership
       </h2>
-      <p class="text-black max-w-2xl mx-auto text-lg">
+      <p class="text-black max-w-2xl mx-auto text-lg" data-i18n="aboutPage.leadership.subtitle">
         Meet the visionary leading our company towards innovation, growth, 
         and excellence.
       </p>
     </div>
 
     <!-- CEO Section -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-black p-10 rounded-2xl shadow-xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white p-10 rounded-2xl shadow-xl">
       
       <!-- CEO Image -->
       <div class="text-center md:text-left">
-        <img src="assets/images/1member.jpg" 
+        <img src="wael.png" 
              alt="Wael - CEO" 
              class="w-full h-[400px] object-cover rounded-lg mb-6 shadow-lg hover:scale-105 transition-transform duration-500">
-        <h3 class="text-3xl font-semibold text-[#FF5F15] flex justify-center">Wael</h3>
-        <p class="text-gray-400 text-base flex justify-center">Chief Executive Officer (CEO)</p>
+        <h3 class="text-3xl font-semibold text-[#FF5F15] flex justify-center" data-i18n="aboutPage.leadership.ceo.name">Wael</h3>
+        <p class="text-gray-400 text-base flex justify-center" data-i18n="aboutPage.leadership.ceo.position">Chief Executive Officer (CEO)</p>
       </div>
 
       <!-- About Wael -->
       <div>
-        <h2 class="text-5xl font-bold text-white mb-4">About Wael</h2>
-        <h3 class="text-2xl font-semibold text-[#FF5F15] mb-6">Company Leader & Web Developer</h3>
-        <p class="text-gray-400 text-base leading-relaxed">
-         Wael has led Al-Futtaim towards corporate success and global recognition  as Vice Chairman & CEO. With over three decades of experience, 
-         he has played a key role in the company’s growth, navigating it through transformation and expansion.
+        <h2 class="text-5xl font-bold text-white mb-4" data-i18n="aboutPage.leadership.ceo.aboutTitle">About Wael</h2>
+        <h3 class="text-2xl font-semibold text-[#FF5F15] mb-6" data-i18n="aboutPage.leadership.ceo.role">Company Leader & Web Developer</h3>
+        <p class="text-gray-400 text-base leading-relaxed" data-i18n="aboutPage.leadership.ceo.description">
+         Wael has led AA SİRKO towards corporate success and global recognition  
+         as Vice Chairman & CEO. With over three decades of experience, 
+         he has played a key role in the company's growth, navigating it through transformation and expansion.
         </p>
       </div>
 
@@ -494,12 +407,12 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
         
         <!-- Left Text -->
         <div class="md:w-1/2"> 
-          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white">Looking to connect with us?</h2> 
+          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white" data-i18n="aboutPage.connect.title">Looking to connect with us?</h2> 
         </div>
 
         <!-- Right Text -->
         <div class="md:w-1/2 text-gray-300 text-lg md:text-xl leading-relaxed">
-          <p>
+          <p data-i18n="aboutPage.connect.description">
             Whether you have a question, a partnership proposal, or an interest in joining our team,
             select the relevant category below, and we'll direct you to the right form.
           </p>
@@ -509,12 +422,14 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
       <!-- Buttons -->
   <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
   <a href="contect.html"
-     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300">
+     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300"
+     data-i18n="aboutPage.connect.buttons.connect">
     Connect with us
   </a>
 
   <a href="contect.html"
-     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300">
+     class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300"
+     data-i18n="aboutPage.connect.buttons.partner">
     Partner with us
   </a>
 </div>
@@ -534,20 +449,19 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
       <!-- Footer Links -->
       <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 text-lg md:text-2xl">
         <div>
-          <p class="font-semibold mb-3 text-[#FF5533]">Company</p>
+          <p class="font-semibold mb-3 text-[#FF5533]" data-i18n="footer.company.title">Company</p>
           <ul class="space-y-2 text-gray-300">
-            <li><a href="about.html">About</a></li>
-            
-            <li><a href="careers.html"></a>Careers</li>
-            <li><a href="contect.html">Contact</a></li>
+            <li><a href="about.html" data-i18n="footer.company.links.about">About</a></li>
+            <li><a href="careers.html" data-i18n="footer.company.links.careers">Careers</a></li>
+            <li><a href="contect.html" data-i18n="footer.company.links.contact">Contact</a></li>
           </ul>
         </div>
         <div>
-          <p class="font-semibold mb-3 text-[#FF5533]">Divisions</p>
+          <p class="font-semibold mb-3 text-[#FF5533]" data-i18n="footer.divisions.title">Divisions</p>
           <ul class="space-y-2 text-gray-300">
-            <li><a href="real.html">Real Estate</a></li>
-            <li><a href="automotive.html">Automotives</a></li>
-            <li><a href="logistic.html">Logistics & Transportations</a></li>
+            <li><a href="real.html" data-i18n="footer.divisions.links.realEstate">Real Estate</a></li>
+            <li><a href="automotive.html" data-i18n="footer.divisions.links.automotives">Automotives</a></li>
+            <li><a href="logistic.html" data-i18n="footer.divisions.links.logisticsTransportations">Logistics & Transportations</a></li>
           </ul>
         </div>
       
@@ -562,9 +476,9 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
 
     <!-- Bottom Categories -->
     <div class="border-t border-gray-700 mt-10 pt-6 text-[#FF5533] text-sm flex flex-wrap justify-center gap-4 md:gap-6">
-      <p>Real Estate</p>
-      <p>Automotive</p>
-      <p>Logistics & Transportations</p>
+      <p data-i18n="footer.categories.realEstate">Real Estate</p>
+      <p data-i18n="footer.categories.automotive">Automotive</p>
+      <p data-i18n="footer.categories.logisticsTransportations">Logistics & Transportations</p>
     </div>
   </footer>
 
@@ -573,7 +487,7 @@ Our expertise spans a range of sectors, including real estate, automotive, logis
  
 
 
- 
+ <script src="languageSwitcher.js"></script>
  <script src="https://kit.fontawesome.com/a2e0a1b8e4.js" crossorigin="anonymous"></script>
 <script src="js.js"></script>
 </body>

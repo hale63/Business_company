@@ -1,0 +1,733 @@
+{
+  "indexPage": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "Over Ons",
+        "divisions": "Divisies",
+        "divisionsDropdown": {
+          "realEstate": "Vastgoed",
+          "automobilesTrade": "Auto Handel",
+          "transportations": "Transport",
+          "logisticsServices": "Logistieke Diensten"
+        },
+        "impact": "Impact",
+        "contact": "Contact"
+      }
+    },
+    "hero": {
+      "titleLine1": "Verrijking",
+      "titleLine2": "Levens Elke Dag"
+    },
+    "about": {
+      "title": "Wie We Zijn",
+      "description": "AA SİRKO is een zeer gediversifieerd en vooruitstrevend bedrijf dat uitmuntendheid nastreeft in een breed scala aan industrieën. Onze expertise omvat vastgoedontwikkeling, auto handel, transport en logistiek, waardoor we uitgebreide oplossingen kunnen creëren die vooruitgang en innovatie stimuleren. We streven ernaar uitzonderlijke waarde te leveren door kennis, technologie en duurzame praktijken te combineren.",
+      "learnMore": "Meer Weten →"
+    },
+    "values": {
+      "title": "Onze Waarden",
+      "innovation": {
+        "title": "Innovatie",
+        "description1": "Bevordering van continue verbetering en creatief denken.",
+        "description2": "Omarmen van nieuwe technologieën om voorop te blijven."
+      },
+      "collaboration": {
+        "title": "Samenwerking",
+        "description1": "Bouwen aan sterke partnerschappen voor wederzijds succes.",
+        "description2": "Aanmoedigen van teamwork over diverse sectoren."
+      },
+      "socialResponsibility": {
+        "title": "Maatschappelijke Verantwoordelijkheid",
+        "description1": "Positief bijdragen aan gemeenschappen.",
+        "description2": "Implementeren van duurzame praktijken."
+      },
+      "integrity": {
+        "title": "Integriteit",
+        "description1": "Handhaven van de hoogste ethische normen.",
+        "description2": "Transparantie en verantwoording."
+      }
+    },
+    "divisions": {
+      "title": "Onze Divisies",
+      "automotive": {
+        "title": "Auto",
+        "description": "Sinds 1955 heeft onze Auto Divisie de standaard gezet voor uitmuntendheid.",
+        "learnMore": "Meer Weten →"
+      },
+      "realEstate": {
+        "title": "Vastgoed",
+        "description": "Leveren van innovatieve ontwikkelingen die functionaliteit en design combineren.",
+        "learnMore": "Meer Weten →"
+      },
+      "transportation": {
+        "title": "Transport",
+        "description": "Bieden van efficiënte en betrouwbare logistieke oplossingen.",
+        "learnMore": "Meer Weten →"
+      },
+      "logistics": {
+        "title": "Logistiek",
+        "description": "Zorgen voor gestroomlijnde operaties via end-to-end oplossingen.",
+        "learnMore": "Meer Weten →"
+      }
+    },
+    "connect": {
+      "title": "Wilt u contact met ons opnemen?",
+      "description": "Kies een categorie hieronder om bij het juiste formulier uit te komen.",
+      "buttons": {
+        "connect": "Contact met ons opnemen",
+        "partner": "Samenwerken met ons"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Bedrijf",
+        "links": {
+          "about": "Over Ons",
+          "careers": "Carrières",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisies",
+        "links": {
+          "realEstate": "Vastgoed",
+          "automotives": "Auto",
+          "logisticsTransportations": "Logistiek & Transport"
+        }
+      },
+      "categories": {
+        "realEstate": "Vastgoed",
+        "automotive": "Auto",
+        "logisticsTransportations": "Logistiek & Transport"
+      }
+    }
+  },
+
+  "aboutPage": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "Over Ons",
+        "divisions": "Divisies",
+        "divisionsDropdown": {
+          "realEstate": "Vastgoed",
+          "automotiveTrade": "Auto Handel",
+          "logisticsTransportations": "Logistiek & Transport"
+        },
+        "careers": "Carrières",
+        "contact": "Contact"
+      },
+      "language": {
+        "selector": "NL",
+        "options": {
+          "arabic": "Arabisch",
+          "dutch": "Nederlands"
+        }
+      }
+    },
+    "hero": {
+      "title": "Wie We Zijn"
+    },
+    "about": {
+      "overview": {
+        "title": "Overzicht",
+        "description": "AA SİRKO is een dynamisch en innovatief bedrijf dat toegewijd is aan uitmuntendheid in meerdere industrieën..."
+      }
+    },
+    "philosophy": {
+      "title": "Onze Filosofie",
+      "vision": {
+        "title": "Visie",
+        "description": "Wij leveren kwaliteitsproducten die levens verrijken."
+      },
+      "purpose": {
+        "title": "Doel",
+        "description": "Wij streven naar uitmuntendheid en stellen klantbehoeften op de eerste plaats."
+      }
+    },
+    "leadership": {
+      "title": "Ons Leiderschap",
+      "subtitle": "Ontmoet de visionair die ons bedrijf leidt.",
+      "ceo": {
+        "name": "Wael",
+        "position": "Chief Executive Officer (CEO)",
+        "aboutTitle": "Over Wael",
+        "role": "Bedrijfsleider & Webontwikkelaar",
+        "description": "Wael heeft AA SİRKO naar continue groei geleid."
+      }
+    },
+    "connect": {
+      "title": "Wilt u contact met ons opnemen?",
+      "description": "Kies een categorie hieronder om bij het juiste formulier uit te komen.",
+      "buttons": {
+        "connect": "Contact met ons opnemen",
+        "partner": "Samenwerken met ons"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Bedrijf",
+        "links": {
+          "about": "Over Ons",
+          "careers": "Carrières",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisies",
+        "links": {
+          "realEstate": "Vastgoed",
+          "automotives": "Auto",
+          "logisticsTransportations": "Logistiek & Transport"
+        }
+      },
+      "categories": {
+        "realEstate": "Vastgoed",
+        "automotive": "Auto",
+        "logisticsTransportations": "Logistiek & Transport"
+      }
+    }
+  },
+  "auto": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "Over Ons",
+        "divisions": "Divisies",
+        "divisionsDropdown": {
+          "realEstate": "Vastgoed",
+          "automotiveTrade": "Auto Handel",
+          "logisticsTransportations": "Logistiek & Transport"
+        },
+        "careers": "Carrières",
+        "contact": "Contact"
+      },
+      "language": {
+        "selector": "NL",
+        "options": {
+          "arabic": "Arabisch",
+          "dutch": "Nederlands"
+        }
+      }
+    },
+    "hero": {
+      "title": "Auto"
+    },
+    "about": {
+      "overview": {
+        "title": "Overzicht",
+        "description": "AA SİRKO is een zeer gediversifieerd en vooruitstrevend bedrijf dat uitmuntendheid nastreeft in een breed scala aan industrieën. Onze expertise omvat vastgoedontwikkeling, auto handel, transport en logistiek, waardoor we uitgebreide oplossingen kunnen creëren die vooruitgang en innovatie stimuleren. We streven ernaar uitzonderlijke waarde te leveren aan onze klanten, partners en gemeenschappen door branchekennis, geavanceerde technologie en duurzame praktijken te combineren."
+      }
+    },
+    "brands": {
+      "title": "Geselecteerde Merken"
+    },
+    "atAGlance": {
+      "title": "In Een Oogopslag",
+      "description": "We zijn er trots op innovatie en vooruitgang in de wereldwijde auto-industrie te stimuleren. Toegewijd aan uitmuntendheid, leveren we geavanceerde oplossingen die bedrijven empoweren en gemeenschappen verrijken. Verken onze impact en laatste vooruitgangen hier.",
+      "stats": {
+        "brands": "Merk",
+        "employees": "Medewerkers (k+)",
+        "nationalities": "Nationaliteiten"
+      }
+    },
+    "divisions": {
+      "title": "Onze Divisies",
+      "newCars": {
+        "title": "Nieuwe Auto's",
+        "description": "Onze Nieuwe Auto's Divisie levert de nieuwste voertuigen met geavanceerde technologie en design innovaties."
+      },
+      "evCharging": {
+        "title": "EV & Opladen",
+        "description": "De EV & Oplaad Divisie leidt de transitie naar duurzame energie met geavanceerde oplaadinfrastructuur."
+      },
+      "usedVehicles": {
+        "title": "Gebruikte Voertuigen",
+        "description": "Onze Gebruikte Voertuigen Divisie zorgt voor topkwaliteit occasions met complete service en betrouwbaarheid."
+      },
+      "rentalLeasing": {
+        "title": "Verhuur & Lease",
+        "description": "Sinds 1955 heeft onze Verhuur & Lease Divisie industriestandaarden gezet in klanttevredenheid in de MENA-regio."
+      },
+      "motorcycles": {
+        "title": "Motorfietsen",
+        "description": "Onze Motorfietsen Divisie combineert kracht, stijl en prestaties voor rijders in de regio."
+      },
+      "commercialVehicles": {
+        "title": "Bedrijfsvoertuigen",
+        "description": "De Bedrijfsvoertuigen Divisie biedt duurzame en efficiënte transportoplossingen op maat voor bedrijfsbehoeften."
+      }
+    },
+    "connect": {
+      "title": "Wilt u contact met ons opnemen?",
+      "description": "Of u nu een vraag, een samenwerkingsvoorstel heeft of interesse heeft om ons team te versterken, selecteer de relevante categorie hieronder en we leiden u naar het juiste formulier.",
+      "buttons": {
+        "connect": "Contact met ons opnemen",
+        "partner": "Samenwerken met ons"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Bedrijf",
+        "links": {
+          "about": "Over Ons",
+          "careers": "Carrières",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisies",
+        "links": {
+          "realEstate": "Vastgoed",
+          "automotives": "Auto",
+          "logisticsTransportations": "Logistiek & Transport"
+        }
+      },
+      "categories": {
+        "realEstate": "Vastgoed",
+        "automotive": "Auto",
+        "logisticsTransportations": "Logistiek & Transport"
+      }
+    }
+  },
+  "logic": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "Over Ons",
+        "divisions": "Divisies",
+        "divisionsDropdown": {
+          "realEstate": "Vastgoed",
+          "automotiveTrade": "Auto Handel",
+          "logisticsTransportations": "Logistiek & Transport"
+        },
+        "careers": "Carrières",
+        "contact": "Contact"
+      },
+      "language": {
+        "selector": "NL",
+        "options": {
+          "arabic": "Arabisch",
+          "dutch": "Nederlands"
+        }
+      }
+    },
+    "hero": {
+      "title": "Logistiek & Transport"
+    },
+    "about": {
+      "overview": {
+        "title": "Overzicht",
+        "description": "AAsirko Logistiek & Transport biedt betrouwbare en geïntegreerde logistieke en transportoplossingen over land, zee en lucht. We zorgen voor veilige, tijdige levering via efficiënt supply chain management, moderne vlootoperaties en professionele expertise. Onze missie is om bedrijven met de wereld te verbinden via slimme, transparante en klantgerichte diensten."
+      }
+    },
+    "services": {
+      "warehousing": {
+        "title": "Opslag & Voorraad",
+        "features": [
+          "Veilige opslag met geavanceerde monitorsystemen.",
+          "Real-time voorraadbeheer en flexibele capaciteit."
+        ]
+      },
+      "customsClearance": {
+        "title": "Douane-afhandeling",
+        "features": [
+          "Vloeiende afhandeling van import- en exportprocedures.",
+          "Zorgt voor naleving van alle lokale regelgeving"
+        ]
+      },
+      "supplyChain": {
+        "title": "Supply Chain Management",
+        "features": [
+          "End-to-end planning en coördinatie van zendingen.",
+          "Verhoogt efficiëntie en verlaagt operationele kosten."
+        ]
+      },
+      "distribution": {
+        "title": "Distributie & Levering",
+        "features": [
+          "Aangepaste verpakking om elk product te beschermen.",
+          "Hoogwaardige materialen voor veilig transport en opslag."
+        ]
+      },
+      "packaging": {
+        "title": "Verpakking & Handling",
+        "features": [
+          "Aangepaste verpakking om elk product te beschermen.",
+          "Hoogwaardige materialen voor veilig transport en opslag."
+        ]
+      },
+      "consulting": {
+        "title": "Logistiek Advies",
+        "features": [
+          "Professioneel advies om uw logistieke stroom te optimaliseren.",
+          "Helpt u tijd, ruimte en operationele kosten te besparen."
+        ]
+      }
+    },
+    "atAGlance": {
+      "title": "In Een Oogopslag",
+      "description": "We zijn er trots op innovatie en vooruitgang in de wereldwijde auto-industrie te stimuleren. Toegewijd aan uitmuntendheid, leveren we geavanceerde oplossingen die bedrijven empoweren en gemeenschappen verrijken. Verken onze impact en laatste vooruitgangen hier.",
+      "stats": {
+        "warehousing": "Opslagruimte (m2)",
+        "yardFacilities": "Terreinfaciliteiten (m2)",
+        "petrochemicalProducts": "Petrochemische Producten Verwerkt (ton)",
+        "tankContainer": "Tankcontainer",
+        "vehiclesPerYear": "Voertuigen Per Jaar (k+)"
+      }
+    },
+    "transportation": {
+      "title": "Ons Transport",
+      "airFreight": {
+        "title": "Luchtvracht",
+        "description": "IATA/FIATA gecertificeerd agent, diensten aanbiedend op alle belangrijke luchthavens in de GCC Lid van het Aviation Logistics Network (ALN)"
+      },
+      "seaFreight": {
+        "title": "Zeevracht",
+        "description": "Douane-opslagfaciliteiten in alle belangrijke havens Break bulk zendingafhandeling"
+      },
+      "landFreight": {
+        "title": "Landvracht & Transport",
+        "description": "Nationaal transport met grensoverschrijdend transport naar verschillende GCC-landen Transportoplossingen, inclusief gordijnzijdige trailers en gespecialiseerde tanktrailers met lage vloer"
+      },
+      "automotive": {
+        "title": "Auto",
+        "description": "Douane-afhandeling en levering van voertuigen van alle soorten Exotische auto transporten"
+      },
+      "projectLogistics": {
+        "title": "Project Logistiek (inclusief Evenementen, Tentoonstellingen & Motorsport)",
+        "description": "Complete grondlogistiek voor hoogwaardige internationale evenementen Logistiek Management van grote tentoonstellingen"
+      }
+    },
+    "connect": {
+      "title": "Wilt u contact met ons opnemen?",
+      "description": "Of u nu een vraag, een samenwerkingsvoorstel heeft of interesse heeft om ons team te versterken, selecteer de relevante categorie hieronder en we leiden u naar het juiste formulier.",
+      "buttons": {
+        "connect": "Contact met ons opnemen",
+        "partner": "Samenwerken met ons"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Bedrijf",
+        "links": {
+          "about": "Over Ons",
+          "careers": "Carrières",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisies",
+        "links": {
+          "realEstate": "Vastgoed",
+          "automotives": "Auto",
+          "logisticsTransportations": "Logistiek & Transport"
+        }
+      },
+      "categories": {
+        "realEstate": "Vastgoed",
+        "automotive": "Auto",
+        "logisticsTransportations": "Logistiek & Transport"
+      }
+    }
+  },
+  "real": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "Over Ons",
+        "divisions": "Divisies",
+        "divisionsDropdown": {
+          "realEstate": "Vastgoed",
+          "automotiveTrade": "Auto Handel",
+          "logisticsTransportations": "Logistiek & Transport"
+        },
+        "careers": "Carrières",
+        "contact": "Contact"
+      },
+      "language": {
+        "selector": "NL",
+        "options": {
+          "arabic": "Arabisch",
+          "dutch": "Nederlands"
+        }
+      }
+    },
+    "hero": {
+      "title": "Vastgoed"
+    },
+    "about": {
+      "overview": {
+        "title": "Overzicht",
+        "description": "Ontdek uw droomhuis of ideale investering met AASIRKO. Wij zijn gespecialiseerd in het verbinden van kopers, verkopers en investeerders met de perfecte eigendommen. Of u nu op zoek bent naar residentiële, commerciële of huureigendommen, ons toegewijde team biedt deskundige begeleiding, gepersonaliseerde service en diepgaande marktkennis om u te helpen zelfverzekerde beslissingen te nemen. Verken aanbiedingen, bekijk virtuele tours en ervaar een naadloos vastgoedtraject op maat voor u."
+      }
+    },
+    "services": {
+      "title": "Onze Diensten",
+      "subtitle": "Wij bieden uitgebreide vastgoedoplossingen op maat van uw unieke behoeften",
+      "projectDevelopment": {
+        "title": "Projectontwikkeling",
+        "description": "De taken van het bedrijf variëren van het identificeren van gewenste grondassets tot het leiden van vastgoedontwerp, constructie en verhuur."
+      },
+      "projectManagement": {
+        "title": "Projectmanagement",
+        "description": "AA SIRKO Vastgoed is toegewijd aan het bieden van haalbare oplossingen voor de diverse uitdagingen die residentiële en commerciële eigendommen tegenkomen."
+      },
+      "assetManagement": {
+        "title": "Vermogensbeheer",
+        "description": "AA SIRKO Vastgoed bewaakt en onderhoudt waarde-gebaseerde entiteiten zoals gebouwen, menselijk kapitaal, financiën, intellectueel eigendom en goodwill."
+      },
+      "facilityManagement": {
+        "title": "Facilitair Management",
+        "description": "AA SIRKO Vastgoed bewaakt en onderhoudt waarde-gebaseerde entiteiten zoals gebouwen, menselijk kapitaal, financiën, intellectueel eigendom en goodwill."
+      }
+    },
+    "atAGlance": {
+      "title": "In Een Oogopslag",
+      "description": "We zijn er trots op innovatie en vooruitgang in de wereldwijde auto-industrie te stimuleren. Toegewijd aan uitmuntendheid, leveren we geavanceerde oplossingen die bedrijven empoweren en gemeenschappen verrijken. Verken onze impact en laatste vooruitgangen hier.",
+      "stats": {
+        "primeRetail": "Aan prime retail en commerciële ruimtes (Mm²)",
+        "annualVisitors": "Jaarlijkse bezoekers (k+)",
+        "nationalities": "Nationaliteiten"
+      }
+    },
+    "brands": {
+      "title": "Geselecteerde Merken"
+    },
+    "divisions": {
+      "title": "Onze Divisies",
+      "residencesCommunities": {
+        "title": "Woningen & Gemeenschappen",
+        "description": "Onze Superieure Leefruimtes Ontworpen Om Levenskwaliteit Te Verbeteren Onze woningen en gemeenschappen bieden doordacht ontworpen omgevingen die verder gaan dan huisvesting en een echt gevoel van verbondenheid bevorderen. Met een diepe toewijding aan maatschappelijke verantwoordelijkheid creëren we levendige buurten waar mensen samen gedijen. Deze ontwikkelingen zijn ontworpen om bewoners te empoweren en lokale uitdagingen aan te pakken, waardoor we ons vestigen als een betrouwbare vastgoedmakelaar in de regio."
+      },
+      "malls": {
+        "title": "Winkelcentra",
+        "description": "De winkelcentra divisie richt zich op het creëren van moderne winkelbestemmingen die dienen als gemeenschapshubs."
+      },
+      "contractingGroup": {
+        "title": "Aannemersgroep",
+        "description": "Onze Efficiënte Supply Chains voor Sterkere Resultaten zorgt voor topkwaliteit occasions met complete service en betrouwbaarheid."
+      }
+    },
+    "connect": {
+      "title": "Wilt u contact met ons opnemen?",
+      "description": "Of u nu een vraag, een samenwerkingsvoorstel heeft of interesse heeft om ons team te versterken, selecteer de relevante categorie hieronder en we leiden u naar het juiste formulier.",
+      "buttons": {
+        "connect": "Contact met ons opnemen",
+        "partner": "Samenwerken met ons"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Bedrijf",
+        "links": {
+          "about": "Over Ons",
+          "careers": "Carrières",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisies",
+        "links": {
+          "realEstate": "Vastgoed",
+          "automotives": "Auto",
+          "logisticsTransportations": "Logistiek & Transport"
+        }
+      },
+      "categories": {
+        "realEstate": "Vastgoed",
+        "automotive": "Auto",
+        "logisticsTransportations": "Logistiek & Transport"
+      }
+    }
+  },
+  "career": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "Over Ons",
+        "divisions": "Divisies",
+        "divisionsDropdown": {
+          "realEstate": "Vastgoed",
+          "automotiveTrade": "Auto Handel",
+          "logisticsTransportations": "Logistiek & Transport"
+        },
+        "careers": "Carrières",
+        "contact": "Contact"
+      },
+      "language": {
+        "selector": "NL",
+        "options": {
+          "arabic": "Arabisch",
+          "dutch": "Nederlands"
+        }
+      }
+    },
+    "hero": {
+      "title": "Word deel van ons groeiende erfgoed"
+    },
+    "about": {
+      "title": "AA SIRKO: Een Plek Om Thuis Te Horen, Groeien, Uitblinken",
+      "description": "We zijn toegewijd aan het bevorderen van een dynamische en inclusieve werkomgeving waar elke medewerker de kans heeft om te gedijen en groeien. Via onze uitgebreide trainings- en ontwikkelingsprogramma's empoweren we onze teamleden om hun vaardigheden te verbeteren, hun kennis uit te breiden en uit te blinken in collaboratieve teamsettings."
+    },
+    "culture": {
+      "title": "Onze Cultuur is Gebouwd Op",
+      "values": {
+        "collaboration": "Samenwerking",
+        "honesty": "Eerlijkheid",
+        "integrity": "Integriteit",
+        "respect": "Respect"
+      }
+    },
+    "atAGlance": {
+      "title": "In Een Oogopslag",
+      "description": "We zijn er trots op innovatie en vooruitgang in de wereldwijde auto-industrie te stimuleren. Toegewijd aan uitmuntendheid, leveren we geavanceerde oplossingen die bedrijven empoweren en gemeenschappen verrijken. Verken onze impact en laatste vooruitgangen hier.",
+      "stats": {
+        "colleagues": "Collega's (K)",
+        "nationalities": "Nationaliteiten",
+        "countries": "Landen (K)"
+      }
+    },
+    "whyUs": {
+      "title": "Waarom AA SIRKO?",
+      "description": "AA SIRKO biedt u de mogelijkheid om uw stempel te drukken op een breed scala aan industrieën via diverse projecten. Toegerust met eersteklas training en een cultuur die vruchtbare samenwerking mogelijk maakt, bent u uitgerust om de leiding te nemen over een welvarende carrière.",
+      "linkedin": "Verken onze carrières op LinkedIn"
+    },
+    "connect": {
+      "title": "Wilt u contact met ons opnemen?",
+      "description": "Of u nu een vraag, een samenwerkingsvoorstel heeft of interesse heeft om ons team te versterken, selecteer de relevante categorie hieronder en we leiden u naar het juiste formulier.",
+      "buttons": {
+        "connect": "Contact met ons opnemen",
+        "partner": "Samenwerken met ons"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Bedrijf",
+        "links": {
+          "about": "Over Ons",
+          "careers": "Carrières",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisies",
+        "links": {
+          "realEstate": "Vastgoed",
+          "automotives": "Auto",
+          "logisticsTransportations": "Logistiek & Transport"
+        }
+      },
+      "categories": {
+        "realEstate": "Vastgoed",
+        "automotive": "Auto",
+        "logisticsTransportations": "Logistiek & Transport"
+      }
+    }
+  },
+  "contact": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "Over Ons",
+        "divisions": "Divisies",
+        "divisionsDropdown": {
+          "realEstate": "Vastgoed",
+          "automotiveTrade": "Auto Handel",
+          "logisticsTransportations": "Logistiek & Transport"
+        },
+        "careers": "Carrières",
+        "contact": "Contact"
+      },
+      "language": {
+        "selector": "NL",
+        "options": {
+          "arabic": "Arabisch",
+          "dutch": "Nederlands"
+        }
+      }
+    },
+    "hero": {
+      "title": "Contacteer Ons"
+    },
+    "contact": {
+      "companyInfo": {
+        "name": "AASIRKO Global B.V.",
+        "address": "Edisonbaan, 23.3439MN Nieuwegin",
+        "phone1": "+973 1722 0220",
+        "phone2": "+973 1722 9122",
+        "viewLocation": "Bekijk Locatie"
+      },
+      "form": {
+        "description": "Voor verdere informatie over YBA AA SIRKO, zijn partnerschappen en projecten, vul het contactformulier in.",
+        "fields": {
+          "firstName": {
+            "label": "Voornaam*",
+            "placeholder": ""
+          },
+          "lastName": {
+            "label": "Achternaam*",
+            "placeholder": ""
+          },
+          "phone": {
+            "label": "Telefoon",
+            "placeholder": ""
+          },
+          "email": {
+            "label": "E-mail*",
+            "placeholder": ""
+          },
+          "company": {
+            "label": "Bedrijf",
+            "placeholder": ""
+          },
+          "subject": {
+            "label": "Onderwerp*",
+            "placeholder": "—Kies een optie—",
+            "options": {
+              "general": "Algemene Vraag",
+              "partnership": "Samenwerkingsmogelijkheid",
+              "project": "Projectinformatie",
+              "other": "Anders"
+            }
+          },
+          "message": {
+            "label": "Bericht*",
+            "placeholder": ""
+          }
+        },
+        "submit": "Versturen"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Bedrijf",
+        "links": {
+          "about": "Over Ons",
+          "careers": "Carrières",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisies",
+        "links": {
+          "realEstate": "Vastgoed",
+          "automotives": "Auto",
+          "logisticsTransportations": "Logistiek & Transport"
+        }
+      },
+      "categories": {
+        "realEstate": "Vastgoed",
+        "automotive": "Auto",
+        "logisticsTransportations": "Logistiek & Transport"
+      }
+    }
+  }
+}

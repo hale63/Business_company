@@ -1,0 +1,700 @@
+{
+  "indexPage": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "divisions": "Divisions",
+        "divisionsDropdown": {
+          "realEstate": "Real Estate",
+          "automobilesTrade": "Automobiles Trade",
+          "transportations": "Transportations",
+          "logisticsServices": "Logistics Services"
+        },
+        "impact": "Impact",
+        "contact": "Contact"
+      }
+    },
+    "hero": {
+      "titleLine1": "Enriching",
+      "titleLine2": "Lives Everyday"
+    },
+    "about": {
+      "title": "Who We Are",
+      "description": "AA SİRKO is a highly diversified and forward-thinking company committed to achieving excellence across a wide range of industries. Our expertise spans real estate development, automotive trade, transportation, and logistics, allowing us to create comprehensive solutions that drive progress and innovation. We strive to deliver exceptional value by combining knowledge, technology, and sustainable practices.",
+      "learnMore": "Learn More →"
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "description1": "Fostering continuous improvement and creative thinking.",
+        "description2": "Embracing new technologies to stay ahead."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description1": "Building strong partnerships for mutual success.",
+        "description2": "Encouraging teamwork across diverse sectors."
+      },
+      "socialResponsibility": {
+        "title": "Social Responsibility",
+        "description1": "Contributing positively to communities.",
+        "description2": "Implementing sustainable practices."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description1": "Upholding the highest ethical standards.",
+        "description2": "Transparency and accountability."
+      }
+    },
+    "divisions": {
+      "title": "Our Divisions",
+      "automotive": {
+        "title": "Automotive",
+        "description": "Since 1955, our Automotive Division has set the benchmark for excellence.",
+        "learnMore": "Learn More →"
+      },
+      "realEstate": {
+        "title": "Real Estate",
+        "description": "Delivering innovative developments combining functionality and design.",
+        "learnMore": "Learn More →"
+      },
+      "transportation": {
+        "title": "Transportation",
+        "description": "Providing efficient and reliable logistics solutions.",
+        "learnMore": "Learn More →"
+      },
+      "logistics": {
+        "title": "Logistics",
+        "description": "Ensuring streamlined operations through end-to-end solutions.",
+        "learnMore": "Learn More →"
+      }
+    }
+  },
+
+  "aboutPage": {
+    "navbar": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
+        "about": "About",
+        "divisions": "Divisions",
+        "divisionsDropdown": {
+          "realEstate": "Real Estate",
+          "automotiveTrade": "Automotive Trade",
+          "logisticsTransportations": "Logistics & Transportations"
+        },
+        "careers": "Careers",
+        "contact": "Contact"
+      },
+      "language": {
+        "selector": "EN",
+        "options": {
+          "arabic": "Arabic",
+          "dutch": "Dutch"
+        }
+      }
+    },
+    "hero": {
+      "title": "Who We Are"
+    },
+    "about": {
+      "overview": {
+        "title": "Overview",
+        "description": "AA SİRKO is a dynamic and innovative company dedicated to excellence across multiple industries..."
+      }
+    },
+    "philosophy": {
+      "title": "Our Philosophy",
+      "vision": {
+        "title": "Vision",
+        "description": "We provide quality products that enrich lives."
+      },
+      "purpose": {
+        "title": "Purpose",
+        "description": "We pursue excellence and put customer needs first."
+      }
+    },
+  "leadership": {
+      "title": "Our Leadership",
+      "subtitle": "Meet the visionary leading our company.",
+      "ceo": {
+        "name": "Wael",
+        "position": "Chief Executive Officer (CEO)",
+        "aboutTitle": "About Wael",
+        "role": "Company Leader & Web Developer",
+        "description": "Wael has led AA SİRKO towards corporate success and global recognition as Vice Chairman & CEO. With over three decades of experience, he has played a key role in the company's growth, navigating it through transformation and expansion."
+      }
+    },
+    "connect": {
+      "title": "Looking to connect with us?",
+      "description": "Choose a category below to reach the right form.",
+      "buttons": {
+        "connect": "Connect with us",
+        "partner": "Partner with us"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Company",
+        "links": {
+          "about": "About",
+          "careers": "Careers",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisions",
+        "links": {
+          "realEstate": "Real Estate",
+          "automotives": "Automotives",
+          "logisticsTransportations": "Logistics & Transportations"
+        }
+      },
+      "categories": {
+        "realEstate": "Real Estate",
+        "automotive": "Automotive",
+        "logisticsTransportations": "Logistics & Transportations"
+      }
+    }
+},
+  "auto":{ 
+    "navbar": {
+    "companyName": "AA SİRKO",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "divisions": "Divisions",
+      "divisionsDropdown": {
+        "realEstate": "Real Estate",
+        "automotiveTrade": "Automotive Trade",
+        "logisticsTransportations": "Logistics & Transportations"
+      },
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "language": {
+      "selector": "EN",
+      "options": {
+        "arabic": "Arabic",
+        "dutch": "Dutch"
+      }
+    }
+  },
+  "hero": {
+    "title": "Automotive"
+  },
+  "about": {
+    "overview": {
+      "title": "Overview",
+      "description": "AA SİRKO is a highly diversified and forward-thinking company committed to achieving excellence across a wide range of industries. Our expertise spans real estate development, automotive trade, transportation, and logistics, allowing us to create comprehensive solutions that drive progress and innovation. We strive to deliver exceptional value to our clients, partners, and communities by combining industry knowledge, cutting-edge technology, and sustainable practices."
+    }
+  },
+  "brands": {
+    "title": "Selected Brands"
+  },
+  "atAGlance": {
+    "title": "At a Glance",
+    "description": "We are proud to drive innovation and progress in the global automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
+    "stats": {
+      "brands": "Brand",
+      "employees": "Employees (k+)",
+      "nationalities": "Nationalities"
+    }
+  },
+  "divisions": {
+    "title": "Our Divisions",
+    "newCars": {
+      "title": "New Cars",
+      "description": "Our New Cars Division delivers the latest vehicles with advanced technology and design innovations."
+    },
+    "evCharging": {
+      "title": "EV & Charging",
+      "description": "The EV & Charging Division leads the transition to sustainable energy with cutting-edge charging infrastructure."
+    },
+    "usedVehicles": {
+      "title": "Used Vehicles",
+      "description": "Our Used Vehicles Division ensures top quality pre-owned cars with complete service and reliability."
+    },
+    "rentalLeasing": {
+      "title": "Rental & Leasing",
+      "description": "Since 1955, our Rental & Leasing Division has set industry standards in customer satisfaction across the MENA region."
+    },
+    "motorcycles": {
+      "title": "Motorcycles",
+      "description": "Our Motorcycles Division combines power, style, and performance for riders across the region."
+    },
+    "commercialVehicles": {
+      "title": "Commercial Vehicles",
+      "description": "The Commercial Vehicles Division offers durable and efficient transport solutions tailored for business needs."
+    }
+  },
+  "connect": {
+    "title": "Looking to connect with us?",
+    "description": "Whether you have a question, a partnership proposal, or an interest in joining our team, select the relevant category below, and we'll direct you to the right form.",
+    "buttons": {
+      "connect": "Connect with us",
+      "partner": "Partner with us"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "links": {
+        "about": "About",
+        "careers": "Careers",
+        "contact": "Contact"
+      }
+    },
+    "divisions": {
+      "title": "Divisions",
+      "links": {
+        "realEstate": "Real Estate",
+        "automotives": "Automotives",
+        "logisticsTransportations": "Logistics & Transportations"
+      }
+    },
+    "categories": {
+      "realEstate": "Real Estate",
+      "automotive": "Automotive",
+      "logisticsTransportations": "Logistics & Transportations"
+    }
+  }
+},
+ "logic":{"navbar": {
+    "companyName": "AA SİRKO",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "divisions": "Divisions",
+      "divisionsDropdown": {
+        "realEstate": "Real Estate",
+        "automotiveTrade": "Automotive Trade",
+        "logisticsTransportations": "Logistics & Transportations"
+      },
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "language": {
+      "selector": "EN",
+      "options": {
+        "arabic": "Arabic",
+        "dutch": "Dutch"
+      }
+    }
+  },
+  "hero": {
+    "title": "Logistics & Transportations"
+  },
+  "about": {
+    "overview": {
+      "title": "Overview",
+      "description": "AAsirko Logistics & Transportations provides reliable and integrated logistics and transportation solutions across land, sea, and air. We ensure safe, on-time delivery through efficient supply chain management, modern fleet operations, and professional expertise. Our mission is to connect businesses with the world through smart, transparent, and customer-focused services."
+    }
+  },
+  "services": {
+    "warehousing": {
+      "title": "Warehousing & Inventory",
+      "features": [
+        "Secure storage with advanced monitoring systems.",
+        "Real-time stock control and flexible capacity."
+      ]
+    },
+    "customsClearance": {
+      "title": "Customs Clearance",
+      "features": [
+        "Smooth handling of import and export procedures.",
+        "Ensures compliance with all local regulations"
+      ]
+    },
+    "supplyChain": {
+      "title": "Supply Chain Management",
+      "features": [
+        "End-to-end planning and coordination of shipments.",
+        "Enhances efficiency and reduces operational costs."
+      ]
+    },
+    "distribution": {
+      "title": "Distribution & Delivery",
+      "features": [
+        "Customized packaging to protect every product.",
+        "High-quality materials for safe transport and storage."
+      ]
+    },
+    "packaging": {
+      "title": "Packaging & Handling",
+      "features": [
+        "Customized packaging to protect every product.",
+        "High-quality materials for safe transport and storage."
+      ]
+    },
+    "consulting": {
+      "title": "Logistics Consulting",
+      "features": [
+        "Professional advice to optimize your logistics flow.",
+        "Helps you save time, space, and operational costs."
+      ]
+    }
+  },
+  "atAGlance": {
+    "title": "At a Glance",
+    "description": "We are proud to drive innovation and progress in the global automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
+    "stats": {
+      "warehousing": "Warehousing (m2)",
+      "yardFacilities": "Yard Facilities (m2)",
+      "petrochemicalProducts": "Petrochemical Products Handled (tones)",
+      "tankContainer": "tank container",
+      "vehiclesPerYear": "Vehicles Per Year (k+)"
+    }
+  },
+  "transportation": {
+    "title": "Our transportation",
+    "airFreight": {
+      "title": "Air Freight",
+      "description": "IATA/FIATA certified agent, offering services at all key airports in the GCC Member of the Aviation Logistics Network (ALN)"
+    },
+    "seaFreight": {
+      "title": "Sea Freight",
+      "description": "Bonded warehousing facilities in all key ports Break bulk shipment handling"
+    },
+    "landFreight": {
+      "title": "Land Freight & Transport",
+      "description": "National transportation with cross-border transport to different GCC countries Transport Solutions, including curtain-sided trailers and low-bed specialised tank trailers"
+    },
+    "automotive": {
+      "title": "Automotive",
+      "description": "Customs clearance and delivery of vehicles of all varieties Exotic car movements"
+    },
+    "projectLogistics": {
+      "title": "Project Logistics (including Events, Exhibitions & Motorsports)",
+      "description": "Complete ground logistics for high-profile international events Logistics Management of major exhibitions"
+    }
+  },
+  "connect": {
+    "title": "Looking to connect with us?",
+    "description": "Whether you have a question, a partnership proposal, or an interest in joining our team, select the relevant category below, and we'll direct you to the right form.",
+    "buttons": {
+      "connect": "Connect with us",
+      "partner": "Partner with us"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "links": {
+        "about": "About",
+        "careers": "Careers",
+        "contact": "Contact"
+      }
+    },
+    "divisions": {
+      "title": "Divisions",
+      "links": {
+        "realEstate": "Real Estate",
+        "automotives": "Automotives",
+        "logisticsTransportations": "Logistics & Transportations"
+      }
+    },
+    "categories": {
+      "realEstate": "Real Estate",
+      "automotive": "Automotive",
+      "logisticsTransportations": "Logistics & Transportations"
+    }
+  }
+},
+  "real":{
+    "navbar": {
+    "companyName": "AA SİRKO",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "divisions": "Divisions",
+      "divisionsDropdown": {
+        "realEstate": "Real Estate",
+        "automotiveTrade": "Automotive Trade",
+        "logisticsTransportations": "Logistics & Transportations"
+      },
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "language": {
+      "selector": "EN",
+      "options": {
+        "arabic": "Arabic",
+        "dutch": "Dutch"
+      }
+    }
+  },
+  "hero": {
+    "title": "Real Estate"
+  },
+  "about": {
+    "overview": {
+      "title": "Overview",
+      "description": "Discover your dream home or ideal investment with AASIRKO. We specialize in connecting buyers, sellers, and investors with the perfect properties. Whether you're looking for residential, commercial, or rental properties, our dedicated team provides expert guidance, personalized service, and in-depth market knowledge to help you make confident decisions. Explore listings, browse virtual tours, and experience a seamless real estate journey tailored just for you."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We provide comprehensive real estate solutions tailored to your unique needs",
+    "projectDevelopment": {
+      "title": "Project Development",
+      "description": "The company's duties range from identifying desirable land assets to directing property design, construction and leasing."
+    },
+    "projectManagement": {
+      "title": "Project Management",
+      "description": "AA SIRKO Real Estate is dedicated to providing viable solutions to the various challenges that residential and commercial properties face."
+    },
+    "assetManagement": {
+      "title": "Asset Management",
+      "description": "AA SIRKO Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill."
+    },
+    "facilityManagement": {
+      "title": "Facility Management",
+      "description": "AA SIRKO Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill."
+    }
+  },
+  "atAGlance": {
+    "title": "At a Glance",
+    "description": "We are proud to drive innovation and progress in the global automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
+    "stats": {
+      "primeRetail": "Of prime retail and commercial spaces(Mm²)",
+      "annualVisitors": "Annual visitors (k+)",
+      "nationalities": "Nationalities"
+    }
+  },
+  "brands": {
+    "title": "Selected Brands"
+  },
+  "divisions": {
+    "title": "Our Divisions",
+    "residencesCommunities": {
+      "title": "Residences & Communities",
+      "description": "Our Superior Living Spaces Designed To Enhance Quality of Life Our residences and communities offer thoughtfully designed environments that go beyond housing, fostering a true sense of belonging. With a deep commitment to social responsibility, we create vibrant neighborhoods where people thrive together. These developments are designed to empower residents and address local challenges, establishing us as a trusted real estate broker in the region."
+    },
+    "malls": {
+      "title": "Malls",
+      "description": "The malls division focuses on creating modern shopping destinations that serve as community hubs."
+    },
+    "contractingGroup": {
+      "title": "Contracting Group",
+      "description": "Our Efficient Supply Chains for Stronger Results ensures top quality pre-owned cars with complete service and reliability."
+    }
+  },
+  "connect": {
+    "title": "Looking to connect with us?",
+    "description": "Whether you have a question, a partnership proposal, or an interest in joining our team, select the relevant category below, and we'll direct you to the right form.",
+    "buttons": {
+      "connect": "Connect with us",
+      "partner": "Partner with us"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "links": {
+        "about": "About",
+        "careers": "Careers",
+        "contact": "Contact"
+      }
+    },
+    "divisions": {
+      "title": "Divisions",
+      "links": {
+        "realEstate": "Real Estate",
+        "automotives": "Automotives",
+        "logisticsTransportations": "Logistics & Transportations"
+      }
+    },
+    "categories": {
+      "realEstate": "Real Estate",
+      "automotive": "Automotive",
+      "logisticsTransportations": "Logistics & Transportations"
+    }
+  }
+  },
+  "career":{
+"navbar": {
+    "companyName": "AA SİRKO",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "divisions": "Divisions",
+      "divisionsDropdown": {
+        "realEstate": "Real Estate",
+        "automotiveTrade": "Automotive Trade",
+        "logisticsTransportations": "Logistics & Transportations"
+      },
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "language": {
+      "selector": "EN",
+      "options": {
+        "arabic": "Arabic",
+        "dutch": "Dutch"
+      }
+    }
+  },
+  "hero": {
+    "title": "Join our growing legacy"
+  },
+  "about": {
+    "title": "AA SIRKO: A Place To Belong, Grow, Excel",
+    "description": "We are committed to fostering a dynamic and inclusive work environment where every employee has the opportunity to thrive and grow. Through our comprehensive training and development programs, we empower our team members to enhance their skills, expand their knowledge, and excel in collaborative team settings."
+  },
+  "culture": {
+    "title": "Our Culture is Built On",
+    "values": {
+      "collaboration": "Collaboration",
+      "honesty": "Honesty",
+      "integrity": "Integrity",
+      "respect": "Respect"
+    }
+  },
+  "atAGlance": {
+    "title": "At a Glance",
+    "description": "We are proud to drive innovation and progress in the global automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
+    "stats": {
+      "colleagues": "Colleagues (K)",
+      "nationalities": "Nationalities",
+      "countries": "Countries (K)"
+    }
+  },
+  "whyUs": {
+    "title": "Why AA SIRKO?",
+    "description": "AA SIRKO provides you with the opportunity to leave your mark on a breadth of industries through various diverse projects. Empowered with best-in-class training and a culture that enables fruitful collaboration, you'll be equipped to take charge of a prosperous career.",
+    "linkedin": "Explore our careers on LinkedIn"
+  },
+  "connect": {
+    "title": "Looking to connect with us?",
+    "description": "Whether you have a question, a partnership proposal, or an interest in joining our team, select the relevant category below, and we'll direct you to the right form.",
+    "buttons": {
+      "connect": "Connect with us",
+      "partner": "Partner with us"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "links": {
+        "about": "About",
+        "careers": "Careers",
+        "contact": "Contact"
+      }
+    },
+    "divisions": {
+      "title": "Divisions",
+      "links": {
+        "realEstate": "Real Estate",
+        "automotives": "Automotives",
+        "logisticsTransportations": "Logistics & Transportations"
+      }
+    },
+    "categories": {
+      "realEstate": "Real Estate",
+      "automotive": "Automotive",
+      "logisticsTransportations": "Logistics & Transportations"
+    }
+  }
+  },
+  "contact":{ "navbar": {
+    "companyName": "AA SİRKO",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "divisions": "Divisions",
+      "divisionsDropdown": {
+        "realEstate": "Real Estate",
+        "automotiveTrade": "Automotive Trade",
+        "logisticsTransportations": "Logistics & Transportations"
+      },
+      "careers": "Careers",
+      "contact": "Contact"
+    },
+    "language": {
+      "selector": "EN",
+      "options": {
+        "arabic": "Arabic",
+        "dutch": "Dutch"
+      }
+    }
+  },
+  "hero": {
+    "title": "Contect Us"
+  },
+  "contact": {
+    "companyInfo": {
+      "name": "AASIRKO Global.B.v",
+      "address": "Edisonbaan, 23.3439MN Nieuwegin",
+      "phone1": "+973 1722 0220",
+      "phone2": "+973 1722 9122",
+      "viewLocation": "View Location"
+    },
+    "form": {
+      "description": "For further information regarding YBA AA SIRKO, its partnerships, and projects, fill out the contact form.",
+      "fields": {
+        "firstName": {
+          "label": "First name*",
+          "placeholder": ""
+        },
+        "lastName": {
+          "label": "Last name*",
+          "placeholder": ""
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": ""
+        },
+        "email": {
+          "label": "Email*",
+          "placeholder": ""
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": ""
+        },
+        "subject": {
+          "label": "Subject*",
+          "placeholder": "—Please choose an option—",
+          "options": {
+            "general": "General Inquiry",
+            "partnership": "Partnership Opportunity",
+            "project": "Project Information",
+            "other": "Other"
+          }
+        },
+        "message": {
+          "label": "Message*",
+          "placeholder": ""
+        }
+      },
+      "submit": "Submit"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Company",
+      "links": {
+        "about": "About",
+        "careers": "Careers",
+        "contact": "Contact"
+      }
+    },
+    "divisions": {
+      "title": "Divisions",
+      "links": {
+        "realEstate": "Real Estate",
+        "automotives": "Automotives",
+        "logisticsTransportations": "Logistics & Transportations"
+      }
+    },
+    "categories": {
+      "realEstate": "Real Estate",
+      "automotive": "Automotive",
+      "logisticsTransportations": "Logistics & Transportations"
+    }
+  }
+  }
+}

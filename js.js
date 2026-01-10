@@ -214,16 +214,81 @@ function toggleSection(sectionId) {
 // Make it global so HTML onclick can access it
 window.toggleSection = toggleSection;
 
-// Mobile language dropdown functionality
-const mobileLanguageBtn = document.getElementById('mobile-language-btn');
-const mobileLanguageMenu = document.getElementById('mobile-language-menu');
+// ===== Desktop Language Dropdown (Improved) =====
+(() => {
+  const btn = document.getElementById('desktop-language-btn');
+  const menu = document.getElementById('desktop-language-menu');
 
-if (mobileLanguageBtn && mobileLanguageMenu) {
-  mobileLanguageBtn.addEventListener('click', function() {
-    mobileLanguageMenu.classList.toggle('hidden');
-    
-    // Rotate arrow icon
-    const arrow = this.querySelector('svg:last-child');
-    arrow.classList.toggle('rotate-90');
+  if (!btn || !menu) return;
+
+  const arrow = btn.querySelector('svg:last-child');
+
+  // Toggle dropdown
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('hidden');
+    arrow?.classList.toggle('rotate-180');
   });
-}
+
+  // Close when clicking outside
+  document.addEventListener('click', () => {
+    if (!menu.classList.contains('hidden')) {
+      menu.classList.add('hidden');
+      arrow?.classList.remove('rotate-180');
+    }
+  });
+
+  // Close with ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !menu.classList.contains('hidden')) {
+      menu.classList.add('hidden');
+      arrow?.classList.remove('rotate-180');
+    }
+  });
+})();
+
+
+
+// ===== Mobile Language Dropdown (FIXED) =====
+document.addEventListener("DOMContentLoaded", () => {
+  const langBtn = document.getElementById("mobile-language-btn");
+  const langMenu = document.getElementById("mobile-language-menu");
+
+  if (!langBtn || !langMenu) return;
+
+  // Open/Close dropdown
+  langBtn.addEventListener("click", (e) => {
+    e.stopPropagation();     // IMPORTANT FIX
+    langMenu.classList.toggle("hidden");
+  });
+
+  // Handle selecting language
+  langMenu.querySelectorAll("button[data-lang]").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();   // IMPORTANT FIX
+      
+      const selectedLang = btn.getAttribute("data-lang");
+
+      // Update the button label
+      langBtn.querySelector("span").textContent =
+        `Language (${selectedLang.toUpperCase()})`;
+
+      // Close dropdown
+      langMenu.classList.add("hidden");
+
+      // Call your translation system
+      if (typeof changeLanguage === "function") {
+        changeLanguage(selectedLang);  // THIS WAS NOT FIRING BEFORE
+      }
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", () => {
+    langMenu.classList.add("hidden");
+  });
+});
+
+
+
+
