@@ -116,6 +116,40 @@
         "description": "We pursue excellence and put customer needs first."
       }
     },
+    
+  "services": {
+    "tag": "What we offer",
+    "title": "Our Services",
+    "desc": "We stand alongside individuals and families — offering guidance, resources, and community every step of the way.",
+
+    "items": {
+      "1": {
+        "title": "Social Support",
+        "text": "Providing emotional and practical support through guidance and community programs."
+      },
+      "2": {
+        "title": "Education & Language",
+        "text": "Training programs and language courses to improve skills and opportunities."
+      },
+      "3": {
+        "title": "Legal Assistance",
+        "text": "Legal advice and support in family, work, and housing matters."
+      },
+      "4": {
+        "title": "Community Development",
+        "text": "Building stronger communities through initiatives and projects."
+      },
+      "5": {
+        "title": "Refugee Support",
+        "text": "Helping newcomers integrate with guidance and job support."
+      },
+      "6": {
+        "title": "Women & Children",
+        "text": "Safe spaces and activities supporting well-being and development."
+      }
+    }
+  }
+},
   "leadership": {
       "title": "Our Leadership",
       "subtitle": "Meet the visionary leading our company.",
@@ -157,8 +191,8 @@
         "automotive": "Automotive",
         "logisticsTransportations": "Logistics & Transportations"
       }
-    }
-},
+    },
+
   "auto":{ 
     "navbar": {
     "companyName": "AA SİRKO",
@@ -627,13 +661,13 @@
   "contact": {
     "companyInfo": {
       "name": "AASIRKO Global.B.v",
-      "address": "Edisonbaan, 23.3439MN Nieuwegin",
-      "phone1": "+973 1722 0220",
-      "phone2": "+973 1722 9122",
+      "address": "Kernkade 2 Unite 16 3542CH Utrecht",
+      "phone1": "+31 687896904",
+      "phone2": "+31 684795155",
       "viewLocation": "View Location"
     },
     "form": {
-      "description": "For further information regarding YBA AA SIRKO, its partnerships, and projects, fill out the contact form.",
+      "description": "For further information regarding  AA SIRKO, its partnerships, and projects, fill out the contact form.",
       "fields": {
         "firstName": {
           "label": "First name*",

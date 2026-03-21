@@ -129,14 +129,16 @@
   <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-3">
 
     <!-- Logo -->
-    <div class="flex space-x-10">
-      <a href="index.html" class="group">
-        <div class="relative">
-          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <img src="assets/images/carlogo.png" alt="AA SİRKO Logo" class="relative h-[85px] w-auto md:h-50 transition-all duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl" />
-        </div>
-      </a>
+<div class="flex space-x-10 items-center h-[80px]"> <!-- Keep navbar height fixed -->
+  <a href="index.html" class="group relative">
+    <div class="relative w-[150px] h-[120px] overflow-visible">
+      <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+      <img src="assets/images/carlogo.png" 
+           alt="AA SİRKO Logo" 
+           class="absolute bottom-0 left-0 h-full w-auto transform scale-125 transition-all duration-500 ease-in-out group-hover:scale-140 drop-shadow-xl" />
     </div>
+  </a>
+</div>
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex flex-1 justify-center relative z-50">
@@ -451,7 +453,7 @@
       
       <!-- Logo -->
       <div class="px-5 py-2 bg-black rounded-lg">
-        <img src="assets/images/carlogo.png" alt="Logo" class="w-40 mb-6 ">
+        <img src="assets/images/carlogo.png" alt="Logo" class="w-60 mb-6 ">
       </div>
 
       <!-- Footer Links -->

@@ -3,7 +3,7 @@
     "navbar": {
       "companyName": "AA SİRKO",
       "menu": {
-        "home": "Home",
+        "home": "Startpagina",
         "about": "Over Ons",
         "divisions": "Divisies",
         "divisionsDropdown": {
@@ -13,6 +13,8 @@
           "logisticsServices": "Logistieke Diensten"
         },
         "impact": "Impact",
+        "careers":"Carrières",
+        
         "contact": "Contact"
       }
     },
@@ -108,7 +110,7 @@
     "navbar": {
       "companyName": "AA SİRKO",
       "menu": {
-        "home": "Home",
+        "home": "Startpagina",
         "about": "Over Ons",
         "divisions": "Divisies",
         "divisionsDropdown": {
@@ -147,6 +149,40 @@
         "description": "Wij streven naar uitmuntendheid en stellen klantbehoeften op de eerste plaats."
       }
     },
+    
+  "services": {
+    "tag": "Wat wij bieden",
+    "title": "Onze Diensten",
+    "desc": "Wij staan naast individuen en families en bieden begeleiding, middelen en gemeenschap bij elke stap.",
+
+    "items": {
+      "1": {
+        "title": "Sociale Ondersteuning",
+        "text": "Emotionele en praktische ondersteuning via begeleiding en gemeenschapsprogramma’s."
+      },
+      "2": {
+        "title": "Onderwijs & Taal",
+        "text": "Trainingen en taalcursussen om vaardigheden en kansen te verbeteren."
+      },
+      "3": {
+        "title": "Juridische Hulp",
+        "text": "Juridisch advies en ondersteuning bij familie-, werk- en huisvestingszaken."
+      },
+      "4": {
+        "title": "Gemeenschapsontwikkeling",
+        "text": "Sterkere gemeenschappen opbouwen via initiatieven en projecten."
+      },
+      "5": {
+        "title": "Vluchtelingenondersteuning",
+        "text": "Nieuwkomers helpen integreren met begeleiding en werkondersteuning."
+      },
+      "6": {
+        "title": "Vrouwen & Kinderen",
+        "text": "Veilige ruimtes en activiteiten voor welzijn en ontwikkeling."
+      }
+    }
+  }
+},
     "leadership": {
       "title": "Ons Leiderschap",
       "subtitle": "Ontmoet de visionair die ons bedrijf leidt.",
@@ -188,13 +224,12 @@
         "automotive": "Auto",
         "logisticsTransportations": "Logistiek & Transport"
       }
-    }
-  },
+    },
   "auto": {
     "navbar": {
       "companyName": "AA SİRKO",
       "menu": {
-        "home": "Home",
+        "home": "Startpagina",
         "about": "Over Ons",
         "divisions": "Divisies",
         "divisionsDropdown": {
@@ -297,7 +332,7 @@
     "navbar": {
       "companyName": "AA SİRKO",
       "menu": {
-        "home": "Home",
+        "home": "Startpagina",
         "about": "Over Ons",
         "divisions": "Divisies",
         "divisionsDropdown": {
@@ -439,7 +474,7 @@
     "navbar": {
       "companyName": "AA SİRKO",
       "menu": {
-        "home": "Home",
+        "home": "Startpagina",
         "about": "Over Ons",
         "divisions": "Divisies",
         "divisionsDropdown": {
@@ -550,7 +585,7 @@
     "navbar": {
       "companyName": "AA SİRKO",
       "menu": {
-        "home": "Home",
+        "home": "Startpagina",
         "about": "Over Ons",
         "divisions": "Divisies",
         "divisionsDropdown": {
@@ -635,7 +670,7 @@
     "navbar": {
       "companyName": "AA SİRKO",
       "menu": {
-        "home": "Home",
+        "home": "Startpagina",
         "about": "Over Ons",
         "divisions": "Divisies",
         "divisionsDropdown": {
@@ -660,13 +695,13 @@
     "contact": {
       "companyInfo": {
         "name": "AASIRKO Global B.V.",
-        "address": "Edisonbaan, 23.3439MN Nieuwegin",
-        "phone1": "+973 1722 0220",
-        "phone2": "+973 1722 9122",
+        "address": "Kernkade 2 Unite 16 3542CH Utrecht",
+        "phone1": "+31 687896904",
+        "phone2": "+973 684795155",
         "viewLocation": "Bekijk Locatie"
       },
       "form": {
-        "description": "Voor verdere informatie over YBA AA SIRKO, zijn partnerschappen en projecten, vul het contactformulier in.",
+        "description": "Voor verdere informatie over  AA SIRKO, zijn partnerschappen en projecten, vul het contactformulier in.",
         "fields": {
           "firstName": {
             "label": "Voornaam*",

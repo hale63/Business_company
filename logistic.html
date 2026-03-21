@@ -129,14 +129,16 @@
   <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-3">
 
     <!-- Logo -->
-    <div class="flex space-x-10">
-      <a href="index.html" class="group">
-        <div class="relative">
-          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <img src="assets/images/carlogo.png" alt="AA SİRKO Logo" class="relative h-[85px] w-auto md:h-50 transition-all duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl" />
-        </div>
-      </a>
+<div class="flex space-x-10 items-center h-[80px]"> <!-- Keep navbar height fixed -->
+  <a href="index.html" class="group relative">
+    <div class="relative w-[150px] h-[120px] overflow-visible">
+      <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+      <img src="assets/images/carlogo.png" 
+           alt="AA SİRKO Logo" 
+           class="absolute bottom-0 left-0 h-full w-auto transform scale-125 transition-all duration-500 ease-in-out group-hover:scale-140 drop-shadow-xl" />
     </div>
+  </a>
+</div>
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex flex-1 justify-center relative z-50">
@@ -605,19 +607,19 @@ Logistics Management of major exhibitions
 </section>
 
 
-   <!-- Connect Section -->
+  <!-- Connect Section -->
   <section class="py-20 md:py-32 px-6 md:px-20 text-center md:text-left bg-black gap-12 mobile-padding">
     <div class="max-w-9xl mx-auto">
       <div class="md:flex justify-between items-start space-y-10 md:space-y-2">
         
         <!-- Left Text -->
         <div class="md:w-1/2"> 
-          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white" data-i18n="aboutPage.connect.title">Looking to connect with us?</h2> 
+          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white" data-i18n="connect.title">Looking to connect with us?</h2> 
         </div>
 
         <!-- Right Text -->
         <div class="md:w-1/2 text-gray-300 text-lg md:text-xl leading-relaxed">
-          <p data-i18n="aboutPage.connect.description">
+          <p data-i18n="connect.description">
             Whether you have a question, a partnership proposal, or an interest in joining our team,
             select the relevant category below, and we'll direct you to the right form.
           </p>
@@ -628,13 +630,13 @@ Logistics Management of major exhibitions
   <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
   <a href="contect.html"
      class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300"
-     data-i18n="aboutPage.connect.buttons.connect">
+     data-i18n="connect.buttons.connect">
     Connect with us
   </a>
 
   <a href="contect.html"
      class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300"
-     data-i18n="aboutPage.connect.buttons.partner">
+     data-i18n="connect.buttons.partner">
     Partner with us
   </a>
 </div>
@@ -648,7 +650,7 @@ Logistics Management of major exhibitions
       
       <!-- Logo -->
       <div class="px-5 py-2 bg-black rounded-lg">
-        <img src="assets/images/carlogo.png" alt="Logo" class="w-40 mb-6 ">
+        <img src="assets/images/carlogo.png" alt="Logo" class="w-60 mb-6 ">
       </div>
 
       <!-- Footer Links -->

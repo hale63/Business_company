@@ -123,14 +123,16 @@
   <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-3">
 
     <!-- Logo -->
-    <div class="flex space-x-10">
-      <a href="index.html" class="group">
-        <div class="relative">
-          <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
-          <img src="assets/images/carlogo.png" alt="AA SİRKO Logo" class="relative h-[85px] w-auto md:h-50 transition-all duration-500 ease-in-out group-hover:scale-110 drop-shadow-xl" />
-        </div>
-      </a>
+<div class="flex space-x-10 items-center h-[80px]"> <!-- Keep navbar height fixed -->
+  <a href="index.html" class="group relative">
+    <div class="relative w-[150px] h-[120px] overflow-visible">
+      <div class="absolute -inset-1 bg-gradient-to-r from-black to-black rounded-lg blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+      <img src="assets/images/carlogo.png" 
+           alt="AA SİRKO Logo" 
+           class="absolute bottom-0 left-0 h-full w-auto transform scale-125 transition-all duration-500 ease-in-out group-hover:scale-140 drop-shadow-xl" />
     </div>
+  </a>
+</div>
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex flex-1 justify-center relative z-50">
@@ -262,7 +264,7 @@
   <section class="mt-20 relative">
     <div class="bg-[#FF5F15] text-white px-6 sm:px-10 md:px-20 pt-32 pb-56 md:pb-30 md:text-left">
       <div class="max-w-6xl mx-auto transform -translate-y-3">
-        <h1 class="text-4xl sm:text-7xl md:text-8xl leading-tight text-left text-black" data-i18n="hero.title">
+        <h1 class="text-4xl sm:text-7xl md:text-8xl leading-tight text-left text-black" data-i18n="career.hero.title">
          Join our growing legacy
         </h1>
       </div>
@@ -284,14 +286,14 @@
       
       <!-- Left: Title -->
       <div class="text-center md:text-left">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 sm:mb-6" data-i18n="about.title">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 sm:mb-6" data-i18n="career.about.title">
         AA SIRKO: A Place To   <span class="text-[#FF5F15]">Belong, Grow, Excel</span> 
         </h2>
       </div>
 
       <!-- Right: Description -->
       <div class="text-gray-700 text-base sm:text-lg leading-relaxed text-center md:text-left">
-        <p class="mb-4" data-i18n="about.description">We are committed to fostering a dynamic and inclusive work environment where every employee has the opportunity to thrive and grow. Through our comprehensive training and development programs, we empower our team members to enhance their skills, expand their knowledge, and excel in collaborative team settings.
+        <p class="mb-4" data-i18n="career.about.description">We are committed to fostering a dynamic and inclusive work environment where every employee has the opportunity to thrive and grow. Through our comprehensive training and development programs, we empower our team members to enhance their skills, expand their knowledge, and excel in collaborative team settings.
           </p>
    </div>
     </div>
@@ -299,7 +301,7 @@
    <div class="bg-white h-[100px] sm:h-[150px]"></div>
 <section class="bg-gray-200 text-[#FF5F15] py-36 px-6 md:px-32 lg:px-32">
   <div class="max-w-9xl mx-auto text-center">
-    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12" data-i18n="culture.title">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12" data-i18n="career.culture.title">
       Our Culture is Built On
     </h2>
 
@@ -307,25 +309,25 @@
       <!-- Collaboration -->
       <div class="flex flex-col items-center">
         <img src="assets/images/Collaboration-1-2-scaled.jpg" alt="Collaboration" class="rounded-lg shadow-md w-full h-64 object-cover mb-6">
-        <h3 class="text-xl font-semibold" data-i18n="culture.values.collaboration">Collaboration</h3>
+        <h3 class="text-xl font-semibold" data-i18n="career.culture.values.collaboration">Collaboration</h3>
       </div>
 
       <!-- Honesty -->
       <div class="flex flex-col items-center">
         <img src="assets/images/realestate.jpg" alt="Honesty" class="rounded-lg shadow-md w-full h-64 object-cover mb-6">
-        <h3 class="text-xl font-semibold" data-i18n="culture.values.honesty">Honesty</h3>
+        <h3 class="text-xl font-semibold" data-i18n="career.culture.values.honesty">Honesty</h3>
       </div>
 
       <!-- Integrity -->
       <div class="flex flex-col items-center">
         <img src="assets/images/Integrity-1-2048x1365.jpg" alt="Integrity" class="rounded-lg shadow-md w-full h-64 object-cover mb-6">
-        <h3 class="text-xl font-semibold" data-i18n="culture.values.integrity">Integrity</h3>
+        <h3 class="text-xl font-semibold" data-i18n="career.culture.values.integrity">Integrity</h3>
       </div>
 
       <!-- Respect -->
       <div class="flex flex-col items-center">
         <img src="assets/images/Career-Respect-2-720x480.jpg" alt="Respect" class="rounded-lg shadow-md w-full h-64 object-cover mb-6">
-        <h3 class="text-xl font-semibold" data-i18n="culture.values.respect">Respect</h3>
+        <h3 class="text-xl font-semibold" data-i18n="career.culture.values.respect">Respect</h3>
       </div>
     </div>
   </div>
@@ -339,12 +341,12 @@
     <!-- Title and Description Row -->
     <div class="flex flex-col md:flex-row justify-between items-center md:items-start mb-16 space-y-8 md:space-y-0">
       <!-- Title -->
-      <h2 class="text-4xl md:text-5xl font-semibold text-center md:text-left" data-i18n="atAGlance.title">
+      <h2 class="text-4xl md:text-5xl font-semibold text-center md:text-left" data-i18n="career.atAGlance.title">
         At a Glance
       </h2>
 
       <!-- Description -->
-      <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center md:text-left md:max-w-3xl" data-i18n="atAGlance.description">
+      <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center md:text-left md:max-w-3xl" data-i18n="careerr.atAGlance.description">
         We are proud to drive innovation and progress in the global automotive industry. Committed to excellence,
          we deliver cutting-edge solutions 
         that empower businesses and enrich communities. Explore our impact and latest advancements here.
@@ -356,15 +358,15 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 text-center md:divide-x divide-gray-300">
       <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="10">0</h3>
-        <p class="text-gray-600 mt-3 text-lg md:text-xl" data-i18n="atAGlance.stats.colleagues">Colleagues (K)</p>
+        <p class="text-gray-600 mt-3 text-lg md:text-xl" data-i18n="career.atAGlance.stats.colleagues">Colleagues (K)</p>
       </div>
       <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="100">0</h3>
-        <p class="text-gray-600 mt-3 text-lg md:text-xl" data-i18n="atAGlance.stats.nationalities">Nationalities </p>
+        <p class="text-gray-600 mt-3 text-lg md:text-xl" data-i18n="career.atAGlance.stats.nationalities">Nationalities </p>
       </div>
       <div>
         <h3 class="text-6xl md:text-8xl font-bold text-[#FF5F15]" data-target="12">0</h3>
-        <p class="text-gray-600 mt-3 text-lg md:text-xl" data-i18n="atAGlance.stats.countries">Countries (K)</p>
+        <p class="text-gray-600 mt-3 text-lg md:text-xl" data-i18n="career.atAGlance.stats.countries">Countries (K)</p>
       </div>
     </div>
   </div>
@@ -375,13 +377,13 @@
     
     <!-- Left Text Section -->
     <div class="px-6 sm:px-12 py-20 text-[#FF5F15]">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-6" data-i18n="whyUs.title">Why AA SIRKO?</h2>
-      <p class="text-lg leading-relaxed mb-8 text-gray-700" data-i18n="whyUs.description">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6" data-i18n="career.whyUs.title">Why AA SIRKO?</h2>
+      <p class="text-lg leading-relaxed mb-8 text-gray-700" data-i18n="career.whyUs.description">
         AA SIRKO provides you with the opportunity to leave your mark on a breadth of industries 
         through various diverse projects. Empowered with best-in-class training and a culture that 
         enables fruitful collaboration, you'll be equipped to take charge of a prosperous career.
       </p>
-      <a href="#" class="text-[#FF5F15] font-semibold flex items-center gap-2 hover:underline" data-i18n="whyUs.linkedin">
+      <a href="#" class="text-[#FF5F15] font-semibold flex items-center gap-2 hover:underline" data-i18n="career.whyUs.linkedin">
         Explore our careers on LinkedIn
         <span class="border border-[#FF5F15] rounded-full w-6 h-6 flex items-center justify-center text-sm">
           →
@@ -406,12 +408,12 @@
         
         <!-- Left Text -->
         <div class="md:w-1/2"> 
-          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white" data-i18n="aboutPage.connect.title">Looking to connect with us?</h2> 
+          <h2 class="text-3xl md:text-4xl font-weight-20 mb-4 text-white" data-i18n="connect.title">Looking to connect with us?</h2> 
         </div>
 
         <!-- Right Text -->
         <div class="md:w-1/2 text-gray-300 text-lg md:text-xl leading-relaxed">
-          <p data-i18n="aboutPage.connect.description">
+          <p data-i18n="connect.description">
             Whether you have a question, a partnership proposal, or an interest in joining our team,
             select the relevant category below, and we'll direct you to the right form.
           </p>
@@ -422,13 +424,13 @@
   <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
   <a href="contect.html"
      class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300"
-     data-i18n="aboutPage.connect.buttons.connect">
+     data-i18n="connect.buttons.connect">
     Connect with us
   </a>
 
   <a href="contect.html"
      class="text-center border border-gray-500 py-5 text-white text-lg md:text-xl px-8 hover:bg-[#FF5533] hover:text-white transition duration-300"
-     data-i18n="aboutPage.connect.buttons.partner">
+     data-i18n="connect.buttons.partner">
     Partner with us
   </a>
 </div>
@@ -442,7 +444,7 @@
       
       <!-- Logo -->
       <div class="px-5 py-2 bg-black rounded-lg">
-        <img src="assets/images/carlogo.png" alt="Logo" class="w-40 mb-6 ">
+        <img src="assets/images/carlogo.png" alt="Logo" class="w-60 mb-6 ">
       </div>
 
       <!-- Footer Links -->
