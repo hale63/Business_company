@@ -7,22 +7,22 @@
         "about": "About",
         "divisions": "Divisions",
         "divisionsDropdown": {
-          "realEstate": "Real Estate",
-          "automobilesTrade": "Automobiles Trade",
+          "realEstate": "Track & Trace Systems",
+          "automobilesTrade": "Car Trade & Rental",
           "transportations": "Transportations",
-          "logisticsServices": "Logistics Services"
+          "logisticsServices": "Logistics & Distribution"
         },
         "impact": "Impact",
         "contact": "Contact"
       }
     },
     "hero": {
-      "titleLine1": "Enriching",
-      "titleLine2": "Lives Everyday"
+      "titleLine1": "Welcome to AASirko Global",
+      "titleLine2": "Speed, Reliability, Quality."
     },
     "about": {
       "title": "Who We Are",
-      "description": "AA SİRKO is a highly diversified and forward-thinking company committed to achieving excellence across a wide range of industries. Our expertise spans real estate development, automotive trade, transportation, and logistics, allowing us to create comprehensive solutions that drive progress and innovation. We strive to deliver exceptional value by combining knowledge, technology, and sustainable practices.",
+      "description": "“At AASirko Global, we combine over 10 years of experience in logistics......",
       "learnMore": "Learn More →"
     },
     "values": {
@@ -50,13 +50,13 @@
     },
     "divisions": {
       "title": "Our Divisions",
-      "automotive": {
-        "title": "Automotive",
-        "description": "Since 1955, our Automotive Division has set the benchmark for excellence.",
+      "Automotive": {
+        "title": "Vehicle Trade & Rental",
+        "description": "Since 1955, our Vehicle Trade & Rental Division has set the benchmark for excellence.",
         "learnMore": "Learn More →"
       },
       "realEstate": {
-        "title": "Real Estate",
+        "title": "Track & Trace Systems",
         "description": "Delivering innovative developments combining functionality and design.",
         "learnMore": "Learn More →"
       },
@@ -81,7 +81,7 @@
         "about": "About",
         "divisions": "Divisions",
         "divisionsDropdown": {
-          "realEstate": "Real Estate",
+          "realEstate": "Track & Trace Systems",
           "automotiveTrade": "Automotive Trade",
           "logisticsTransportations": "Logistics & Transportations"
         },
@@ -101,8 +101,8 @@
     },
     "about": {
       "overview": {
-        "title": "Overview",
-        "description": "AA SİRKO is a dynamic and innovative company dedicated to excellence across multiple industries..."
+        "title": "Who We Are",
+        "description": "“At AASirko Global, we combine over 10 years of experience in logistics, vehicle trading, and distribution..."
       }
     },
     "philosophy": {
@@ -181,14 +181,14 @@
       "divisions": {
         "title": "Divisions",
         "links": {
-          "realEstate": "Real Estate",
+          "realEstate": "Track & Trace Systems",
           "automotives": "Automotives",
           "logisticsTransportations": "Logistics & Transportations"
         }
       },
       "categories": {
-        "realEstate": "Real Estate",
-        "automotive": "Automotive",
+        "realEstate": "Track & Trace Systems",
+        "Automotive": "Vehicle Trade & Rental",
         "logisticsTransportations": "Logistics & Transportations"
       }
     },
@@ -201,7 +201,7 @@
       "about": "About",
       "divisions": "Divisions",
       "divisionsDropdown": {
-        "realEstate": "Real Estate",
+        "realEstate": "Track & Trace Systems",
         "automotiveTrade": "Automotive Trade",
         "logisticsTransportations": "Logistics & Transportations"
       },
@@ -217,12 +217,12 @@
     }
   },
   "hero": {
-    "title": "Automotive"
+    "title": "Vehicle Trade & Rental"
   },
   "about": {
     "overview": {
       "title": "Overview",
-      "description": "AA SİRKO is a highly diversified and forward-thinking company committed to achieving excellence across a wide range of industries. Our expertise spans real estate development, automotive trade, transportation, and logistics, allowing us to create comprehensive solutions that drive progress and innovation. We strive to deliver exceptional value to our clients, partners, and communities by combining industry knowledge, cutting-edge technology, and sustainable practices."
+      "description": "AA SİRKO is a highly diversified and forward-thinking company committed to achieving excellence across a wide range of industries. Our expertise spans Track & Trace Systems development, Automotive trade, transportation, and logistics, allowing us to create comprehensive solutions that drive progress and innovation. We strive to deliver exceptional value to our clients, partners, and communities by combining industry knowledge, cutting-edge technology, and sustainable practices."
     }
   },
   "brands": {
@@ -230,7 +230,7 @@
   },
   "atAGlance": {
     "title": "At a Glance",
-    "description": "We are proud to drive innovation and progress in the global automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
+    "description": "We are proud to drive innovation and progress in the global Automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
     "stats": {
       "brands": "Brand",
       "employees": "Employees (k+)",
@@ -284,14 +284,14 @@
     "divisions": {
       "title": "Divisions",
       "links": {
-        "realEstate": "Real Estate",
+        "realEstate": "Track & Trace Systems",
         "automotives": "Automotives",
         "logisticsTransportations": "Logistics & Transportations"
       }
     },
     "categories": {
-      "realEstate": "Real Estate",
-      "automotive": "Automotive",
+      "realEstate": "Track & Trace Systems",
+      "Automotive": "Vehicle Trade & Rental",
       "logisticsTransportations": "Logistics & Transportations"
     }
   }
@@ -303,7 +303,7 @@
       "about": "About",
       "divisions": "Divisions",
       "divisionsDropdown": {
-        "realEstate": "Real Estate",
+        "realEstate": "Track & Trace Systems",
         "automotiveTrade": "Automotive Trade",
         "logisticsTransportations": "Logistics & Transportations"
       },
@@ -373,7 +373,7 @@
   },
   "atAGlance": {
     "title": "At a Glance",
-    "description": "We are proud to drive innovation and progress in the global automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
+    "description": "We are proud to drive innovation and progress in the global Vehicle Trade & Rental industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
     "stats": {
       "warehousing": "Warehousing (m2)",
       "yardFacilities": "Yard Facilities (m2)",
@@ -396,8 +396,8 @@
       "title": "Land Freight & Transport",
       "description": "National transportation with cross-border transport to different GCC countries Transport Solutions, including curtain-sided trailers and low-bed specialised tank trailers"
     },
-    "automotive": {
-      "title": "Automotive",
+    "Automotive": {
+      "title": "Vehicle Trade & Rental",
       "description": "Customs clearance and delivery of vehicles of all varieties Exotic car movements"
     },
     "projectLogistics": {
@@ -425,128 +425,129 @@
     "divisions": {
       "title": "Divisions",
       "links": {
-        "realEstate": "Real Estate",
+        "realEstate": "Track & Trace Systems",
         "automotives": "Automotives",
         "logisticsTransportations": "Logistics & Transportations"
       }
     },
     "categories": {
-      "realEstate": "Real Estate",
-      "automotive": "Automotive",
+      "realEstate": "Track & Trace Systems",
+      "Automotive": "Vehicle Trade & Rental",
       "logisticsTransportations": "Logistics & Transportations"
     }
   }
 },
-  "real":{
+
+  "track": {
     "navbar": {
-    "companyName": "AA SİRKO",
-    "menu": {
-      "home": "Home",
-      "about": "About",
-      "divisions": "Divisions",
-      "divisionsDropdown": {
-        "realEstate": "Real Estate",
-        "automotiveTrade": "Automotive Trade",
-        "logisticsTransportations": "Logistics & Transportations"
-      },
-      "careers": "Careers",
-      "contact": "Contact"
-    },
-    "language": {
-      "selector": "EN",
-      "options": {
-        "arabic": "Arabic",
-        "dutch": "Dutch"
-      }
-    }
-  },
-  "hero": {
-    "title": "Real Estate"
-  },
-  "about": {
-    "overview": {
-      "title": "Overview",
-      "description": "Discover your dream home or ideal investment with AASIRKO. We specialize in connecting buyers, sellers, and investors with the perfect properties. Whether you're looking for residential, commercial, or rental properties, our dedicated team provides expert guidance, personalized service, and in-depth market knowledge to help you make confident decisions. Explore listings, browse virtual tours, and experience a seamless real estate journey tailored just for you."
-    }
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "We provide comprehensive real estate solutions tailored to your unique needs",
-    "projectDevelopment": {
-      "title": "Project Development",
-      "description": "The company's duties range from identifying desirable land assets to directing property design, construction and leasing."
-    },
-    "projectManagement": {
-      "title": "Project Management",
-      "description": "AA SIRKO Real Estate is dedicated to providing viable solutions to the various challenges that residential and commercial properties face."
-    },
-    "assetManagement": {
-      "title": "Asset Management",
-      "description": "AA SIRKO Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill."
-    },
-    "facilityManagement": {
-      "title": "Facility Management",
-      "description": "AA SIRKO Real Estate monitors and maintains value-based entities such as buildings, human capital, finances, intellectual property, and goodwill."
-    }
-  },
-  "atAGlance": {
-    "title": "At a Glance",
-    "description": "We are proud to drive innovation and progress in the global automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
-    "stats": {
-      "primeRetail": "Of prime retail and commercial spaces(Mm²)",
-      "annualVisitors": "Annual visitors (k+)",
-      "nationalities": "Nationalities"
-    }
-  },
-  "brands": {
-    "title": "Selected Brands"
-  },
-  "divisions": {
-    "title": "Our Divisions",
-    "residencesCommunities": {
-      "title": "Residences & Communities",
-      "description": "Our Superior Living Spaces Designed To Enhance Quality of Life Our residences and communities offer thoughtfully designed environments that go beyond housing, fostering a true sense of belonging. With a deep commitment to social responsibility, we create vibrant neighborhoods where people thrive together. These developments are designed to empower residents and address local challenges, establishing us as a trusted real estate broker in the region."
-    },
-    "malls": {
-      "title": "Malls",
-      "description": "The malls division focuses on creating modern shopping destinations that serve as community hubs."
-    },
-    "contractingGroup": {
-      "title": "Contracting Group",
-      "description": "Our Efficient Supply Chains for Stronger Results ensures top quality pre-owned cars with complete service and reliability."
-    }
-  },
-  "connect": {
-    "title": "Looking to connect with us?",
-    "description": "Whether you have a question, a partnership proposal, or an interest in joining our team, select the relevant category below, and we'll direct you to the right form.",
-    "buttons": {
-      "connect": "Connect with us",
-      "partner": "Partner with us"
-    }
-  },
-  "footer": {
-    "company": {
-      "title": "Company",
-      "links": {
+      "companyName": "AA SİRKO",
+      "menu": {
+        "home": "Home",
         "about": "About",
+        "divisions": "Divisions",
+        "divisionsDropdown": {
+          "realEstate": "Track & Trace Systems",
+          "automotiveTrade": "Automotive Trade",
+          "logisticsTransportations": "Logistics & Transportations"
+        },
         "careers": "Careers",
         "contact": "Contact"
+      },
+      "language": {
+        "selector": "EN",
+        "options": {
+          "arabic": "Arabic",
+          "dutch": "Dutch"
+        }
       }
+    },
+    "hero": {
+      "title": "Track & Trace Systems"
+    },
+    "about": {
+      "overview": {
+        "title": "Overview",
+        "description": "Track your shipments and monitor your logistics in real time with AASIRKO. We specialize in connecting businesses, couriers, and customers with accurate, real-time tracking data. Whether you're looking for parcel tracking, fleet management, or delivery monitoring, our dedicated team provides expert guidance, personalized service, and in-depth logistics knowledge to help you make confident decisions. Explore tracking dashboards, monitor live routes, and experience a seamless track and trace journey tailored just for you."
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "We provide comprehensive tracking and trace solutions tailored to your unique logistics needs",
+      "projectDevelopment": {
+        "title": "Tracking Infrastructure",
+        "description": "The company's duties range from identifying tracking system requirements to directing deployment, integration, and real-time monitoring."
+      },
+      "projectManagement": {
+        "title": "Tracking Management",
+        "description": "AA SIRKO Track & Trace is dedicated to providing viable solutions to the various challenges that shipments and logistics operations face."
+      },
+      "assetManagement": {
+        "title": "Fleet Asset Management",
+        "description": "AA SIRKO Track & Trace monitors and maintains value-based entities such as vehicles, drivers, finances, delivery data, and customer goodwill."
+      },
+      "facilityManagement": {
+        "title": "Logistics Management",
+        "description": "AA SIRKO Track & Trace monitors and maintains value-based entities such as warehouses, distribution centers, fleets, delivery networks, and customer satisfaction."
+      }
+    },
+    "atAGlance": {
+      "title": "At a Glance",
+      "description": "We are proud to drive innovation and progress in the global tracking and logistics industry. Committed to excellence, we deliver cutting-edge tracking solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
+      "stats": {
+        "primeRetail": "Million shipments tracked annually",
+        "annualVisitors": "Active tracking users (k+)",
+        "nationalities": "Countries covered"
+      }
+    },
+    "brands": {
+      "title": "Trusted Partners"
     },
     "divisions": {
-      "title": "Divisions",
-      "links": {
-        "realEstate": "Real Estate",
-        "automotives": "Automotives",
-        "logisticsTransportations": "Logistics & Transportations"
+      "title": "Our Divisions",
+      "residencesCommunities": {
+        "title": "Parcel & Courier Tracking",
+        "description": "Our Superior Tracking Systems Designed To Enhance Delivery Visibility. Our parcel and courier tracking solutions offer real-time visibility that goes beyond basic tracking, fostering complete supply chain transparency. With a deep commitment to customer satisfaction, we create reliable networks where shipments move seamlessly. These systems are designed to empower businesses and address local delivery challenges, establishing us as a trusted tracking provider in the region."
+      },
+      "malls": {
+        "title": "Fleet Management",
+        "description": "The fleet management division focuses on creating modern tracking dashboards that serve as operational hubs for logistics companies."
+      },
+      "contractingGroup": {
+        "title": "Logistics Solutions",
+        "description": "Our Efficient Tracking Networks for Stronger Results ensures end-to-end visibility with complete service and reliability."
       }
     },
-    "categories": {
-      "realEstate": "Real Estate",
-      "automotive": "Automotive",
-      "logisticsTransportations": "Logistics & Transportations"
+    "connect": {
+      "title": "Looking to track with us?",
+      "description": "Whether you have a shipment to track, a logistics partnership proposal, or an interest in joining our team, select the relevant category below, and we'll direct you to the right form.",
+      "buttons": {
+        "connect": "Track a shipment",
+        "partner": "Partner with us"
+      }
+    },
+    "footer": {
+      "company": {
+        "title": "Company",
+        "links": {
+          "about": "About",
+          "careers": "Careers",
+          "contact": "Contact"
+        }
+      },
+      "divisions": {
+        "title": "Divisions",
+        "links": {
+          "realEstate": "Track & Trace Systems",
+          "automotives": "Automotives",
+          "logisticsTransportations": "Logistics & Transportations"
+        }
+      },
+      "categories": {
+        "realEstate": "Track & Trace Systems",
+        "Automotive": "Vehicle Trade & Rental",
+        "logisticsTransportations": "Logistics & Transportations"
+      }
     }
-  }
   },
   "career":{
 "navbar": {
@@ -556,7 +557,7 @@
       "about": "About",
       "divisions": "Divisions",
       "divisionsDropdown": {
-        "realEstate": "Real Estate",
+        "realEstate": "Track & Trace Systems",
         "automotiveTrade": "Automotive Trade",
         "logisticsTransportations": "Logistics & Transportations"
       },
@@ -575,8 +576,8 @@
     "title": "Join our growing legacy"
   },
   "about": {
-    "title": "AA SIRKO: A Place To Belong, Grow, Excel",
-    "description": "We are committed to fostering a dynamic and inclusive work environment where every employee has the opportunity to thrive and grow. Through our comprehensive training and development programs, we empower our team members to enhance their skills, expand their knowledge, and excel in collaborative team settings."
+    "title": "Do you want to work in a dynamic and growing organization?",
+    "description": "At AASirko Global, you have the opportunity to develop yourself and become part of a professional team."
   },
   "culture": {
     "title": "Our Culture is Built On",
@@ -589,7 +590,7 @@
   },
   "atAGlance": {
     "title": "At a Glance",
-    "description": "We are proud to drive innovation and progress in the global automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
+    "description": "We are proud to drive innovation and progress in the global Automotive industry. Committed to excellence, we deliver cutting-edge solutions that empower businesses and enrich communities. Explore our impact and latest advancements here.",
     "stats": {
       "colleagues": "Colleagues (K)",
       "nationalities": "Nationalities",
@@ -621,14 +622,14 @@
     "divisions": {
       "title": "Divisions",
       "links": {
-        "realEstate": "Real Estate",
+        "realEstate": "Track & Trace Systems",
         "automotives": "Automotives",
         "logisticsTransportations": "Logistics & Transportations"
       }
     },
     "categories": {
-      "realEstate": "Real Estate",
-      "automotive": "Automotive",
+      "realEstate": "Track & Trace Systems",
+      "Automotive": "Vehicle Trade & Rental",
       "logisticsTransportations": "Logistics & Transportations"
     }
   }
@@ -640,8 +641,8 @@
       "about": "About",
       "divisions": "Divisions",
       "divisionsDropdown": {
-        "realEstate": "Real Estate",
-        "automotiveTrade": "Automotive Trade",
+        "realEstate": "Track & Trace Systems",
+        "automotiveTrade": "Vehicle Trade & Rental",
         "logisticsTransportations": "Logistics & Transportations"
       },
       "careers": "Careers",
@@ -661,13 +662,14 @@
   "contact": {
     "companyInfo": {
       "name": "AASIRKO Global.B.v",
-      "address": "Kernkade 2 Unite 16 3542CH Utrecht",
+      "address": "Edisonbaan 23, 3439MN Nieuwegein",
       "phone1": "+31 687896904",
       "phone2": "+31 684795155",
+      "email":"info@assirko.com",
       "viewLocation": "View Location"
     },
     "form": {
-      "description": "For further information regarding  AA SIRKO, its partnerships, and projects, fill out the contact form.",
+      "description": "Do you have questions or want to collaborate? Our team is ready to assist you with all your logistics and business needs.",
       "fields": {
         "firstName": {
           "label": "First name*",
@@ -719,16 +721,27 @@
     "divisions": {
       "title": "Divisions",
       "links": {
-        "realEstate": "Real Estate",
+        "realEstate": "Track & Trace Systems",
         "automotives": "Automotives",
         "logisticsTransportations": "Logistics & Transportations"
       }
     },
     "categories": {
-      "realEstate": "Real Estate",
-      "automotive": "Automotive",
+      "realEstate": "Track & Trace Systems",
+      "Automotive": "Vehicle Trade & Rental",
       "logisticsTransportations": "Logistics & Transportations"
     }
   }
-  }
+  },
+  "atAGlance": {
+      "title": "At a Glance",
+      "description": "We are committed to pushing the boundaries of what is possible, embracing new technologies, driving sustainable progress, and making an enduring positive impact for our partners, customers, and the communities we serve.",
+      "stats": {
+        "brands": "Divisions",
+        "employees": "Employees (k+)",
+        "nationalities": "Nationalities"
+      }
+    }
+  
 }
+
